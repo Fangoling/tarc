@@ -45,7 +45,10 @@ export default function Home() {
                                         className="w-full rounded-lg object-cover aspect-auto filter blur-sm"
                                     ></Image>
                                     <div className="absolute inset-0 flex items-center justify-center">
-                                        <p style={{ color: color }}className="text-8xl font-bold">{text}</p>
+                                        <p style={{color: color}}
+                                            className="font-bold text-5xl sm:text-7xl md:text-8xl">
+                                            {text}
+                                        </p>
                                     </div>
                                 </Card>
                             </CarouselItem>
