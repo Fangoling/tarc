@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 export default function footer() {
     return (
@@ -6,17 +7,15 @@ export default function footer() {
             <div className="absolute bottom-0 w-full bg-grey flex flex-col items-center pt-2 pb-8 text-xs gap-2">
                 <Separator />
                 <div className="flex gap-4 text-foreground pt-1">
-                    <a className="hover:underline">Status</a>
+                    <span className="hover:underline">Status</span>
                     <Separator orientation="vertical" className="h-4"/>
-                    <a className="hover:underline">Twitter</a>
+                    <Link href="https://x.com/tarcfitness" target="_blank" className="hover:underline">Twitter</Link>
                     <Separator orientation="vertical" className="h-4"/>
-                    <a className="hover:underline">Instagram</a>
+                    <Link href="https://www.instagram.com/tarc.fitness/" target="_blank" className="hover:underline">Instagram</Link>
                     <Separator orientation="vertical" className="h-4"/>
-                    <a className="hover:underline">Contact</a>
+                    <span className="hover:underline">Contact</span>
                     <Separator orientation="vertical" className="h-4"/>
-                    <a className="hover:underline">Privacy</a>
-                    <Separator orientation="vertical" className="h-4"/>
-                    <a className="hover:underline">Terms</a>
+                    <Link href="/Terms" className="hover:underline">Terms</Link>
                 </div>
                 <div>
                     <p className="text-foreground">Copyright &copy; 2024 Tarc-fitness</p>
