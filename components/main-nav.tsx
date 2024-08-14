@@ -3,30 +3,66 @@ import Link from "next/link"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./ui/mode-toggle"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
 export default function Nav() {
   return (
     <div className="flex items-center justify-between px-4 py-2">
-      <Link href="#home" className="flex items-center gap-2" prefetch={false}>
+
+      <Link href="/#home" className="flex items-center gap-2">
         <span className="text-lg font-semibold">Tarc Fitness</span>
       </Link>
-      <div className="hidden md:flex gap-4">
-        <Link href="#home" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
-          Home
-        </Link>
-        <Link href="#services" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
-          Services
-        </Link>
-        <Link href="#projects" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
-          Projects
-        </Link>
-        <Link href="#team" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
-          Team
-        </Link>
-        <Link href="#contact" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
-          Contact
-        </Link>
-      </div>
+
+      <NavigationMenu className="hidden md:flex">
+        <NavigationMenuList>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <Link href="/#services" className="text-lg font-medium" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Services
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <Link href="/#projects" className="text-lg font-medium" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Projects
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <Link href="/#team" className="text-lg font-medium" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Team
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          
+          <NavigationMenuItem>
+            <Link href="/#contact" className="text-lg font-medium" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Contact
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+        </NavigationMenuList>
+      </NavigationMenu>
+
       <div className="flex items-center gap-2">
         <ModeToggle/>
         <Sheet>
@@ -38,19 +74,19 @@ export default function Nav() {
           </SheetTrigger>
           <SheetContent side="right">
             <div className="grid w-[200px] p-4">
-              <Link href="#home" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+              <Link href="/#home" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                 Home
               </Link>
-              <Link href="#services" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+              <Link href="/#services" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                 Services
               </Link>
-              <Link href="#projects" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+              <Link href="/#projects" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                 Projects
               </Link>
-              <Link href="#team" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+              <Link href="/#team" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                 Team
               </Link>
-              <Link href="#Contact" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+              <Link href="/#contact" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                 Contact
               </Link>
             </div>
