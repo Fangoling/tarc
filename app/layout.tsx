@@ -33,9 +33,11 @@ export default function RootLayout({ children }: Readonly<{children: React.React
             enableSystem
             disableTransitionOnChange
           >
-            <Nav />
-            {children}
-            <Footer />
+            <div className="flex flex-col">
+              <Nav />
+                {children}
+              <Footer />
+            </div>
           </ThemeProvider>
         </body>
       </html>
