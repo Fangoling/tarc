@@ -1,5 +1,9 @@
 "use client"
+
+import * as React from "react"
 import Link from "next/link"
+
+import { cn } from "@/lib/utils"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./ui/mode-toggle"
@@ -12,6 +16,19 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+
+const services: { title: string; href: string; description: string }[] = [
+  {
+    title: "all Services",
+    href: "/#services",
+    description: "look at all services"
+  }, 
+  {
+    title: "Athlete Drafting",
+    href: "/drafting",
+    description: "Prototype model of the drafting system"
+  }
+]
 
 export default function Nav() {
   return (
@@ -29,11 +46,20 @@ export default function Nav() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link href="/#services" className="text-lg font-medium" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Services
-              </NavigationMenuLink>
-            </Link>
+            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grind-cols-2 lg:w-[400px]">
+                {services.map((service) => (
+                  <ListItem
+                    key={service.title}
+                    title={service.title}
+                    href={service.href}
+                  >
+                    {service.description}
+                  </ListItem>
+                ))}
+                </ul>
+            </NavigationMenuContent>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
@@ -118,3 +144,29 @@ function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  )
+})
+ListItem.displayName = "ListItem"
