@@ -1,13 +1,27 @@
 "use client"
 
+import Image from "next/image"
 import { ColumnDef } from "@tanstack/react-table"
 
+import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 
 import { statuses, qualities } from "@/app/drafting/data/data"
 import { Athlete, Company } from "@/app/drafting/data/schema"
 import { DataTableColumnHeader } from "@/app/drafting/components/data-table-column-header"
 import { DataTableRowActions } from "@/app/drafting/components/data-table-row-actions"
+
+
 
 export const athleteColumns: ColumnDef<Athlete>[] = [
     {
@@ -52,7 +66,34 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
             return (
                 <div className="flex space-x-2">
                     <span className="max-w-[500px] truncate font-medium">
-                        {row.getValue("name")}
+                        
+                        <Drawer>
+                            <DrawerTrigger asChild>
+                                <Button variant="outline">{row.getValue("name")}</Button>
+                            </DrawerTrigger>
+                            <DrawerContent>
+                                <div className="mx-auto w-full max-w-sm">
+                                    <DrawerTitle>{row.getValue("name")}</DrawerTitle>
+                                    <DrawerDescription>{row.getValue("description")}</DrawerDescription>
+                                    <div className="flex justify-center p-4">
+                                        <Image
+                                            src={'/images/athletes/default.jpg'}
+                                            alt={'picture of the athlete ' + row.getValue("name")}
+                                            width={300}
+                                            height={300}
+                                            className="rounded"
+                                        />
+                                    </div>
+                                    <DrawerFooter>
+                                        <Button>Draft</Button>
+                                        <DrawerClose asChild>
+                                            <Button variant="outline">Close</Button>
+                                        </DrawerClose>
+                                    </DrawerFooter>
+                                </div>
+                            </DrawerContent>
+                        </Drawer>
+
                     </span>
                 </div>
             )

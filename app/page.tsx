@@ -34,7 +34,7 @@ export default function Home() {
                     <Carousel 
                     plugins={[plugin.current]}
                     opts={{loop: true}}
-                    className="w-full max-w-4xl">
+                    className="w-full max-w-4xl h-[400px]">
                         <CarouselContent>
                             {sliderContent.map(({ key, src, alt, text, color }) => (
                             <CarouselItem key={key} className="w-full h-full">

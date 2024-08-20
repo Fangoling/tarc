@@ -6,6 +6,7 @@ export const athleteSchema = z.object({
     description: z.string(),
     status: z.string(),
     quality: z.string(),
+    image: z.string().default("default"),
 })
 
 export const companySchema = z.object({

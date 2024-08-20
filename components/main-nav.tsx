@@ -19,9 +19,9 @@ import {
 
 const services: { title: string; href: string; description: string }[] = [
   {
-    title: "all Services",
+    title: "All Services",
     href: "/#services",
-    description: "look at all services"
+    description: "Current services that we provide for you"
   }, 
   {
     title: "Athlete Drafting",
@@ -32,7 +32,7 @@ const services: { title: string; href: string; description: string }[] = [
 
 export default function Nav() {
   return (
-    <div className="flex items-center justify-between px-4 py-2">
+    <div className="flex items-center justify-between px-4 py-2 pb-4">
 
       <Link href="/#home" className="flex items-center gap-2">
         <span className="text-lg font-semibold">Tarc Fitness</span>
