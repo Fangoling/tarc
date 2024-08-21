@@ -2,11 +2,15 @@ import { promises as fs } from "fs"
 import path from "path"
 import { z } from "zod"
 
+import { createClient } from "@/lib/supabase/server"
+
 import { athleteColumns } from "@/app/drafting/components/column"
 import { DataTable } from "@/app/drafting/components/data-table"
 import { athleteSchema } from "@/app/drafting/data/schema"
 
+
 // Simulate a database read for athletes.
+/*
 async function getAthletes() {
     const data = await fs.readFile(
         path.join(process.cwd(), "app/drafting/data/athletes.json")
@@ -14,6 +18,15 @@ async function getAthletes() {
 
     const athletes = JSON.parse(data.toString())
 
+    return z.array(athleteSchema).parse(athletes)
+}
+*/
+
+async function getAthletes() {
+    const supabase = createClient()
+    const { data: athletes } = await supabase
+        .from("athletes")
+        .select()
     return z.array(athleteSchema).parse(athletes)
 }
 
