@@ -33,7 +33,6 @@ const services: { title: string; href: string; description: string }[] = [
 export default function Nav() {
   return (
     <div className="flex items-center justify-between px-4 py-2 pb-4">
-
       <Link href="/#home" className="flex items-center gap-2">
         <span className="text-lg font-semibold">Tarc Fitness</span>
       </Link>
