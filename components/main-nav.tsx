@@ -19,11 +19,6 @@ import {
 
 const services: { title: string; href: string; description: string }[] = [
   {
-    title: "All Services",
-    href: "/#services",
-    description: "Current services that we provide for you"
-  }, 
-  {
     title: "Athlete Drafting",
     href: "/drafting",
     description: "Prototype model of the drafting system"

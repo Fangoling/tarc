@@ -3,6 +3,8 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import Image from 'next/image'
+import Link from 'next/link'
+
 import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
 
 import "@/styles/globals.css" 
@@ -78,10 +80,11 @@ export default function Home() {
                     <Tabs defaultValue="clothing" className="w-xl md:w-2xl lg:w-4xl">
                         <TabsList className="grid w-full grid-cols-3 w-xl md:w-2xl lg:w-4xl">
                             <TabsTrigger value="clothing">Weighted Clothing</TabsTrigger>
-                            <TabsTrigger value="gym">Gym</TabsTrigger>
                             <TabsTrigger value="partner">Partnering Program</TabsTrigger>
+                            <TabsTrigger value="gym">Gym</TabsTrigger>
                         </TabsList>
                         <div className="pt-4 max-w-2xl">
+
                             <TabsContent value="clothing">
                                 <h1>
                                     Project Weighted Clothing
@@ -98,6 +101,45 @@ export default function Home() {
                                     compared to the current market
                                 </p>
                             </TabsContent>
+
+                            <TabsContent value="partner">
+                                <h1>
+                                    Project Partnering Program
+                                </h1>
+                                <p>
+                                    The concept is intended to serve as a platform for athlete placement, complementing or potentially
+                                    replacing smaller agencies. The project aims to function as a seal of quality that distinguishes our partner companies from conventional providers,
+                                    while also providing athletes with a reliable source of reputable partners.
+                                    We ensure the integrity of both our partner companies and the athletes, and will take appropriate action in the event of any violations
+                                </p>
+                                <h2>What do we look for in a partner</h2>
+                                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                                    <li>Ethical Conduct</li>
+                                    <li>Economic Stability and Professionalism</li>
+                                    <li>Visionary and Progressive Thinking</li>
+                                </ul>
+                                <h2>Drafting</h2>
+                                <p>
+                                    The Draft is a system designed to introduce advertisers to companies in an exciting way.
+                                    In this process, athletes are evaluated and sorted based on their statistics.
+                                    These athletes are then available for selection, and can be chosen one by one.
+                                    The statistical sorting serves only as a guideline and is not mandatory.
+                                </p>
+                                <br />
+                                <p>
+                                    Every six months, a list of all Tarc athletes is published. Just before the summer and winter breaks,
+                                    all partner companies can decide which advertiser suits them best.
+                                    The order in which athletes are chosen is determined by the partner companies&apos; join dates.
+                                    Companies that joined earlier have a higher position in the Draft.
+                                    Therefore, the longest-standing partners have the greatest selection of popular athletes.
+                                    The selection process continues until there are no more advertising slots available.
+                                </p>
+                                <br />
+                                <p>
+                                    Click <Link href="/drafting" className="underline">here</Link> to see a prototype of the drafting system.
+                                </p>
+                            </TabsContent>
+
                             <TabsContent value="gym">
                                 <h1>
                                     Project Gym in Madeira
@@ -116,25 +158,6 @@ export default function Home() {
                                     in a comfortable setting.
                                 </p>
                             </TabsContent>
-                            <TabsContent value="partner">
-                                <h1>
-                                    Project Partnering Program
-                                </h1>
-                                <p>
-                                    The concept is intended to serve as a platform for athlete placement, complementing or potentially
-                                    replacing smaller agencies. The project aims to function as a seal of quality that distinguishes our partner companies from conventional providers,
-                                    while also providing athletes with a reliable source of reputable partners.
-                                    We ensure the integrity of both our partner companies and the athletes, and will take appropriate action in the event of any violations
-                                </p>
-                                <h2>What do we look for in a partner</h2>
-                                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                                    <li>Ethical Conduct</li>
-                                    <li>Economic Stability and Professionalism</li>
-                                    <li>Visionary and Progressive Thinking</li>
-                                </ul>
-
-                            </TabsContent>
-
                         </div>
                     </Tabs>
                 </section>
@@ -144,7 +167,7 @@ export default function Home() {
                     <div className="flex flex-row gap-8">
                         <Card className="flex-1">
                             <CardHeader>
-                                <CardTitle>Finn Untied</CardTitle>
+                                <CardTitle>Finn Untiedt</CardTitle>
                                 <CardDescription>CEO</CardDescription>
                             </CardHeader>
                             <CardContent>
