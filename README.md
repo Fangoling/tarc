@@ -1,6 +1,5 @@
 # Tarc Fitness Homepage
-This is the source code for the website of Tarc Fitness. It is still in development and has not been deployed.
-You can find the old home page [here](https://tarc-fitness.com)
+This is the source code for the website of Tarc Fitness. You can the page [here](https://tarc-fitness.com)
 
 ### Installation
 1. Clone the repository:
