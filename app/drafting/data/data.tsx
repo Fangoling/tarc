@@ -8,12 +8,12 @@ import {
 
 export const statuses = [
     {
-        value: true,
+        value: "true",
         label: "Available",
         icon: CheckIcon,
     },
     {
-        value: false,
+        value: "false",
         label: "Unavailable",
         icon: Cross2Icon,
     }

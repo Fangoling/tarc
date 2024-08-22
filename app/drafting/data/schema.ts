@@ -4,7 +4,7 @@ export const athleteSchema = z.object({
     id: z.number(),
     name: z.string(),
     description: z.string(),
-    status: z.boolean(),
+    status: z.string(),
     quality: z.enum(["low","medium","high"]),
     image: z.string().default("default"),
 })
