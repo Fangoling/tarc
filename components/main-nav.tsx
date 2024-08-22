@@ -33,7 +33,7 @@ const services: { title: string; href: string; description: string }[] = [
 export default function Nav() {
   return (
     <div className="flex items-center justify-between px-4 py-2 pb-4">
-      <Link href="/#home" className="flex items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
         <span className="text-lg font-semibold">Tarc Fitness</span>
       </Link>
 
@@ -41,7 +41,11 @@ export default function Nav() {
         <NavigationMenuList>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+            <Link href="/" className="text-lg font-medium" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Home
+              </NavigationMenuLink>
+            </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
@@ -99,7 +103,7 @@ export default function Nav() {
           </SheetTrigger>
           <SheetContent side="right">
             <div className="grid w-[200px] p-4">
-              <Link href="/#home" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+              <Link href="/" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                 Home
               </Link>
               <Link href="/#services" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
