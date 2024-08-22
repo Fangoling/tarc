@@ -19,7 +19,7 @@ This page is built on NextJS with [ShadcnUI](https://ui.shadcn.com/), [React](ht
 1. `npm install`
 2. `npm run dev`
 
-### Where to get you own Environment Variables
+### Where to get your own Environment Variables
 
 | Variable                                                 | Where to get it                                                         | Notes                                                                                           |
 | ---------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
