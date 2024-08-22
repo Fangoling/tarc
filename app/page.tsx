@@ -3,7 +3,7 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import Image from 'next/image'
-import { Dumbbell, Shirt, Handshake, PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
+import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
 
 import "@/styles/globals.css" 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
@@ -34,7 +34,7 @@ import {
  const contactContent = [
     {key: 'phone', icon: <PhoneIcon/>, text: 'Coming Soon'},
     {key: 'location', icon: <MapPinIcon/>, text: 'Coming Soon'},
-    {key: 'mail', icon: <MailIcon/>, text: 'Coming Soon'},
+    {key: 'mail', icon: <MailIcon/>, text: 'info@tarc-fitness.de'},
  ]
 
 
@@ -74,7 +74,7 @@ export default function Home() {
                         <CarouselNext />
                     </Carousel>
 
-                <section id="projects" className="py-8">
+                <section id="projects" className="pt-4">
                     <Tabs defaultValue="clothing" className="w-xl md:w-2xl lg:w-4xl">
                         <TabsList className="grid w-full grid-cols-3 w-xl md:w-2xl lg:w-4xl">
                             <TabsTrigger value="clothing">Weighted Clothing</TabsTrigger>
@@ -164,15 +164,15 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="contact" className="flex flex-col items-center gap-4">
+                <section id="contact" className="flex flex-col items-center gap-4 pb-16">
                     <h1>Contact</h1>
                     <div className="flex w-max gap-8">
                         {contactContent.map(({ key, icon, text}) => (
-                            <Card key={key}>
+                            <Card key={key} className="flex-1 w-[250px]">
                                 <CardHeader className="flex flex-col items-center">
                                         {icon}
                                 </CardHeader>
-                                <CardContent>
+                                <CardContent className="flex flex-col items-center">
                                     <p>{text}</p>
                                 </CardContent>
                             </Card>
