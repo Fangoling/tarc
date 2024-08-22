@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/drawer"
 
 import { statuses, qualities } from "@/app/drafting/data/data"
-import { Athlete, Company } from "@/app/drafting/data/schema"
+import { Athlete} from "@/app/drafting/data/schema"
 import { DataTableColumnHeader } from "@/app/drafting/components/data-table-column-header"
 import { DataTableRowActions } from "@/app/drafting/components/data-table-row-actions"
 
@@ -49,40 +49,54 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
         enableHiding: false,
     },
     {
-        accessorKey: "id",
+        accessorKey: "athlete_id",
         header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Athlete" />
+            <DataTableColumnHeader column={column} title="Athlete ID" />
         ),
-        cell: ({ row }) => <div className="w-[80px]">{row.getValue("id")}</div>,
-        enableSorting: false,
+        cell: ({ row }) => <div className="w-[80px]">{row.getValue("athlete_id")}</div>,
         enableHiding: false,
     },
     {
-        accessorKey: "name",
+        accessorFn: (row) => `${row.first_name} ${row.last_name}`,
+        id: "name",
         header: ({ column }) => (
             <DataTableColumnHeader column={column} title="Name" />
         ),
         cell: ({ row }) => {
+            const rowData = row.original
             return (
                 <div className="flex space-x-2">
                     <span className="max-w-[500px] truncate font-medium">
                         
                         <Drawer>
                             <DrawerTrigger asChild>
-                                <Button variant="outline">{row.getValue("name")}</Button>
+                                <Button variant="outline">{rowData.first_name + " " + rowData.last_name}</Button>
                             </DrawerTrigger>
                             <DrawerContent>
-                                <div className="mx-auto w-full max-w-sm">
-                                    <DrawerTitle>{row.getValue("name")}</DrawerTitle>
-                                    <DrawerDescription>{row.getValue("description")}</DrawerDescription>
-                                    <div className="flex justify-center p-4">
+                                <div className="mx-auto w-full max-w-lg">
+                                    <DrawerHeader>
+                                        <DrawerTitle>{rowData.first_name + " " + rowData.last_name}</DrawerTitle>
+                                        <DrawerDescription>
+                                            {"sport: " + row.getValue("sport")}
+                                            <br />
+                                            media presence: 8 million
+                                            </DrawerDescription>
+                                    </DrawerHeader>
+                                    <div className="flex p-4 space-x-4">
                                         <Image
                                             src={'/images/athletes/default.jpg'}
-                                            alt={'picture of the athlete ' + row.getValue("name")}
+                                            alt={'picture of the athlete ' + rowData.first_name + rowData.last_name}
                                             width={300}
                                             height={300}
                                             className="rounded"
                                         />
+                                        <div>
+                                            <h2>Description</h2>
+                                            <p>
+                                                {rowData.description}
+                                            </p>
+                                        </div>
+
                                     </div>
                                     <DrawerFooter>
                                         <Button>Draft</Button>
@@ -101,18 +115,17 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
         enableHiding: false,
     },
     {
-        accessorKey: "description",
+        accessorKey: "sport",
         header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Description"/>
+            <DataTableColumnHeader column={column} title="Sport"/>
         ),
         cell: ({ row }) => {
             return(
-                <span className="max-w-[500px] truncate font-medium">
-                    {row.getValue("description")}
+                <span className="max-w-[100px] truncate font-medium">
+                    {row.getValue("sport")}
                 </span>
             )
         },
-        enableSorting: false,
     },
     {
         accessorKey: "status",
@@ -124,7 +137,9 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
                 (status) => status.value === row.getValue("status")
             )
 
-            if (!status) return null
+            if (!status) {
+                return null
+            }
 
             return (
                 <div className="flex w-[100px] items-center">
@@ -138,98 +153,6 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
         filterFn: (row, id, value) => {
             return value.includes(row.getValue(id))
         },
-    },
-    {
-        accessorKey: "quality",
-        header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Quality"/>
-        ),
-        cell: ({ row }) => {
-            const quality = qualities.find(
-                (quality) => quality.value === row.getValue("quality")
-            )
-
-            if (!quality) return null
-
-            return (
-                <div className="flex w-[100px] items-center">
-                    {quality.icon && (
-                        <quality.icon className="mr-2 h-4 w-4 text-muted-foreground" />
-                    )}
-                    <span>{quality.label}</span>
-                </div>
-            )
-        },
-        filterFn: (row, id, value) => {
-            return value.includes(row.getValue(id))
-        },
-    },
-    {
-        id: "actions",
-        cell: ({ row }) => <DataTableRowActions row={row} />,
-    },
-]
-
-
-export const companyColumns: ColumnDef<Company>[] = [
-    {
-        id: "select",
-        header: ({ table }) => (
-            <Checkbox
-                checked={
-                    table.getIsAllPageRowsSelected() ||
-                    (table.getIsSomePageRowsSelected() && "indeterminate")
-                }
-                onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
-                aria-label="Select all"
-                className="translate-y-[2px]"
-            />
-        ),
-        cell: ({ row }) => (
-            <Checkbox
-                checked={row.getIsSelected()}
-                onCheckedChange={(value) => row.toggleSelected(!!value)}
-                aria-label="Select row"
-                className="translate-y-[2px]"
-            /> 
-        ),
-        enableSorting: false,
-        enableHiding: false,
-    },
-    {
-        accessorKey: "id",
-        header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Company" />
-        ),
-        cell: ({ row }) => <div className="w-[80px]">{row.getValue("id")}</div>,
-        enableSorting: false,
-        enableHiding: false,
-    },
-    {
-        accessorKey: "name",
-        header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Name" />
-        ),
-        cell: ({ row }) => {
-            <div className="flex space-x-2">
-                <span className="max-w-[500px] truncate font-medium">
-                    {row.getValue("name")}
-                </span>
-            </div>
-        },
-        enableHiding: false,
-    },
-    {
-        accessorKey: "description",
-        header: ({ column }) => (
-            <DataTableColumnHeader column={column} title="Description"/>
-        ),
-        cell: ({ row }) => {
-                <span className="max-w-[500px] truncate font-medium">
-                    {row.getValue("description")}
-                </span>
-        },
-        enableSorting: false,
     },
     {
         accessorKey: "quality",

@@ -1,8 +1,10 @@
 import { z } from "zod"
 
 export const athleteSchema = z.object({
-    id: z.number(),
-    name: z.string(),
+    athlete_id: z.number(),
+    first_name: z.string(),
+    last_name: z.string(),
+    sport: z.string(),
     description: z.string(),
     status: z.string(),
     quality: z.enum(["low","medium","high"]),

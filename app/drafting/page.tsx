@@ -9,8 +9,8 @@ import { DataTable } from "@/app/drafting/components/data-table"
 import { athleteSchema } from "@/app/drafting/data/schema"
 
 
-// Simulate a database read for athletes.
 /*
+// Simulate a database read for athletes.
 async function getAthletes() {
     const data = await fs.readFile(
         path.join(process.cwd(), "app/drafting/data/athletes.json")
@@ -35,7 +35,7 @@ export default async function AthletePage() {
 
     return (
         <>
-            <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+            <div className="h-full flex-1 flex-col space-y-8 p-8"> 
                 <div className="flex items-center justify-between space-y-2">
                     <div>
                         <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>
