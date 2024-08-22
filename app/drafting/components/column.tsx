@@ -15,6 +15,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 import { statuses, qualities } from "@/app/drafting/data/data"
 import { Athlete} from "@/app/drafting/data/schema"
@@ -73,7 +74,7 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
                                 <Button variant="outline">{rowData.first_name + " " + rowData.last_name}</Button>
                             </DrawerTrigger>
                             <DrawerContent>
-                                <div className="mx-auto w-full max-w-lg">
+                                <div className="mx-auto w-full max-w-xl">
                                     <DrawerHeader>
                                         <DrawerTitle>{rowData.first_name + " " + rowData.last_name}</DrawerTitle>
                                         <DrawerDescription>
@@ -92,9 +93,9 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
                                         />
                                         <div>
                                             <h2>Description</h2>
-                                            <p>
+                                            <ScrollArea className="h-[200px]">
                                                 {rowData.description}
-                                            </p>
+                                            </ScrollArea>
                                         </div>
 
                                     </div>
