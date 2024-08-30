@@ -13,8 +13,6 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious
  } from "@/components/ui/carousel";
 import {  
     Tabs,
@@ -22,6 +20,7 @@ import {
     TabsList,
     TabsTrigger
 } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
 
 
  const sliderContent = [
@@ -39,6 +38,11 @@ import {
     {key: 'mail', icon: <MailIcon/>, text: 'info@tarc-fitness.de'},
  ]
 
+ const teamContent = [
+    {key: 'team_1', name: 'Finn Untiedt', title: 'Founder & CEO'},
+    {key: 'team_2', name: 'Manuel Schmitz', title: 'Lead Designer & Creative Director'},
+    {key: 'team_3', name: 'Fangxing Liu', title: 'IT Lead & Software Engineer'},
+ ]
 
 export default function Home() {
     const plugin = React.useRef(
@@ -47,10 +51,37 @@ export default function Home() {
     return(
         <>
             <div className="flex flex-col items-center gap-20">
+
+                <section id="hero">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6">
+                        <div className="py-2 md:py-0">
+                            <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
+                                <h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-white/40">
+                                    Revolutionize the Sport Industry
+                                </h1>
+                                <div className="mx-auto max-w-3xl">
+                                    <p className="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-700 dark:text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
+                                        Tarc bridges the gap between business innovation and social impact. We drive economic growth with diverse initiatives, from our fitness studio on Madeira to our fitness app and partnership programs.
+                                        <br/>At the same time, we&apos;re committed to making a difference through projects like our self-help book and support programs for individuals facing challenges such as depression.
+                                    </p>
+                                    <div>
+                                        <Button className="animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg">
+                                            <Link href="/#contact">Contact us</Link>
+                                        </Button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="carousel">
                     <Carousel 
                     plugins={[plugin.current]}
                     opts={{loop: true}}
-                    className="w-full max-w-4xl h-[300px]">
+                    className="w-full">
                         <CarouselContent>
                             {sliderContent.map(({ key, src, alt, text, color }) => (
                             <CarouselItem key={key} className="w-full h-full">
@@ -72,16 +103,15 @@ export default function Home() {
                             </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
                     </Carousel>
+                </section>
 
                 <section id="projects" className="pt-4">
-                    <Tabs defaultValue="clothing" className="w-xl md:w-2xl lg:w-4xl">
-                        <TabsList className="grid w-full grid-cols-3 w-xl md:w-2xl lg:w-4xl">
-                            <TabsTrigger value="clothing">Weighted Clothing</TabsTrigger>
-                            <TabsTrigger value="partner">Partnering Program</TabsTrigger>
-                            <TabsTrigger value="gym">Gym</TabsTrigger>
+                    <Tabs defaultValue="clothing" className="mx-auto px-4 w-xl md:w-2xl lg:w-4xl">
+                        <TabsList className="grid w-full grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px]">
+                            <TabsTrigger value="clothing" className="h-[50px]">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
+                            <TabsTrigger value="partner" className="h-[50px]">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
+                            <TabsTrigger value="gym" className="h-[50px]">Gym</TabsTrigger>
                         </TabsList>
                         <div className="pt-4 max-w-2xl">
 
@@ -94,7 +124,7 @@ export default function Home() {
                                     It is safer than other forms of weighted training because no new movements need to be learned.
                                     Additionally, it increases metabolism due to the higher energy expenditure.
                                 </p>
-                                <h2>What makes us different</h2>
+                                <h2>Weighted Clothing that&apos;s built different</h2>
                                 <p>
                                     In terms of fit, maximum weight, and value for money, we are light years ahead of the competition.
                                     Our products will also have significantly better media presence and brand recognition
@@ -149,9 +179,11 @@ export default function Home() {
                                     It serves as a pioneering model of its kind. The concept allows professional athletes of all
                                     disciplines to spend their off-season with their families without worrying about the quality of their training.
                                     <br />
+                                    <br />
                                     Our gym provides the opportunity to maintain or even elevate training levels in a luxurious environment.
                                     Upon request, trainers, physiotherapists, and a dedicated medical team will take care of all needs.
                                     Additionally, we offer the possibility to fully customize nutrition.
+                                    <br />
                                     <br />
                                     Outside of the peak season,
                                     the resort is also ideal for recovering from injuries, helping individuals to return to their peak performance
@@ -164,32 +196,25 @@ export default function Home() {
 
                 <section id="team" className="flex flex-col items-center gap-4">
                     <h1>Team</h1>
-                    <div className="flex flex-row gap-8">
-                        <Card className="flex-1">
-                            <CardHeader>
-                                <CardTitle>Finn Untiedt</CardTitle>
-                                <CardDescription>CEO</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                    <div className="mx-auto px-4 flex flex-col md:flex-row gap-8">
+                        {teamContent.map(({key, name, title})=>(
+                            <Card key={key} className="flex-1">
+                                <CardHeader>
+                                    <CardTitle>{name}</CardTitle>
+                                    <CardDescription>{title}</CardDescription>
+                                </CardHeader>
+                                <CardContent>
 
-                            </CardContent>
-                        </Card>
-                        <Card className="flex-1">
-                            <CardHeader>
-                                <CardTitle>Manuel Schmitz</CardTitle>
-                                <CardDescription>CTO</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                                </CardContent>
+                            </Card>
 
-                            </CardContent>
-                        </Card>
-
+                        ))}
                     </div>
                 </section>
 
                 <section id="contact" className="flex flex-col items-center gap-4 pb-16">
                     <h1>Contact</h1>
-                    <div className="flex w-max gap-8">
+                    <div className="mx-auto px-4 flex flex-col md:flex-row w-max gap-8">
                         {contactContent.map(({ key, icon, text}) => (
                             <Card key={key} className="flex-1 w-[250px]">
                                 <CardHeader className="flex flex-col items-center">
@@ -202,6 +227,8 @@ export default function Home() {
                         ))}
                     </div>
                 </section>
+
+
 
             </div>
         </>
