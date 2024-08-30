@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Img from "next/image"
 
 import { cn } from "@/lib/utils"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
@@ -29,7 +30,23 @@ export default function Nav() {
   return (
     <div className="flex items-center justify-between px-4 py-2 pb-4">
       <Link href="/" className="flex items-center gap-2">
-        <span className="text-lg font-semibold">Tarc Fitness</span>
+      <div className="pl-4 flex flex-row gap-2">
+        <Img
+          src="/images/Tarc_Logo_Schwarz.png"
+          alt="tarc logo"
+          height={20}
+          width={20}
+          className="flex dark:hidden"
+        ></Img>
+        <Img
+          src="/images/Tarc_Logo_Wei.png"
+          alt="tarc logo"
+          height={20}
+          width={20}
+          className="hidden dark:flex"
+        ></Img>
+        <span className="text-xl font-semibold">Tarc</span>
+      </div>
       </Link>
 
       <NavigationMenu className="hidden md:flex">
