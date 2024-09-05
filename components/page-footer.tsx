@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function footer() {
     return (
         <>
-            <div className="mt-auto w-full bg-grey flex flex-col items-center pt-2 pb-8 text-xs gap-2">
+            <div className="mt-auto w-full bg-grey flex flex-col items-center pt-12 pb-8 text-xs gap-2">
                 <Separator />
                 <div className="flex gap-4 text-foreground pt-1">
                     <Link href="https://github.com/Fangoling/tarc" className="hover:underline">Github</Link>
