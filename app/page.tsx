@@ -14,6 +14,7 @@ import {
     TabsTrigger
 } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
+import { EmailForm } from "@/components/email-form"
 
 
 
@@ -60,9 +61,9 @@ export default function Home() {
                 </section>
 
 
-                <section id="projects" className="p-8 w-full">
+                <section id="projects" className="w-full">
 
-                        <Tabs defaultValue="clothing" className="flex flex-col items-center w-full gap-4">
+                        <Tabs defaultValue="clothing" className="flex flex-col items-center w-full gap-8">
                             <TabsList className="grid w-full max-w-2xl grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] dark:bg-secondary">
                                 <TabsTrigger value="clothing" className="h-[48px] md:h-[36px]">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
                                 <TabsTrigger value="partner" className="h-[48px] md:h-[36px]">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
@@ -154,8 +155,8 @@ export default function Home() {
 
                 </section>
 
-                <section id="team" className="p-8 w-full flex flex-col items-center">
-                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-4 rounded-xl">
+                <section id="team" className="w-full flex flex-col items-center">
+                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-12 rounded-xl">
                         <h1>Team</h1>
                         <div className="mx-auto px-4 flex flex-col md:flex-row gap-8">
                             {teamContent.map(({key, name, title})=>(
@@ -164,9 +165,6 @@ export default function Home() {
                                         <CardTitle>{name}</CardTitle>
                                         <CardDescription>{title}</CardDescription>
                                     </CardHeader>
-                                    <CardContent>
-
-                                    </CardContent>
                                 </Card>
 
                             ))}
@@ -175,12 +173,12 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="contact" className="w-full p-8 flex flex-col items-center">
-                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-4 rounded-xl">
+                <section id="contact" className="w-full flex flex-col items-center">
+                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-12 rounded-xl">
                         <h1>Contact</h1>
-                        <div className="mx-auto px-4 flex flex-col md:flex-row w-max gap-8">
+                        <div className="mx-auto px-4 flex flex-col md:flex-row gap-8">
                             {contactContent.map(({ key, icon, text}) => (
-                                <Card key={key} className="flex-1 w-[250px]">
+                                <Card key={key} className="flex-1">
                                     <CardHeader className="flex flex-col items-center">
                                             {icon}
                                     </CardHeader>
@@ -190,6 +188,13 @@ export default function Home() {
                                 </Card>
                             ))}
                         </div>
+                    </div>
+                </section>
+
+                <section id="email" className="w-full flex flex-col items-center">
+                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-12 rounded-xl">
+                        <h1>Get in touch</h1>
+                        <EmailForm />
                     </div>
                 </section>
 
