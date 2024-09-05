@@ -2,7 +2,7 @@ import { promises as fs } from "fs"
 import path from "path"
 import { z } from "zod"
 
-import { createClient } from "@/lib/supabase/server"
+import { createClient } from "@/lib/utils/supabase/server"
 
 import { athleteColumns } from "@/app/drafting/components/column"
 import { DataTable } from "@/app/drafting/components/data-table"
