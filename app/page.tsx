@@ -49,7 +49,7 @@ export default function Home() {
                                     </p>
                                     <div>
                                         <Button className="animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg">
-                                            <Link href="/#contact">Contact us</Link>
+                                            <Link href="/#email">Contact us</Link>
                                         </Button>
                                     </div>
                                 </div>
