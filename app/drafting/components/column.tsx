@@ -74,37 +74,41 @@ export const athleteColumns: ColumnDef<Athlete>[] = [
                                 <Button variant="outline">{rowData.first_name + " " + rowData.last_name}</Button>
                             </DrawerTrigger>
                             <DrawerContent>
-                                <div className="mx-auto w-full max-w-xl">
+                                <div className="mx-auto w-full max-w-2xl">
                                     <DrawerHeader>
                                         <DrawerTitle>{rowData.first_name + " " + rowData.last_name}</DrawerTitle>
                                         <DrawerDescription>
-                                            {"sport: " + row.getValue("sport")}
-                                            <br />
-                                            media presence: 8 million
-                                            </DrawerDescription>
+                                            Information Overview
+                                        </DrawerDescription>
                                     </DrawerHeader>
-                                    <div className="flex p-4 space-x-4">
-                                        <Image
-                                            src={'/images/athletes/default.jpg'}
-                                            alt={'picture of the athlete ' + rowData.first_name + rowData.last_name}
-                                            width={300}
-                                            height={300}
-                                            className="rounded"
-                                        />
-                                        <div>
-                                            <h2>Description</h2>
-                                            <ScrollArea className="h-[200px]">
-                                                {rowData.description}
-                                            </ScrollArea>
+                                    <div className="flex flex-col items-center">
+                                        <div className="flex p-4 space-x-4">
+                                            <Image
+                                                src={'/images/athletes/default.jpg'}
+                                                alt={'picture of the athlete ' + rowData.first_name + rowData.last_name}
+                                                width={300}
+                                                height={300}
+                                                className="rounded"
+                                            />
+                                            <div>
+                                                <p>{"sport: " + row.getValue("sport")}
+                                                <br />
+                                                media presence: 8 mio</p>
+                                                <h2>Description</h2>
+                                                <ScrollArea className="h-[200px]">
+                                                    {rowData.description}
+                                                </ScrollArea>
+                                            </div>
+
                                         </div>
+                                        <DrawerFooter className="w-full max-w-sm">
+                                            <Button className="w-full max-w-sm">Draft</Button>
+                                            <DrawerClose asChild>
+                                                <Button variant="outline" className="w-full">Close</Button>
+                                            </DrawerClose>
+                                        </DrawerFooter>
 
                                     </div>
-                                    <DrawerFooter>
-                                        <Button>Draft</Button>
-                                        <DrawerClose asChild>
-                                            <Button variant="outline">Close</Button>
-                                        </DrawerClose>
-                                    </DrawerFooter>
                                 </div>
                             </DrawerContent>
                         </Drawer>
