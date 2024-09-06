@@ -19,9 +19,9 @@ import { EmailForm } from "@/components/email-form"
 
 
  const contactContent = [
-    {key: 'phone', icon: <PhoneIcon/>, text: 'Coming Soon'},
-    {key: 'location', icon: <MapPinIcon/>, text: 'Coming Soon'},
-    {key: 'mail', icon: <MailIcon/>, text: 'info@tarc-fitness.de'},
+    {key: 'phone', icon: <PhoneIcon size={48}/>, text: 'Coming Soon'},
+    {key: 'location', icon: <MapPinIcon size={48}/>, text: 'Coming Soon'},
+    {key: 'mail', icon: <MailIcon size={48}/>, text: 'info@tarc-fitness.de'},
  ]
 
  const teamContent = [
@@ -40,7 +40,7 @@ export default function Home() {
                         <div className="py-2 md:py-0">
                             <div className="mx-auto max-w-4xl pb-4 text-center md:pb-16">
                                 <h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-white/40">
-                                    Revolutionize the Sport Industry
+                                    Revolutionize the Sport Industry with <span className="bg-gradient-to-br from-red-800 to-red-600 bg-clip-text">Tarc</span> 
                                 </h1>
                                 <div className="mx-auto max-w-3xl">
                                     <p className="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-700 dark:text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
@@ -49,7 +49,9 @@ export default function Home() {
                                     </p>
                                     <div>
                                         <Button className="animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg">
-                                            <Link href="/#email">Contact us</Link>
+                                            <Link href="/#email">
+                                            <span>Contact us</span>
+                                            </Link>
                                         </Button>
                                     </div>
                                 </div>
@@ -64,14 +66,14 @@ export default function Home() {
                 <section id="projects" className="w-full">
 
                         <Tabs defaultValue="clothing" className="flex flex-col items-center w-full gap-8">
-                            <TabsList className="grid w-full max-w-2xl grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] dark:bg-secondary">
+                            <TabsList className="grid w-full max-w-2xl grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary">
                                 <TabsTrigger value="clothing" className="h-[48px] md:h-[36px]">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
                                 <TabsTrigger value="partner" className="h-[48px] md:h-[36px]">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
                                 <TabsTrigger value="gym" className="h-[48px] md:h-[36px]">Gym</TabsTrigger>
                             </TabsList>
                             <div className="w-full max-w-4xl rounded-xl bg-secondary">
 
-                                <div className="p-4 max-w-2xl mx-auto">
+                                <div className="px-8 pt-12 pb-16 max-w-2xl mx-auto">
 
                                     <TabsContent value="clothing" className="animate-fade-in">
                                         <h1>
@@ -156,11 +158,11 @@ export default function Home() {
                 </section>
 
                 <section id="team" className="w-full flex flex-col items-center">
-                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-12 rounded-xl">
+                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-8 p-12 rounded-xl">
                         <h1>Team</h1>
-                        <div className="mx-auto px-4 flex flex-col md:flex-row gap-8">
+                        <div className="mx-auto px-4 flex flex-col md:flex-row gap-8 w-full">
                             {teamContent.map(({key, name, title})=>(
-                                <Card key={key} className="flex-1">
+                                <Card key={key} className="w-full max-w-lg">
                                     <CardHeader>
                                         <CardTitle>{name}</CardTitle>
                                         <CardDescription>{title}</CardDescription>
@@ -174,16 +176,17 @@ export default function Home() {
                 </section>
 
                 <section id="contact" className="w-full flex flex-col items-center">
-                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-4 p-12 rounded-xl">
+                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-8 p-12 rounded-xl">
                         <h1>Contact</h1>
-                        <div className="mx-auto px-4 flex flex-col md:flex-row gap-8">
+                        <div className="mx-auto px-4 flex flex-col items-center md:flex-row gap-8 w-full">
                             {contactContent.map(({ key, icon, text}) => (
-                                <Card key={key} className="flex-1">
-                                    <CardHeader className="flex flex-col items-center">
-                                            {icon}
+                                <Card key={key} className="w-full max-w-lg">
+                                    <CardHeader className="flex justify-center items-center">
+                                        <div className="text-primary text-4xl">{icon}</div>
+                                            
                                     </CardHeader>
-                                    <CardContent className="flex flex-col items-center">
-                                        <p>{text}</p>
+                                    <CardContent>
+                                        <p className="text-center">{text}</p>
                                     </CardContent>
                                 </Card>
                             ))}
