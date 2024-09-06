@@ -24,3 +24,4 @@ This page is built on NextJS with [ShadcnUI](https://ui.shadcn.com/), [React](ht
 | Variable                                                 | Where to get it                                                         | Notes                                                                                           |
 | ---------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY  | [Supabase](https://supabase.com/) | |
+| EMAIL_USER, EMAIL_PASSWORD  | [Zoho](https://zoho.com/) | You can use any Email Service Provider you want, just change the host at /app/api/email/route.ts |
