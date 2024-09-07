@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from 'next/link'
 
-import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
+import { PhoneIcon, MapPinIcon, MailIcon, ChevronRightIcon } from "lucide-react"
 
 import "@/styles/globals.css" 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
@@ -47,10 +47,16 @@ export default function Home() {
                                         Tarc bridges the gap between business innovation and social impact. We drive economic growth with diverse initiatives, from our fitness studio on Madeira to our fitness app and partnership programs.
                                         <br/>At the same time, we&apos;re committed to making a difference through projects like our self-help book and support programs for individuals facing challenges such as depression.
                                     </p>
-                                    <div>
-                                        <Button className="animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg">
+                                    <div className="flex flex-row gap-8 justify-center items-center">
+                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg">
                                             <Link href="/#email">
                                             <span>Contact us</span>
+                                            </Link>
+                                        </Button>
+                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg bg-secondary">
+                                            <Link href="/sign-in" className="flex flex-row items-center">
+                                                <span>Sign in</span>
+                                                <ChevronRightIcon />
                                             </Link>
                                         </Button>
                                     </div>
