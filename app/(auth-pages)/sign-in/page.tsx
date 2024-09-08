@@ -12,9 +12,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 import { signInAction } from "@/app/actions"
+import { Message, FormMessageParam } from "@/components/ui/form"
 
 // this is the shadcn ui signin block
-export default function SigninPage() {
+export default function SigninPage({ searchParams }:{ searchParams: Message}) {
   return (
     <Card className="mx-auto max-w-sm">
       <CardHeader>
@@ -45,12 +46,13 @@ export default function SigninPage() {
                 </div>
                 <Input id="password" type="password" name="password" required />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full" formAction={signInAction}>
                 Login
             </Button>
-            <Button variant="outline" className="w-full" formAction={signInAction}>
+            <Button variant="outline" className="w-full">
                 Login with another Service
             </Button>
+            <FormMessageParam message={searchParams} />
             </div>
 
         </form>

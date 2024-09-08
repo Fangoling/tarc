@@ -11,10 +11,17 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { FormMessage } from "@/components/ui/form"
+import { FormMessageParam, Message } from "@/components/ui/form"
 
 // this is the shadcn ui signup block
-export default function SignupPage() {
+export default function SignupPage({ searchParams }:{ searchParams: Message}) {
+    if ("message" in searchParams) {
+        return(
+            <div className="w-full flex-1 flex items-center h-screen sm:max-w-md justify-center gap-2 p-4">
+                <FormMessageParam message={ searchParams }/>
+            </div>
+        )
+    }
 
     return (
         <Card className="mx-auto max-w-sm">
@@ -57,8 +64,8 @@ export default function SignupPage() {
                         <Button variant="outline" className="w-full">
                             Sign up with with another Service
                         </Button>
+                        <FormMessageParam message={searchParams}/>
                     </div>
-
                 </form>
                 <div className="mt-4 text-center text-sm">
                     Already have an account?{" "}
