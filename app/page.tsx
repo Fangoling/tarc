@@ -53,7 +53,7 @@ export default function Home() {
                                             <span>Contact us</span>
                                             </Link>
                                         </Button>
-                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg bg-secondary rounded-2xl">
+                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg dark: text-black hover:text-secondary dark:text-white bg-secondary rounded-2xl">
                                             <Link href="/sign-in" className="flex flex-row items-center">
                                                 <span>Sign in</span>
                                                 <ChevronRightIcon />
