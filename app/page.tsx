@@ -48,12 +48,12 @@ export default function Home() {
                                         <br/>At the same time, we&apos;re committed to making a difference through projects like our self-help book and support programs for individuals facing challenges such as depression.
                                     </p>
                                     <div className="flex flex-row gap-8 justify-center items-center">
-                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg">
+                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl">
                                             <Link href="/#email">
                                             <span>Contact us</span>
                                             </Link>
                                         </Button>
-                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg bg-secondary">
+                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg bg-secondary rounded-2xl">
                                             <Link href="/sign-in" className="flex flex-row items-center">
                                                 <span>Sign in</span>
                                                 <ChevronRightIcon />
@@ -72,10 +72,10 @@ export default function Home() {
                 <section id="projects" className="w-full">
 
                         <Tabs defaultValue="clothing" className="flex flex-col items-center w-full gap-8">
-                            <TabsList className="grid w-full max-w-2xl grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary">
-                                <TabsTrigger value="clothing" className="h-[48px] md:h-[36px]">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
-                                <TabsTrigger value="partner" className="h-[48px] md:h-[36px]">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
-                                <TabsTrigger value="gym" className="h-[48px] md:h-[36px]">Gym</TabsTrigger>
+                            <TabsList className="grid w-full max-w-2xl grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary rounded-2xl">
+                                <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
+                                <TabsTrigger value="partner" className="h-[48px] md:h-[36px] rounded-2xl">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
+                                <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Gym</TabsTrigger>
                             </TabsList>
                             <div className="w-full max-w-4xl rounded-xl bg-secondary">
 
