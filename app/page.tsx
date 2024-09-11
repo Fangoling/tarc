@@ -7,7 +7,6 @@ import Image from 'next/image'
 import { PhoneIcon, MapPinIcon, MailIcon, ChevronRightIcon } from "lucide-react"
 
 import "@/styles/globals.css" 
-import "@/styles/glowing-button.css"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import {  
     Tabs,
@@ -234,7 +233,7 @@ export default function Home() {
                                                         {content}
                                                         <ul>
                                                             {equipment.map( equip=> (
-                                                                <li>{equip}</li>
+                                                                <li key={equip}>{equip}</li>
                                                             ))}
                                                         </ul>
                                                     </AccordionContent>
