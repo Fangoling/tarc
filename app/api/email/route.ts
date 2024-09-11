@@ -26,7 +26,7 @@ export async function POST(req: NextRequest){
         }
         const mailData = {
             from: USER,
-            to: 'fxliu666@gmail.com',
+            to: 'info@tarc-fitness.de',
             subject: `Message from ${body.name} via tarc-fitness.com`,
             text: `Email: ${body.email}\nMessage: ${body.message}` 
         }

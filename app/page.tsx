@@ -2,10 +2,12 @@
 
 import * as React from "react"
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { PhoneIcon, MapPinIcon, MailIcon, ChevronRightIcon } from "lucide-react"
 
 import "@/styles/globals.css" 
+import "@/styles/glowing-button.css"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import {  
     Tabs,
@@ -13,10 +15,42 @@ import {
     TabsList,
     TabsTrigger
 } from "@/components/ui/tabs"
+import {
+    Accordion,
+    AccordionTrigger,
+    AccordionItem,
+    AccordionContent
+} from "@/components/ui/accordion"
+
 import { Button } from "@/components/ui/button"
 import { EmailForm } from "@/components/email-form"
 
+const resortContent = [
+    {key: 'gym', title: 'Gym',
+        content: 'The gym will consist of various equipment for targeted strength or endurance training.',
+        equipment: [
+            
+        ]
+    },
+    {key: 'strongman', title: 'Strongman',
+        content: 'Strongman training will be a combination of basic strength training in the gym, using barbells and dumbbells, and event training with a variety of Strongman objects, such as atlas stones, sandbags, log and yoke',
+        equipment: [
+            
+        ]
+    },
+    {key: 'swimming', title: 'Swimming',
+        content: 'From commercial swimming pools to counter-current systems',
+        equipment: [
 
+        ]
+    },
+    {key: 'athletics', title: 'Athletics',
+        content: 'Endurance running tracks, sprint tracks, resistance running tracks, long jump facilities, shot put and throwing facilities',
+        equipment: [
+
+        ]
+    },
+]
 
  const contactContent = [
     {key: 'phone', icon: <PhoneIcon size={48}/>, text: 'Coming Soon'},
@@ -35,11 +69,11 @@ export default function Home() {
         <>
             <div className="flex flex-col items-center gap-20">
 
-                <section id="hero">
+                <section id="hero" className="relative min-h-screen flex flex-col justify-center text-center">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6">
                         <div className="py-2 md:py-0">
                             <div className="mx-auto max-w-4xl pb-4 text-center md:pb-16">
-                                <h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-white/40">
+                                <h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-8xl dark:from-white dark:to-white/40">
                                     Revolutionize the Sport Industry with <span className="bg-gradient-to-br from-red-800 to-red-600 bg-clip-text">Tarc</span> 
                                 </h1>
                                 <div className="mx-auto max-w-3xl">
@@ -48,7 +82,7 @@ export default function Home() {
                                         <br/>At the same time, we&apos;re committed to making a difference through projects like our self-help book and support programs for individuals facing challenges such as depression.
                                     </p>
                                     <div className="flex flex-row gap-8 justify-center items-center">
-                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl">
+                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-gradient-to-br from-red-900 to-red-600">
                                             <Link href="/#email">
                                             <span>Contact us</span>
                                             </Link>
@@ -71,11 +105,12 @@ export default function Home() {
 
                 <section id="projects" className="w-full">
 
-                        <Tabs defaultValue="clothing" className="flex flex-col items-center w-full gap-8">
-                            <TabsList className="grid w-full max-w-2xl grid-cols-3 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary rounded-2xl">
-                                <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
+                        <Tabs defaultValue="gym" className="flex flex-col items-center w-full gap-8">
+                            <TabsList className="grid w-full max-w-2xl grid-cols-4 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary rounded-2xl">
+                                <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger>
                                 <TabsTrigger value="partner" className="h-[48px] md:h-[36px] rounded-2xl">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
-                                <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Gym</TabsTrigger>
+                                <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
+                                <TabsTrigger value="social" className="h-[48px] md:h-[36px] rounded-2xl">Social <br className="block md:hidden"></br>Work</TabsTrigger>
                             </TabsList>
                             <div className="w-full max-w-4xl rounded-xl bg-secondary">
 
@@ -83,8 +118,19 @@ export default function Home() {
 
                                     <TabsContent value="clothing" className="animate-fade-in">
                                         <h1>
-                                            Project Weighted Clothing
+                                            Project
                                         </h1>
+                                        <div className="relative w-full h-[300px] mt-4">
+                                            <Image 
+                                                src="https://picsum.photos/seed/clothing/1200/600"
+                                                alt="lorem picsum photo"
+                                                fill={true}
+                                                className="rounded-xl brightness-75 dark:brightness-50"
+                                            />
+                                            <div className="absolute inset-0 flex justify-center items-center">
+                                                <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Weighted Clothing</h1>
+                                            </div>
+                                        </div>
                                         <p>
                                             It is a concept in which weighted clothing is used to add resistance to familiar movements.
                                             It is safer than other forms of weighted training because no new movements need to be learned.
@@ -100,8 +146,19 @@ export default function Home() {
 
                                     <TabsContent value="partner" className="animate-fade-in">
                                         <h1>
-                                            Project Partnering Program
+                                            Project
                                         </h1>
+                                        <div className="relative w-full h-[300px] mt-4">
+                                            <Image 
+                                                src="https://picsum.photos/seed/partner/1200/600"
+                                                alt="lorem picsum photo"
+                                                fill={true}
+                                                className="rounded-xl brightness-75 dark:brightness-50"
+                                            />
+                                            <div className="absolute inset-0 flex justify-center items-center">
+                                                <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Partnering Program</h1>
+                                            </div>
+                                        </div>
                                         <p>
                                             The concept is intended to serve as a platform for athlete placement, complementing or potentially
                                             replacing smaller agencies. The project aims to function as a seal of quality that distinguishes our partner companies from conventional providers,
@@ -138,14 +195,25 @@ export default function Home() {
 
                                     <TabsContent value="gym" className="animate-fade-in">
                                         <h1>
-                                            Project Gym in Madeira
+                                            Project
                                         </h1>
+                                        <div className="relative w-full h-[300px] mt-4">
+                                            <Image 
+                                                src="/images/madeira.jpg"
+                                                alt="picture of madeira"
+                                                fill={true}
+                                                className="rounded-xl brightness-75 dark:brightness-50"
+                                            />
+                                            <div className="absolute inset-0 flex justify-center items-center">
+                                                <h1 className="text-white text-7xl drop-shadow-lg shadow-black">Tarc Resort</h1>
+                                            </div>
+                                        </div>
                                         <p>
                                             The Tarc Fitness Resort in Madeira is set to be the first in a series of flagship resorts worldwide.
                                             It serves as a pioneering model of its kind. The concept allows professional athletes of all
                                             disciplines to spend their off-season with their families without worrying about the quality of their training.
-                                            <br />
-                                            <br />
+                                        </p>
+                                        <p>
                                             Our gym provides the opportunity to maintain or even elevate training levels in a luxurious environment.
                                             Upon request, trainers, physiotherapists, and a dedicated medical team will take care of all needs.
                                             Additionally, we offer the possibility to fully customize nutrition.
@@ -154,6 +222,44 @@ export default function Home() {
                                             Outside of the peak season,
                                             the resort is also ideal for recovering from injuries, helping individuals to return to their peak performance
                                             in a comfortable setting.
+                                        </p>
+                                        <h2>Services</h2>
+                                        {resortContent.map(({ key, title, content, equipment }) => (
+                                            <Accordion type="single" collapsible key={key}>
+                                                <AccordionItem value="key" >
+                                                    <AccordionTrigger>
+                                                        {title}
+                                                    </AccordionTrigger>
+                                                    <AccordionContent>
+                                                        {content}
+                                                        <ul>
+                                                            {equipment.map( equip=> (
+                                                                <li>{equip}</li>
+                                                            ))}
+                                                        </ul>
+                                                    </AccordionContent>
+                                                </AccordionItem>
+                                            </Accordion>
+                                        ))}
+                                    </TabsContent>
+
+                                    <TabsContent value="social" className="animate-fade-in">
+                                        <h1>
+                                            Project
+                                        </h1>
+                                        <div className="relative w-full h-[300px] mt-4">
+                                            <Image 
+                                                src="https://picsum.photos/id/65/1200/600"
+                                                alt="lorem picsum photo"
+                                                fill={true}
+                                                className="rounded-xl brightness-75 dark:brightness-50"
+                                            />
+                                            <div className="absolute inset-0 flex justify-center items-center">
+                                                <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Social Work</h1>
+                                            </div>
+                                        </div>
+                                        <p>
+
                                         </p>
                                     </TabsContent>
                                 </div>
