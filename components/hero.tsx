@@ -10,7 +10,6 @@ import {
 
 import { ChevronRightIcon } from 'lucide-react'
 import { EmailForm } from './email-form'
-import ContactPage from '@/app/contact/page'
 
 export function Hero() {
     return (
@@ -29,11 +28,9 @@ export function Hero() {
                                 </p>
                                 <div className="flex flex-row gap-8 justify-center items-center">
                                     <Dialog>
-                                        <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-gradient-to-br from-red-900 to-red-600 hover:from-secondary hover:to-secondary">
-                                            <DialogTrigger>
-                                                Contact Us
-                                            </DialogTrigger>
-                                        </Button>
+                                        <DialogTrigger className="flex items-center justify-center h-10 px-4 py-2 font-medium w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-gradient-to-br from-red-900 to-red-600 hover:from-secondary hover:to-secondary hover:text-black hover:dark:text-white">
+                                            Contact Us
+                                        </DialogTrigger>
                                         <DialogContent>
                                             <h2>Send us an Email</h2>
                                             <EmailForm />
