@@ -24,11 +24,15 @@ export async function POST(req: NextRequest){
                 {status: 400}
             )
         }
+        let mailText = `Email: ${body.email}\nMessage: ${body.message}`
+        if (body.phone) mailText += `\nPhone: ${body.phone}`
+        if (body.address) mailText += `\nAddress: ${body.address}`
+
         const mailData = {
             from: USER,
             to: 'info@tarc-fitness.de',
             subject: `Message from ${body.name} via tarc-fitness.com`,
-            text: `Email: ${body.email}\nMessage: ${body.message}` 
+            text: mailText
         }
         const info = await transporter.sendMail(mailData)
         return NextResponse.json(

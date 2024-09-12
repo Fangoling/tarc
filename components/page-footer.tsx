@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 
-export default function footer() {
+export default function Footer() {
     return (
         <>
             <div className="mt-auto w-full bg-grey flex flex-col items-center pt-12 pb-8 text-xs gap-2">
@@ -13,7 +13,7 @@ export default function footer() {
                     <Separator orientation="vertical" className="h-4"/>
                     <Link href="https://www.instagram.com/tarc.fitness/" target="_blank" className="hover:underline">Instagram</Link>
                     <Separator orientation="vertical" className="h-4"/>
-                    <span className="hover:underline">Contact</span>
+                    <Link href="/contact" className="hover:underline">Contact</Link>
                     <Separator orientation="vertical" className="h-4"/>
                     <Link href="/terms" className="hover:underline">Terms</Link>
                 </div>

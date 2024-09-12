@@ -20,7 +20,9 @@ import { Input } from "@/components/ui/input"
 const formSchema = z.object({
     name: z.string().min(1).max(50),
     email: z.string().email(),
-    message: z.string()
+    message: z.string(),
+    phone: z.string(),
+    address: z.string()
 })
 
 export type FormData = z.infer<typeof formSchema>
@@ -42,7 +44,9 @@ export function EmailForm() {
         defaultValues: {
             name: "",
             email: "",
-            message: ""
+            message: "",
+            phone: "",
+            address: "" 
         },
     })
 
@@ -57,7 +61,7 @@ export function EmailForm() {
                                 <FormItem>
                                     <FormLabel>Name</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Max Mustermann" {...field}/>
+                                        <Input  {...field}/>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -70,7 +74,7 @@ export function EmailForm() {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="mustermann@gmail.com" {...field}/>
+                                        <Input  {...field}/>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -83,7 +87,33 @@ export function EmailForm() {
                                 <FormItem>
                                     <FormLabel>Message</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="..." {...field}/>
+                                        <Input  {...field}/>
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="phone"
+                            render={({ field }) => (
+                                <FormItem>
+                                <FormLabel>Phone Number *</FormLabel>
+                                    <FormControl>
+                                        <Input {...field}/>
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="address"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Address *</FormLabel>
+                                    <FormControl>
+                                        <Input  {...field}/>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -91,7 +121,7 @@ export function EmailForm() {
                         />
 
                     </div>
-                    <Button type="submit">Submit</Button>
+                    <Button className="bg-gradient-to-br from-red-900 to-red-600 rounded-2xl" type="submit">Submit</Button>
                 </form>
             </Form>
     )
