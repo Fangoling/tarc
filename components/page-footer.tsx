@@ -7,8 +7,6 @@ export default function Footer() {
             <div className="mt-auto w-full bg-grey flex flex-col items-center pt-12 pb-8 text-xs gap-2">
                 <Separator />
                 <div className="flex gap-4 text-foreground pt-1">
-                    <Link href="https://github.com/Fangoling/tarc" className="hover:underline">Github</Link>
-                    <Separator orientation="vertical" className="h-4"/>
                     <Link href="https://x.com/tarcfitness" target="_blank" className="hover:underline">Twitter</Link>
                     <Separator orientation="vertical" className="h-4"/>
                     <Link href="https://www.instagram.com/tarc.fitness/" target="_blank" className="hover:underline">Instagram</Link>
