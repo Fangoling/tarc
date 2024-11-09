@@ -34,10 +34,10 @@ const navbarItems:
   subcontent?: {title: string, href: string, description: string}[]
 }[] = [
   {name: 'Home', href: '/'},
-  {name: 'Services', href: '/', subcontent: services},
   {name: 'Projects', href: '/#projects'},
-  {name: 'Team', href: '/#team'},
-  {name: 'Contact', href: '/#contact'}
+  {name: 'Impact', href: '/impact'},
+  {name: 'About us', href: '/about'},
+  {name: 'Contact', href: '/contact'}
 ]
 
 export default function Nav() {

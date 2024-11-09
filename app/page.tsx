@@ -29,7 +29,7 @@ export default function Home() {
                 <ProjectSection/>
 
                 <section id="team" className="w-full flex flex-col items-center">
-                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-8 p-12 rounded-xl">
+                    <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-12 rounded-xl">
                         <h1>Team</h1>
                         <div className="mx-auto px-4 flex flex-col md:flex-row gap-8 w-full">
                             {teamContent.map(({key, name, title})=>(
@@ -47,7 +47,7 @@ export default function Home() {
                 </section>
 
                 <section id="contact" className="w-full flex flex-col items-center">
-                    <div className="flex flex-col items-center bg-secondary w-full max-w-4xl gap-8 p-12 rounded-xl">
+                    <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-12 rounded-xl">
                         <h1>Contact</h1>
                         <div className="mx-auto px-4 flex flex-col items-center md:flex-row gap-8 w-full">
                             {contactContent.map(({ key, icon, text}) => (

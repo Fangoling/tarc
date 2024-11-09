@@ -48,20 +48,17 @@ export function ProjectSection() {
                 <section id="projects" className="w-full">
 
                         <Tabs defaultValue="gym" className="flex flex-col items-center w-full gap-8">
-                            <TabsList className="grid w-full max-w-2xl grid-cols-4 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary rounded-2xl">
+                            <TabsList className="grid w-full max-w-2xl grid-cols-4 xl md:w-2xl lg:w-4xl h-[60px] md:h-[48px] bg-secondary rounded-2xl bg-opacity-30 backdrop-blur-lg">
                                 <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger>
                                 <TabsTrigger value="partner" className="h-[48px] md:h-[36px] rounded-2xl">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
                                 <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
                                 <TabsTrigger value="social" className="h-[48px] md:h-[36px] rounded-2xl">Social <br className="block md:hidden"></br>Work</TabsTrigger>
                             </TabsList>
-                            <div className="w-full max-w-4xl rounded-xl bg-secondary">
+                            <div className="w-full max-w-4xl rounded-xl ">
 
-                                <div className="px-8 pt-12 pb-16 max-w-2xl mx-auto">
+                                <div className="px-8 pt-12 pb-16 max-w-3xl mx-auto">
 
                                     <TabsContent value="clothing" className="animate-fade-in">
-                                        <h1>
-                                            Project
-                                        </h1>
                                         <div className="relative w-full h-[300px] mt-4">
                                             <Image 
                                                 src="https://picsum.photos/seed/clothing/1200/600"
@@ -73,23 +70,21 @@ export function ProjectSection() {
                                                 <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Weighted Clothing</h1>
                                             </div>
                                         </div>
+                                        <h2>The concept of weighted clothing</h2>
                                         <p>
-                                            It is a concept in which weighted clothing is used to add resistance to familiar movements.
-                                            It is safer than other forms of weighted training because no new movements need to be learned.
-                                            Additionally, it increases metabolism due to the higher energy expenditure.
+                                            Weighted clothing is a concept where resistance is added to familiar movements by using clothing with implemented weights. It is safer than other forms of weighted training, as no new movement patterns need to be learned. Additionally, it boosts metabolism due to the increased energy expenditure.
                                         </p>
-                                        <h2>Weighted Clothing that&apos;s built different</h2>
+                                        <h2>Addressing the Challenges of Weighted Clothing</h2>
                                         <p>
-                                            In terms of fit, maximum weight, and value for money, we are light years ahead of the competition.
-                                            Our products will also have significantly better media presence and brand recognition
-                                            compared to the current market
+                                            The current problem with the well-developed concept behind weighted clothing is its implementation in reality. The practical execution of the simple concept of overloading bodyweight training is very complex due to physical constraints. The biggest issues here are often limited range of motion and the improper distribution of weight, which make athletic training impossible. In addition, there is the problem of washability and maintaining quality, which is also encountered in other areas of the fitness industry, such as with free weights.
+                                        </p>
+                                        <h2>Improved Weight Distribution for Optimal Performance</h2>
+                                        <p>
+                                            Tarcs products have achieved better usability for athletic training through improved weight distribution. Additionally, care has been taken not to line the product with thick fabric, ensuring that movement remains as unrestricted as possible
                                         </p>
                                     </TabsContent>
 
                                     <TabsContent value="partner" className="animate-fade-in">
-                                        <h1>
-                                            Project
-                                        </h1>
                                         <div className="relative w-full h-[300px] mt-4">
                                             <Image 
                                                 src="https://picsum.photos/seed/partner/1200/600"
@@ -136,9 +131,6 @@ export function ProjectSection() {
                                     </TabsContent>
 
                                     <TabsContent value="gym" className="animate-fade-in">
-                                        <h1>
-                                            Project
-                                        </h1>
                                         <div className="relative w-full h-[300px] mt-4">
                                             <Image 
                                                 src="/images/madeira.jpg"
@@ -150,20 +142,20 @@ export function ProjectSection() {
                                                 <h1 className="text-white text-7xl drop-shadow-lg shadow-black">Tarc Resort</h1>
                                             </div>
                                         </div>
+                                        <h2>A New Benchmark in Athletic Retreats</h2>
                                         <p>
-                                            The Tarc Fitness Resort in Madeira is set to be the first in a series of flagship resorts worldwide.
-                                            It serves as a pioneering model of its kind. The concept allows professional athletes of all
-                                            disciplines to spend their off-season with their families without worrying about the quality of their training.
+                                        The Tarc-Fitness Resort in Madeira is the first in a planned series of resorts worldwide and serves as a blueprint for future locations. It offers professional athletes the opportunity to spend the off-season with their families without compromising on high-quality training.
                                         </p>
+                                        <h2>Prime Location in the heart of Madeira</h2>
                                         <p>
-                                            Our gym provides the opportunity to maintain or even elevate training levels in a luxurious environment.
-                                            Upon request, trainers, physiotherapists, and a dedicated medical team will take care of all needs.
-                                            Additionally, we offer the possibility to fully customize nutrition.
-                                            <br />
-                                            <br />
-                                            Outside of the peak season,
-                                            the resort is also ideal for recovering from injuries, helping individuals to return to their peak performance
-                                            in a comfortable setting.
+                                        The resort spans 38,970 square meters and is located near Funchal, Madeira, directly opposite the island’s most popular golf course and about a 10-minute drive from the airport, ensuring excellent accessibility.
+                                        </p>
+                                        <h2>World-Class Training Facilities for Professional Athletes</h2>
+                                        <p>
+                                        Our gym allows athletes to maintain or even improve their training level in a luxurious environment, with a team of trainers, physiotherapists, and doctors available upon request. Nutrition can also be fully customized.
+                                        
+                                        <br/><br/>The building itself is designed in an antique style with modern accents, and the entire property is planned to be well-maintained and harmoniously integrated into the natural landscape.
+                                        <br/><br/>Outside the main season, the resort is ideal for rehabilitation and returning to individual performance levels in a relaxed atmosphere.
                                         </p>
                                         <h2>Services</h2>
                                         {resortContent.map(({ key, title, content, equipment }) => (
@@ -186,9 +178,6 @@ export function ProjectSection() {
                                     </TabsContent>
 
                                     <TabsContent value="social" className="animate-fade-in">
-                                        <h1>
-                                            Project
-                                        </h1>
                                         <div className="relative w-full h-[300px] mt-4">
                                             <Image 
                                                 src="https://picsum.photos/id/65/1200/600"
