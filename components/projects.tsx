@@ -70,7 +70,7 @@ export function ProjectSection() {
                                     fill={true}
                                     className="rounded-xl brightness-75 dark:brightness-50"
                                 />
-                                <div className="absolute inset-0 flex justify-center items-center">
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                                     <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Weighted Clothing</h1>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ export function ProjectSection() {
                                     fill={true}
                                     className="rounded-xl brightness-75 dark:brightness-50"
                                 />
-                                <div className="absolute inset-0 flex justify-center items-center">
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                                     <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Partnering Program</h1>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ export function ProjectSection() {
                                     fill={true}
                                     className="rounded-xl brightness-75 dark:brightness-50"
                                 />
-                                <div className="absolute inset-0 flex justify-center items-center">
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                                     <h1 className="text-white text-7xl drop-shadow-lg shadow-black">Tarc Resort</h1>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@ export function ProjectSection() {
                                     fill={true}
                                     className="rounded-xl brightness-75 dark:brightness-50"
                                 />
-                                <div className="absolute inset-0 flex justify-center items-center">
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                                     <h1 className="text-white text-6xl drop-shadow-lg shadow-black">Social Work</h1>
                                 </div>
                             </div>
