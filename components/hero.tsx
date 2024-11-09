@@ -18,10 +18,10 @@ export function Hero() {
                 <div className="py-2 md:py-0">
                     <div className="mx-auto max-w-4xl pb-4 text-center md:pb-16">
                         <h1 className="animate-fade-in -translate-y-4 text-balance py-6 text-5xl font-semibold leading-none tracking-tighter opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-8xl">
-                            <span className="bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text text-transparent dark:from-white dark:from-30% dark:to-white/40">
+                            <span className="bg-gradient-to-br from-black from-30% to-black/60 bg-clip-text text-transparent dark:from-white dark:from-30% dark:to-white/40">
                                 Revolutionize the Sport Industry with
                             </span>
-                            <span className="bg-gradient-to-br from-red-800 to-red-600 bg-clip-text text-transparent font-bold">
+                            <span className="bg-gradient-to-br from-red-700 to-red-600 dark:from-red-800 dark:to-red-600 bg-clip-text text-transparent font-bold">
                                 Tarc
                             </span>
                         </h1>
@@ -33,7 +33,7 @@ export function Hero() {
                             </p>
                             <div className="flex flex-row gap-8 justify-center items-center">
                                 <Dialog>
-                                    <DialogTrigger className="flex items-center justify-center h-10 px-4 py-2 font-medium w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-gradient-to-br from-red-900 to-red-600 hover:from-secondary hover:to-secondary hover:text-black hover:dark:text-white">
+                                    <DialogTrigger className="flex items-center justify-center h-10 px-4 py-2 font-medium w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-gradient-to-br from-red-700 dark:from-red-900 to-red-600 dark:to-red-600 hover:from-secondary hover:to-secondary dark:hover:from-secondary dark:hover:to-secondary hover:text-black hover:dark:text-white">
                                         Contact Us
                                     </DialogTrigger>
                                     <DialogContent>

@@ -34,9 +34,9 @@ const navbarItems:
   subcontent?: {title: string, href: string, description: string}[]
 }[] = [
   {name: 'Home', href: '/'},
+  {name: 'About', href: '/about'},
   {name: 'Projects', href: '/#projects'},
   {name: 'Impact', href: '/impact'},
-  {name: 'About us', href: '/about'},
   {name: 'Contact', href: '/contact'}
 ]
 
