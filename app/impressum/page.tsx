@@ -1,6 +1,6 @@
 export default function Terms() {
     return (
-        <div className="mx-8">
+        <div className="min-h-[100vh] mx-8">
             <h1>Impressum</h1>
             <p>Last Updated: 09.11.2024</p>
             <p>
