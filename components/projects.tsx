@@ -54,7 +54,7 @@ export function ProjectSection() {
                                 <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
                                 <TabsTrigger value="social" className="h-[48px] md:h-[36px] rounded-2xl">Social <br className="block md:hidden"></br>Work</TabsTrigger>
                             </TabsList>
-                            <div className="w-full max-w-4xl rounded-xl ">
+                            <div className="w-full max-w-4xl rounded-xl">
 
                                 <div className="px-8 pt-12 pb-16 max-w-3xl mx-auto">
 

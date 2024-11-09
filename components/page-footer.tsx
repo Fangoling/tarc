@@ -14,6 +14,8 @@ export default function Footer() {
                     <Link href="/contact" className="hover:underline">Contact</Link>
                     <Separator orientation="vertical" className="h-4"/>
                     <Link href="/terms" className="hover:underline">Terms</Link>
+                    <Separator orientation="vertical" className="h-4"/>
+                    <Link href="/impressum" className="hover:underline">Impressum</Link>
                 </div>
                 <div>
                     <p className="text-foreground">Copyright &copy; 2024 Tarc-fitness</p>
