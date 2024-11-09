@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 const fontSans = Fontsans({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
  });
 
 import { ThemeProvider } from "@/components/theme-provider"

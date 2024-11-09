@@ -1,18 +1,7 @@
-import Link from 'next/link'
-import * as React from "react"
+import { UnderConstrucion } from "../under-construction";
 
-import { Button } from '@/components/ui/button'
-
-export default function UnderConstrucion() {
+export default function ImpactPage() {
     return (
-        <div className="min-h-[100vh] flex justify-center items-center">
-            <div>
-                <h2>This page is still underconstrucion</h2>
-                <p>We are eagerly working to make this site available to you as early as possible.</p>
-                <Button className='mt-4'>
-                    <Link href="/">Return Home</Link>
-                </Button>
-            </div>
-        </div>
+        <UnderConstrucion/>
     )
 }

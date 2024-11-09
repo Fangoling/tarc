@@ -21,7 +21,7 @@ export function Hero() {
                             <span className="bg-gradient-to-br from-black from-30% to-black/60 bg-clip-text text-transparent dark:from-white dark:from-30% dark:to-white/40">
                                 Revolutionize the Sport Industry with
                             </span>
-                            <span className="bg-gradient-to-br from-red-700 to-red-600 dark:from-red-800 dark:to-red-600 bg-clip-text text-transparent font-bold">
+                            <span className="pl-2 bg-gradient-to-br from-red-700 to-red-600 dark:from-red-800 dark:to-red-600 bg-clip-text text-transparent font-bold">
                                 Tarc
                             </span>
                         </h1>
