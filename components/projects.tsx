@@ -121,12 +121,12 @@ export function ProjectSection() {
                             </p>
                             <br />
                             <p>
-                                Every six months, a list of all Tarc athletes is published. Just before the summer and winter breaks,
-                                all partner companies can decide which advertiser suits them best.
+                                Every year, a list of all Tarc athletes is published and all partner companies can decide which advertiser suits them best.
                                 The order in which athletes are chosen is determined by the partner companies&apos; join dates.
                                 Companies that joined earlier have a higher position in the Draft.
                                 Therefore, the longest-standing partners have the greatest selection of popular athletes.
                                 The selection process continues until there are no more advertising slots available.
+                                <br/><br/>The first draft starts is planned to start in 2027.
                             </p>
                             <br />
                             <p>
