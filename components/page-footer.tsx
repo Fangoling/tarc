@@ -4,8 +4,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <>
-            <div className="mt-auto w-full bg-grey flex flex-col items-center pt-12 pb-8 text-xs gap-2">
-                <Separator />
+            <div className="mt-auto w-full bg-grey flex flex-col items-center pt-8 pb-8 text-xs gap-2 bg-secondary">
                 <div className="flex gap-4 text-foreground pt-1">
                     <Link href="https://x.com/tarcfitness" target="_blank" className="hover:underline">Twitter</Link>
                     <Separator orientation="vertical" className="h-4"/>
