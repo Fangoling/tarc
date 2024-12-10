@@ -43,7 +43,7 @@ const navbarItems:
 export default function Nav() {
 
   return (
-    <div className="flex items-center justify-between px-4 py-2 pb-4">
+    <div className="bg-secondary flex items-center justify-between px-4 py-2">
       <Link href="/" className="flex items-center gap-2">
       <div className="pl-4 flex flex-row gap-2">
         <Img
@@ -68,9 +68,9 @@ export default function Nav() {
         <NavigationMenuList>
           {navbarItems.map(({ name, href, subcontent }) => (
             !subcontent ? 
-            <NavigationMenuItem key={name}>
+            <NavigationMenuItem key={name}  className="bg-secondary">
               <Link href={href} className="text-lg font-medium" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  bg-secondary`}>
                   {name}
                 </NavigationMenuLink>
               </Link>
