@@ -29,12 +29,6 @@ import {
     TabsList,
     TabsTrigger
 } from "@/components/ui/tabs"
-import {
-    Accordion,
-    AccordionTrigger,
-    AccordionItem,
-    AccordionContent
-} from "@/components/ui/accordion"
 
 export function ProjectSection() {
     return (
