@@ -21,7 +21,7 @@ export function Hero() {
                             <span className="bg-gradient-to-br from-black from-30% to-black/60 bg-clip-text text-transparent dark:from-white dark:from-30% dark:to-white/40">
                                 Revolutionize the Sport Industry with
                             </span>
-                            <span className="pl-2 bg-gradient-to-br from-red-700 to-red-600 dark:from-red-800 dark:to-red-600 bg-clip-text text-transparent font-bold">
+                            <span className="pl-2 bg-primary bg-clip-text text-transparent font-bold">
                                 Tarc
                             </span>
                         </h1>
@@ -33,7 +33,7 @@ export function Hero() {
                             </p>
                             <div className="flex flex-row gap-8 justify-center items-center">
                                 <Dialog>
-                                    <DialogTrigger className="flex items-center justify-center h-10 px-4 py-2 font-medium w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-gradient-to-br from-red-700 dark:from-red-900 to-red-600 dark:to-red-600 hover:from-secondary hover:to-secondary dark:hover:from-secondary dark:hover:to-secondary hover:text-black hover:dark:text-white">
+                                    <DialogTrigger className="flex items-center justify-center h-10 px-4 py-2 font-medium w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg rounded-2xl bg-primary hover:bg-secondary hover:text-black hover:dark:text-white">
                                         Contact Us
                                     </DialogTrigger>
                                     <DialogContent>
@@ -41,7 +41,7 @@ export function Hero() {
                                         <EmailForm />
                                     </DialogContent>
                                 </Dialog>
-                                <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg dark: text-black dark:text-white bg-secondary rounded-2xl hover:from-red-900 hover:to-red-600 hover:bg-gradient-to-br">
+                                <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg dark: text-black dark:text-white bg-secondary rounded-2xl hover:bg-primary">
                                     <Link href="/sign-in" className="flex flex-row items-center">
                                         <span>Sign in</span>
                                         <ChevronRightIcon />
