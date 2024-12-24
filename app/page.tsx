@@ -7,7 +7,7 @@ import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 
 import { Hero } from '@/components/hero'
-import { ProjectSection } from '@/components/projects'
+import { ProjectSection } from '@/components/projects-nex'
 
  const contactContent = [
     {key: 'phone', icon: <PhoneIcon size={48}/>, text: 'Coming Soon'},
@@ -27,7 +27,6 @@ export default function Home() {
             <div className="flex flex-col items-center gap-20">
                 <Hero />
                 <ProjectSection/>
-
                 <section id="team" className="w-full flex flex-col items-center">
                     <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-8 rounded-xl">
                         <h1>Team</h1>

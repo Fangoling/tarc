@@ -41,12 +41,15 @@ export function Hero() {
                                         <EmailForm />
                                     </DialogContent>
                                 </Dialog>
+                            {/*
+
                                 <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg dark: text-black dark:text-white bg-secondary rounded-2xl hover:bg-primary">
                                     <Link href="/sign-in" className="flex flex-row items-center">
                                         <span>Sign in</span>
                                         <ChevronRightIcon />
                                     </Link>
                                 </Button>
+                            */}
 
                             </div>
                         </div>

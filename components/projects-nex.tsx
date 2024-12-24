@@ -1,0 +1,273 @@
+"use client"
+
+import * as React from "react"
+import Link from 'next/link'
+import Image from 'next/image'
+import { motion } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ChevronRight, ArrowRight } from 'lucide-react'
+
+const resortContent = [
+    {
+        key: 'gym', title: 'Gym',
+        content: 'Versatile space for targeted strength and endurance training.',
+        image: '/images/Swiper_1.png'
+    },
+    {
+        key: 'strongman', title: 'Strongman',
+        content: 'Combining gym basics with unique Strongman challenges.',
+        image: '/images/strongman-generated.webp'
+    },
+    {
+        key: 'athletics', title: 'Athletics',
+        content: 'Facilities for endurance, sprints, and field events.',
+        image: '/images/athletics-generated.webp'
+    },
+    {
+        key: 'swimming', title: 'Swimming',
+        content: 'Commercial pools and advanced counter-current systems.',
+        image: '/images/pool-generated.webp'
+    },
+]
+
+const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.5 }
+}
+
+export function ProjectSection() {
+    return (
+        <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-secondary to-secondary/50 pt-16 pb-24">
+            <Tabs defaultValue="gym" className="flex flex-col items-center w-full gap-12">
+                {/* Enhanced Header */}
+                <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-center space-y-4"
+                >
+                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+                        Latest Projects
+                    </h1>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                        Explore our innovative ventures across fitness, hospitality, and social impact
+                    </p>
+                </motion.div>
+
+                {/* Enhanced Tabs */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="w-full max-w-2xl px-4"
+                >
+                    <TabsList className="grid w-full grid-cols-4 h-12 bg-background/50 backdrop-blur-lg rounded-2xl border border-border/50">
+                        <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger>
+                        <TabsTrigger value="partner" className="h-[48px] md:h-[36px] rounded-2xl">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
+                        <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
+                        <TabsTrigger value="social" className="h-[48px] md:h-[36px] rounded-2xl">Social <br className="block md:hidden"></br>Work</TabsTrigger>
+                    </TabsList>
+                </motion.div>
+
+                <div className="w-full px-4 md:px-8">
+                    {/* Resort Tab Content */}
+                    <TabsContent value="gym" className="focus-visible:outline-none">
+                        <motion.div
+                            {...fadeInUp}
+                            className="max-w-7xl mx-auto space-y-12"
+                        >
+                            {/* Hero Section */}
+                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                                <Image
+                                    src="/images/madeira.jpg"
+                                    alt="Madeira resort view"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.2 }}
+                                        className="max-w-2xl space-y-4"
+                                    >
+                                        <h2 className="text-3xl md:text-5xl font-bold text-white">
+                                            Tarc Resort
+                                        </h2>
+                                        <p className="text-white/90 text-lg">
+                                            A new benchmark in athletic retreats, combining luxury with professional training facilities
+                                        </p>
+                                        {/**
+                                         * 
+                                        */}
+                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                            Discover More
+                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        </button>
+                                    </motion.div>
+                                </div>
+                            </div>
+
+                            {/* Services Grid */}
+                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                {resortContent.map(({ key, title, content, image }, index) => (
+                                    <motion.div
+                                        key={key}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: index * 0.15 }}
+                                    >
+                                        <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300">
+                                            <CardContent className="p-0">
+                                                <div className="relative aspect-[4/3] overflow-hidden rounded-t-xl">
+                                                    <Image
+                                                        src={image}
+                                                        alt={title}
+                                                        fill
+                                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                                </div>
+                                                <div className="p-6 space-y-2">
+                                                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                                                        {title}
+                                                    </h3>
+                                                    <p className="text-muted-foreground text-sm">
+                                                        {content}
+                                                    </p>
+                                                    {/*
+                                                    <div className="flex items-center text-primary gap-1 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                                                        Learn more <ChevronRight className="w-4 h-4" />
+                                                    </div>
+                                                    */}
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </TabsContent>
+
+                    {/* Partnering Program Tab Content*/}
+                    <TabsContent value="partner" className="focus-visible:outline-none">
+                        <motion.div
+                            {...fadeInUp}
+                            className="max-w-7xl mx-auto space-y-12"
+                        >
+                            {/* Hero Section */}
+                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                                <Image
+                                    src="https://picsum.photos/seed/partner/1200/600"
+                                    alt="lorem picsum photo"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.2 }}
+                                        className="max-w-2xl space-y-4"
+                                    >
+                                        <h2 className="text-3xl md:text-5xl font-bold text-white">
+                                            Partnering Program
+                                        </h2>
+                                        <p className="text-white/90 text-lg">
+                                            Connecting athletes and companies through ethical partnerships and innovative drafting systems.
+                                        </p>
+                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                            Discover More
+                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        </button>
+                                    </motion.div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </TabsContent>
+
+
+                    {/* Weighted Clothing Tab Content */}
+                    <TabsContent value="clothing" className="focus-visible:outline-none">
+                        <motion.div
+                            {...fadeInUp}
+                            className="max-w-7xl mx-auto space-y-12"
+                        >
+                            {/* Hero Section */}
+                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                                <Image
+                                    src="https://picsum.photos/seed/clothing/1200/600"
+                                    alt="lorem picsum photo"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.2 }}
+                                        className="max-w-2xl space-y-4"
+                                    >
+                                        <h2 className="text-3xl md:text-5xl font-bold text-white">
+                                            Weighted Clothing
+                                        </h2>
+                                        <p className="text-white/90 text-lg">
+                                            Connecting athletes and companies through ethical partnerships and innovative drafting systems.
+                                        </p>
+                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                            Discover More
+                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        </button>
+                                    </motion.div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </TabsContent>
+
+                    {/* Social Work Tab Content */}
+                    <TabsContent value="social" className="focus-visible:outline-none">
+                        <motion.div
+                            {...fadeInUp}
+                            className="max-w-7xl mx-auto space-y-12"
+                        >
+                            {/* Hero Section */}
+                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                                <Image
+                                    src="https://picsum.photos/id/65/1200/600"
+                                    alt="lorem picsum photo"
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.2 }}
+                                        className="max-w-2xl space-y-4"
+                                    >
+                                        <h2 className="text-3xl md:text-5xl font-bold text-white">
+                                            Social Work
+                                        </h2>
+                                        <p className="text-white/90 text-lg">
+                                            Connecting athletes and companies through ethical partnerships and innovative drafting systems.
+                                        </p>
+                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                            Discover More
+                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        </button>
+                                    </motion.div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </TabsContent>
+
+                </div>
+            </Tabs>
+        </section>
+    )
+}
+
