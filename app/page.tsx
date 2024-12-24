@@ -46,7 +46,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="contact" className="w-full flex flex-col items-center bg-secondary">
+                <section id="contact" className="w-full flex flex-col items-center">
                     <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-12 rounded-xl">
                         <h1>Contact</h1>
                         <div className="mx-auto px-4 flex flex-col items-center md:flex-row gap-8 w-full">

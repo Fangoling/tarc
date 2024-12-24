@@ -121,7 +121,7 @@ export function EmailForm() {
                         />
 
                     </div>
-                    <Button className="bg-gradient-to-br from-red-900 to-red-600 rounded-2xl" type="submit">Submit</Button>
+                    <Button className="bg-primary rounded-2xl" type="submit">Submit</Button>
                 </form>
             </Form>
     )
