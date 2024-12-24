@@ -7,19 +7,23 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 const resortContent = [
     {
         key: 'gym', title: 'Gym',
-        content: 'The gym will consist of various equipment for targeted strength or endurance training.',
+        content: 'Versatile space for targeted strength and endurance training.',
+        image: '/images/Swiper_1.png'
     },
     {
         key: 'strongman', title: 'Strongman',
-        content: 'Strongman training will be a combination of basic strength training in the gym, using barbells and dumbbells, and event training with a variety of Strongman objects, such as atlas stones, sandbags, log and yoke',
+        content: 'Combining gym basics with unique Strongman challenges.',
+        image: '/images/strongman-generated.webp'
     },
     {
         key: 'swimming', title: 'Swimming',
-        content: 'From commercial swimming pools to counter-current systems',
+        content: 'Commercial pools and advanced counter-current systems.',
+        image: '/images/pool-generated.webp'
     },
     {
         key: 'athletics', title: 'Athletics',
-        content: 'Endurance running tracks, sprint tracks, resistance running tracks, long jump facilities, shot put and throwing facilities',
+        content: 'Facilities for endurance, sprints, and field events.',
+        image: '/images/trackfield-generated.webp'
     },
 ]
 
@@ -183,14 +187,14 @@ export function ProjectSection() {
                                 </p>
                                 <h2>Services</h2>
                                 <div className="grid gap-8 md:grid-cols-2">
-                                    {resortContent.map(({ key, title, content}) => (
+                                    {resortContent.map(({ key, title, content, image}) => (
                                         <Card className="relative w-full max-w-md overflow-hidden group" key={key}>
                                             <CardContent className="p-0">
                                                 <div className="relative">
                                                 {/* Image container with gradient overlay */}
                                                 <div className="relative aspect-[4/3] overflow-hidden">
                                                     <img
-                                                    src="/images/funchal-madeira.jpg"
+                                                    src={image}
                                                     alt="picture of the title"
                                                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                                                     />
