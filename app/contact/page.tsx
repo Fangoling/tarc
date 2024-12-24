@@ -3,7 +3,7 @@ import { EmailForm } from "@/components/email-form"
 export default function ContactPage() {
     return(
         <div>
-                <section id="email" className="w-full flex flex-col items-center">
+                <section id="email" className="w-full flex flex-col items-center min-h-[100vh]">
                     <div className="flex flex-col items-center w-full max-w-4xl gap-4 p-12 rounded-xl">
                         <h1>Get in touch</h1>
                         <EmailForm />

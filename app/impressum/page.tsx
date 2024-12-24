@@ -1,6 +1,6 @@
 export default function Terms() {
     return (
-        <div className="min-h-[100vh] mx-8">
+        <div className="min-h-[100vh] mx-8 pt-16">
             <h1>Impressum</h1>
             <p>
                 Name der Firma : Tarc-Fitness GmbH
