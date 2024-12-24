@@ -2,35 +2,24 @@ import * as React from "react"
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 
 const resortContent = [
     {
         key: 'gym', title: 'Gym',
         content: 'The gym will consist of various equipment for targeted strength or endurance training.',
-        equipment: [
-
-        ]
     },
     {
         key: 'strongman', title: 'Strongman',
         content: 'Strongman training will be a combination of basic strength training in the gym, using barbells and dumbbells, and event training with a variety of Strongman objects, such as atlas stones, sandbags, log and yoke',
-        equipment: [
-
-        ]
     },
     {
         key: 'swimming', title: 'Swimming',
         content: 'From commercial swimming pools to counter-current systems',
-        equipment: [
-
-        ]
     },
     {
         key: 'athletics', title: 'Athletics',
         content: 'Endurance running tracks, sprint tracks, resistance running tracks, long jump facilities, shot put and throwing facilities',
-        equipment: [
-
-        ]
     },
 ]
 
@@ -139,7 +128,7 @@ export function ProjectSection() {
                         </TabsContent>
 
                         <TabsContent value="gym" className="flex flex-col animate-fade-in w-full items-center">
-                            <div className="flex flex-col max-w-4xl gap-8 ">
+                            <div className="flex flex-col max-w-4xl gap-4 ">
 
                                 <div className="relative w-full h-[300px] mt-4">
                                     <Image
@@ -153,7 +142,7 @@ export function ProjectSection() {
                                     </div>
                                 </div>
 
-                                <div className="">
+                                <div className="pt-4">
                                     <h2>A New Benchmark in Athletic Retreats</h2>
                                     <div className="flex flex-start gap-8 pt-8">
                                         <p className="w-1/2">
@@ -164,7 +153,7 @@ export function ProjectSection() {
                                             src="https://picsum.photos/id/177/1200/600"
                                             alt="Picture of Madeira"
                                             fill={true}
-                                            className="rounded-xl object-cover brightness-75 dark:brightness-50"
+                                            className="rounded-xl object-cover"
                                             />
                                         </div>
                                     </div>
@@ -173,7 +162,7 @@ export function ProjectSection() {
 
 
 
-                                <div className="">
+                                <div className="pt-4">
                                     <h2>Prime Location in the heart of Madeira</h2>
                                     <div className="flex flex-start gap-8 pt-8">
                                         <div className="relative w-1/2">
@@ -181,7 +170,7 @@ export function ProjectSection() {
                                             src="https://picsum.photos/id/16/1200/600"
                                             alt="Picture of Madeira"
                                             fill={true}
-                                            className="rounded-xl object-cover brightness-75 dark:brightness-50"
+                                            className="rounded-xl object-cover"
                                             />
                                         </div>
                                         <p className="w-1/2 p-4 rounded-xl">
@@ -199,23 +188,34 @@ export function ProjectSection() {
                                     <br /><br />Outside the main season, the resort is ideal for rehabilitation and returning to individual performance levels in a relaxed atmosphere.
                                 </p>
                                 <h2>Services</h2>
-                                {resortContent.map(({ key, title, content, equipment }) => (
-                                    <Accordion type="single" collapsible key={key}>
-                                        <AccordionItem value="key" >
-                                            <AccordionTrigger>
-                                                {title}
-                                            </AccordionTrigger>
-                                            <AccordionContent>
-                                                {content}
-                                                <ul>
-                                                    {equipment.map(equip => (
-                                                        <li key={equip}>{equip}</li>
-                                                    ))}
-                                                </ul>
-                                            </AccordionContent>
-                                        </AccordionItem>
-                                    </Accordion>
-                                ))}
+                                <div className="grid gap-8 md:grid-cols-2">
+                                    {resortContent.map(({ key, title, content}) => (
+                                        <Card className="relative w-full max-w-md overflow-hidden group" key={key}>
+                                            <CardContent className="p-0">
+                                                <div className="relative">
+                                                {/* Image container with gradient overlay */}
+                                                <div className="relative aspect-[4/3] overflow-hidden">
+                                                    <img
+                                                    src="/images/funchal-madeira.jpg"
+                                                    alt="picture of the title"
+                                                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                                                    />
+                                                    {/* Gradient overlay */}
+                                                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80" />
+                                                </div>
+                                                
+                                                {/* Text overlay */}
+                                                <div className="absolute bottom-0 left-0 p-6 text-white">
+                                                    <h2 className="text-3xl font-bold tracking-tight decoration-0">
+                                                        {title}
+                                                    </h2>
+                                                </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    ))}
+
+                                </div>
                             </div>
 
                         </TabsContent>
