@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ lang: 'en-US' }, { lang: 'de' }]
+  return [{ lang: 'en' }, { lang: 'de' }]
 }
 
 import { AppData } from "@/components/prop-types"
