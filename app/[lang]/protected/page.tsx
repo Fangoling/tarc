@@ -1,5 +1,5 @@
 import { createClient } from "@/lib/utils/supabase/server"
-import { signOutAction } from "@/app/actions"
+import { signOutAction } from "@/app/[lang]/actions"
 import { redirect } from "next/navigation"
 
 import { Button } from "@/components/ui/button"

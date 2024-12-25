@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-import { signInAction } from "@/app/actions"
+import { signInAction } from "@/app/[lang]/actions"
 import { Message, FormMessageParam } from "@/components/ui/form"
 
 // this is the shadcn ui signin block

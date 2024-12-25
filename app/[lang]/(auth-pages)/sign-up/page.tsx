@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import { signUpAction } from "@/app/actions"
+import { signUpAction } from "@/app/[lang]/actions"
 import { Button } from "@/components/ui/button"
 import {
     Card,

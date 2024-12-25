@@ -25,8 +25,8 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-import { DataTablePagination } from "@/app/drafting/components/data-table-pagination"
-import { DataTableToolbar } from "@/app/drafting/components/data-table-toolbar"
+import { DataTablePagination } from "@/app/[lang]/drafting/components/data-table-pagination"
+import { DataTableToolbar } from "@/app/[lang]/drafting/components/data-table-toolbar"
 
 interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[]

@@ -4,9 +4,9 @@ import { z } from "zod"
 
 import { createClient } from "@/lib/utils/supabase/server"
 
-import { athleteColumns } from "@/app/drafting/components/column"
-import { DataTable } from "@/app/drafting/components/data-table"
-import { athleteSchema } from "@/app/drafting/data/schema"
+import { athleteColumns } from "@/app/[lang]/drafting/components/column"
+import { DataTable } from "@/app/[lang]/drafting/components/data-table"
+import { athleteSchema } from "@/app/[lang]/drafting/data/schema"
 
 
 /*

@@ -17,10 +17,10 @@ import {
 } from "@/components/ui/drawer"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
-import { statuses, qualities } from "@/app/drafting/data/data"
-import { Athlete} from "@/app/drafting/data/schema"
-import { DataTableColumnHeader } from "@/app/drafting/components/data-table-column-header"
-import { DataTableRowActions } from "@/app/drafting/components/data-table-row-actions"
+import { statuses, qualities } from "@/app/[lang]/drafting/data/data"
+import { Athlete} from "@/app/[lang]/drafting/data/schema"
+import { DataTableColumnHeader } from "@/app/[lang]/drafting/components/data-table-column-header"
+import { DataTableRowActions } from "@/app/[lang]/drafting/components/data-table-row-actions"
 
 
 
