@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter as Fontsans} from "next/font/google";
 import "@/styles/globals.css";
 
@@ -70,6 +71,7 @@ export default async function RootLayout({
             <div className="flex flex-col">
               <Nav dict={dict}/>
                 {children}
+                <SpeedInsights />
               <Footer dict={dict}/>
             </div>
           </ThemeProvider>
