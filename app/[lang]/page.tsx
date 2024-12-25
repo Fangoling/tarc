@@ -5,7 +5,7 @@ import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 
 import { Hero } from '@/components/hero'
-import { ProjectSection } from '@/components/projects-nex'
+import { ProjectSection } from '@/components/projects'
 import { getDictionary } from "./dictionaries"
 
 const contactContent = [
