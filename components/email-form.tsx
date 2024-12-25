@@ -27,7 +27,10 @@ const formSchema = z.object({
 
 export type FormData = z.infer<typeof formSchema>
 
-export function EmailForm() {
+import { Props } from './prop-types'
+
+
+export const EmailForm: React.FC<Props> = ( { dict }) => {
 
     async function onSubmit(data: FormData) {
         try {
@@ -59,7 +62,7 @@ export function EmailForm() {
                             name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Name</FormLabel>
+                                    <FormLabel>{dict.contact.name}</FormLabel>
                                     <FormControl>
                                         <Input  {...field}/>
                                     </FormControl>
@@ -72,7 +75,7 @@ export function EmailForm() {
                             name="email"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Email</FormLabel>
+                                    <FormLabel>{dict.contact.email}</FormLabel>
                                     <FormControl>
                                         <Input  {...field}/>
                                     </FormControl>
@@ -85,7 +88,7 @@ export function EmailForm() {
                             name="message"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Message</FormLabel>
+                                    <FormLabel>{dict.contact.message}</FormLabel>
                                     <FormControl>
                                         <Input  {...field}/>
                                     </FormControl>
@@ -98,7 +101,7 @@ export function EmailForm() {
                             name="phone"
                             render={({ field }) => (
                                 <FormItem>
-                                <FormLabel>Phone Number *</FormLabel>
+                                <FormLabel>{dict.contact.phone}</FormLabel>
                                     <FormControl>
                                         <Input {...field}/>
                                     </FormControl>
@@ -111,7 +114,7 @@ export function EmailForm() {
                             name="address"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Address *</FormLabel>
+                                    <FormLabel>{dict.contact.address}</FormLabel>
                                     <FormControl>
                                         <Input  {...field}/>
                                     </FormControl>

@@ -19,87 +19,81 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const services: { title: string; href: string; description: string }[] = [
-  {
-    title: "Athlete Drafting",
-    href: "/drafting",
-    description: "Prototype model of the drafting system"
-  }
-]
 
-const navbarItems: 
-{
-  name: string;
-  href: string;
-  subcontent?: {title: string, href: string, description: string}[]
-}[] = [
-  {name: 'Home', href: '/'},
-  {name: 'About', href: '/about'},
-  {name: 'Projects', href: '/#projects'},
-  {name: 'Impact', href: '/impact'},
-  {name: 'Contact', href: '/contact'}
-]
+import { Props } from './prop-types'
 
-export default function Nav() {
+export default function Nav({ dict }: Props) {
+  const navbarItems:
+    {
+      name: string;
+      href: string;
+      subcontent?: { title: string, href: string, description: string }[]
+    }[] = [
+      { name: dict.navbar.home, href: '/' },
+      { name: dict.navbar.about, href: '/about' },
+      { name: dict.navbar.projects, href: '/#projects' },
+      { name: dict.navbar.impact, href: '/impact' },
+      { name: dict.navbar.contact, href: '/contact' }
+    ]
 
   return (
     <div className="bg-secondary flex items-center justify-between px-4 py-2">
       <Link href="/" className="flex items-center gap-2">
-      <div className="pl-4 flex flex-row gap-2">
-        <Img
-          src="/images/Tarc_Logo_Schwarz.png"
-          alt="tarc logo"
-          height={20}
-          width={20}
-          className="flex dark:hidden"
-        ></Img>
-        <Img
-          src="/images/Tarc_Logo_Wei.png"
-          alt="tarc logo"
-          height={20}
-          width={20}
-          className="hidden dark:flex"
-        ></Img>
-        <span className="text-xl font-semibold">Tarc</span>
-      </div>
+        <div className="pl-4 flex flex-row gap-2">
+          <Img
+            src="/images/Tarc_Logo_Schwarz.png"
+            alt="tarc logo"
+            height={20}
+            width={20}
+            className="flex dark:hidden"
+          ></Img>
+          <Img
+            src="/images/Tarc_Logo_Wei.png"
+            alt="tarc logo"
+            height={20}
+            width={20}
+            className="hidden dark:flex"
+          ></Img>
+          <span className="text-xl font-semibold">Tarc</span>
+        </div>
       </Link>
 
       <NavigationMenu className="hidden md:flex">
         <NavigationMenuList>
           {navbarItems.map(({ name, href, subcontent }) => (
-            !subcontent ? 
-            <NavigationMenuItem key={name}  className="bg-secondary">
-              <Link href={href} className="text-lg font-medium" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  bg-secondary`}>
-                  {name}
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            : 
-            <NavigationMenuItem key={name}>
-              <NavigationMenuTrigger>{name}</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[200px] gap-3 p-2 md:w-[300px] md:grind-cols-2 lg:w-[400px]">
-                  {subcontent.map(({ title, href, description }) => (
-                    <ListItem
-                      key={title}
-                      title={title}
-                      href={href}
-                    >
-                      {description}
-                    </ListItem>
-                  ))}
+            !subcontent ?
+              <NavigationMenuItem key={name} className="bg-secondary">
+                <Link href={href} className="text-lg font-medium" legacyBehavior passHref>
+                  <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  bg-secondary`}>
+                    {name}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              :
+              <NavigationMenuItem key={name}>
+                <NavigationMenuTrigger>{name}</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[200px] gap-3 p-2 md:w-[300px] md:grind-cols-2 lg:w-[400px]">
+                    {subcontent.map(({ title, href, description }) => (
+                      <ListItem
+                        key={title}
+                        title={title}
+                        href={href}
+                      >
+                        {description}
+                      </ListItem>
+                    ))}
                   </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
           ))}
 
         </NavigationMenuList>
       </NavigationMenu>
 
       <div className="flex items-center gap-2">
-        <ModeToggle/>
-        <Sheet> 
+        <ModeToggle />
+        <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="md:hidden">
               <Menu />
@@ -108,26 +102,26 @@ export default function Nav() {
           </SheetTrigger>
           <SheetContent side="right">
             <div className="flex flex-col items-start w-[400px] p-4 gap-2">
-              {navbarItems.map(({name, href, subcontent}) => (
-                !subcontent ? 
+              {navbarItems.map(({ name, href, subcontent }) => (
+                !subcontent ?
                   <SheetClose key={name}>
                     <Link key={name} href={href} className="text-4xl font-medium hover:underline" prefetch={false}>
                       {name}
                     </Link>
-                  </SheetClose> 
-                :
-                <div key={name}>
-                  <p className="text-4xl font-medium">{name + ":"}</p>
-                  {subcontent.map(({title, href}) => (
-                    <SheetClose key={title}>
-                      <Link key={title} href={href} className="text-4xl font-medium hover:underline" prefetch={false}>
-                        {"- " + title}
-                      </Link>
-                    </SheetClose> 
-                  ))}
-                </div>
+                  </SheetClose>
+                  :
+                  <div key={name}>
+                    <p className="text-4xl font-medium">{name + ":"}</p>
+                    {subcontent.map(({ title, href }) => (
+                      <SheetClose key={title}>
+                        <Link key={title} href={href} className="text-4xl font-medium hover:underline" prefetch={false}>
+                          {"- " + title}
+                        </Link>
+                      </SheetClose>
+                    ))}
+                  </div>
 
-                ))}
+              ))}
             </div>
           </SheetContent>
         </Sheet>

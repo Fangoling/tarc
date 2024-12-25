@@ -12,6 +12,7 @@ const fontSans = Fontsans({
 import { ThemeProvider } from "@/components/theme-provider"
 import Nav from "@/components/main-nav"
 import Footer from "@/components/page-footer"
+import { getDictionary } from "./dictionaries";
 
 export const metadata: Metadata = {
   title: "Tarc Website",
@@ -34,10 +35,26 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest'
 };
 
-export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) {
+export async function generateStaticParams() {
+  return [{ lang: 'en-US' }, { lang: 'de' }]
+}
+
+import { AppData } from "@/components/prop-types"
+
+export default async function RootLayout({
+  children,
+  params
+}: Readonly<{
+  children: React.ReactNode
+  params: { lang: 'en' | 'de'}
+}>) {
+  const lang = (await params).lang
+  const dict: AppData = await getDictionary(lang)
+
+
   return (
     <>
-      <html lang="en">
+      <html lang={params.lang}>
         <head />
         <body className={cn(
           "min-h-screen bg-background font-sans anitaliased scroll-smooth",
@@ -51,9 +68,9 @@ export default function RootLayout({ children }: Readonly<{children: React.React
             disableTransitionOnChange
           >
             <div className="flex flex-col">
-              <Nav />
+              <Nav dict={dict}/>
                 {children}
-              <Footer />
+              <Footer dict={dict}/>
             </div>
           </ThemeProvider>
         </body>

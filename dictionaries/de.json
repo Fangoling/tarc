@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "projects": "Projekte",
+        "impact": "Auswirkungen",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Revolutioniere die Sportindustrie mit",
+        "desc": "Tarc überbrückt die Lücke zwischen geschäftlicher Innovation und sozialem Engagement. Wir fördern das wirtschaftliche Wachstum mit vielfältigen Initiativen, von unserem Fitnessstudio auf Madeira bis hin zu unserer Fitness-App und Partnerschaftsprogrammen.",
+        "contact-button": "Kontakt"
+    },
+    "projects": {
+        "title": "Aktuelle Projekte",
+        "subtitle": "Entdecken Sie unsere Innovationen in den Bereichen Fitness und gesellschaftliches Engagement",
+        "resort": {
+            "hero": {
+                "title": "Tarc Resort",
+                "desc": "Ein neuer Maßstab für sportliche Rückzugsorte, der Luxus mit professionellen Trainingsanlagen verbindet",
+                "button": "Entdecke mehr"
+            },
+            "services": {
+                "gym": {
+                    "desc": "Vielseitiger Raum für gezieltes Kraft- und Ausdauertraining."
+                },
+                "strongman": {
+                    "desc": "Kombiniert grundlegende Fitnessgeräte mit einzigartigen Strongman-Herausforderungen."
+                },
+                "athletics": {
+                    "desc": "Anlagen für Ausdauer, Sprints und Feldsportarten."
+                },
+                "swimming": {
+                    "desc": "Kommerzielle Pools und fortschrittliche Gegenstromsysteme."
+                }
+            }
+        },
+        "partnering-program": {
+            "hero": {
+                "title": "Partnerschaftsprogramm",
+                "desc": "Verbindet Sportler und Unternehmen durch ethische Partnerschaften und innovative Auswahlverfahren.",
+                "button": "Entdecke mehr"
+            }
+        },
+        "weighted-clothing": {
+            "hero": {
+                "title": "Gewichtete Kleidung",
+                "desc": "Ein neuer Maßstab für sportliche Rückzugsorte, der Luxus mit professionellen Trainingsanlagen verbindet",
+                "button": "Entdecke mehr"
+            }
+        },
+        "social-circle": {
+            "hero": {
+                "title": "Sozialer Kreis",
+                "desc": "Ein neuer Maßstab für sportliche Rückzugsorte, der Luxus mit professionellen Trainingsanlagen verbindet",
+                "button": "Entdecke mehr"
+            }
+        }
+    },
+    "bottombar": {
+        "contact": "Kontakt"
+    },
+    "contact": {
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "phone": "Telefon (optional)",
+        "address": "Adresse (optional)"
+    }
+}

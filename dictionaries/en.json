@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "impact": "Impact",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Revolutionize the Sport Industry with",
+        "desc": "Tarc bridges the gap between business innovation and social impact. We drive economic growth with diverse initiatives, from our fitness studio on Madeira to our fitness app and partnership programs.",
+        "contact-button": "Contact Us"
+    },
+    "projects": {
+        "title": "Latest Projects",
+        "subtitle": "Explore our innovative ventures across fitness, hospitality, and social impact",
+        "resort": {
+            "hero": {
+                "title": "Tarc Resort",
+                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
+                "button": "Discover More"
+            },
+            "services": {
+                "gym": {
+                    "desc": "Versatile space for targeted strength and endurance training."
+                },
+                "strongman": {
+                    "desc": "Combining gym basics with unique Strongman challenges."
+                },
+                "athletics": {
+                    "desc": "Facilities for endurance, sprints, and field events."
+                },
+                "swimming": {
+                    "desc": "Commercial pools and advanced counter-current systems."
+                }
+            }
+        },
+        "partnering-program":{
+            "hero": {
+                "title": "Partnering Program",
+                "desc": "Connecting athletes and companies through ethical partnerships and innovative drafting systems.",
+                "button": "Discover More"
+            }
+        },
+        "weighted-clothing":{
+            "hero": {
+                "title": "Weighted Clothing",
+                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
+                "button": "Discover More"
+            }
+        },
+        "social-circle":{
+            "hero": {
+                "title": "Social Circle",
+                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
+                "button": "Discover More"
+            }
+        }
+    },
+    "bottombar": {
+        "contact": "Contact"
+    },
+    "contact": {
+        "name": "Name",
+        "email": "E-mail",
+        "message": "Message",
+        "phone": "Phone (optional)",
+        "address": "Address (optional)"
+    }
+}

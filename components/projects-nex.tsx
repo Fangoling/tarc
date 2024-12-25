@@ -8,28 +8,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ChevronRight, ArrowRight } from 'lucide-react'
 
-const resortContent = [
-    {
-        key: 'gym', title: 'Gym',
-        content: 'Versatile space for targeted strength and endurance training.',
-        image: '/images/Swiper_1.png'
-    },
-    {
-        key: 'strongman', title: 'Strongman',
-        content: 'Combining gym basics with unique Strongman challenges.',
-        image: '/images/strongman-generated.webp'
-    },
-    {
-        key: 'athletics', title: 'Athletics',
-        content: 'Facilities for endurance, sprints, and field events.',
-        image: '/images/athletics-generated.webp'
-    },
-    {
-        key: 'swimming', title: 'Swimming',
-        content: 'Commercial pools and advanced counter-current systems.',
-        image: '/images/pool-generated.webp'
-    },
-]
 
 const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -37,7 +15,35 @@ const fadeInUp = {
     transition: { duration: 0.5 }
 }
 
-export function ProjectSection() {
+
+import { Props } from './prop-types'
+
+
+export const ProjectSection: React.FC<Props> = ( { dict }) => {
+
+    const resortContent = [
+        {
+            key: 'gym', title: 'Gym',
+            content: dict.projects.resort.services!.gym.desc,
+            image: '/images/Swiper_1.png'
+        },
+        {
+            key: 'strongman', title: 'Strongman',
+            content: dict.projects.resort.services!.strongman.desc,
+            image: '/images/strongman-generated.webp'
+        },
+        {
+            key: 'athletics', title: 'Athletics',
+            content: dict.projects.resort.services!.athletics.desc,
+            image: '/images/athletics-generated.webp'
+        },
+        {
+            key: 'swimming', title: 'Swimming',
+            content: dict.projects.resort.services!.swimming.desc,
+            image: '/images/pool-generated.webp'
+        },
+    ]
+
     return (
         <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-secondary to-secondary/50 pt-16 pb-24">
             <Tabs defaultValue="gym" className="flex flex-col items-center w-full gap-12">
@@ -48,10 +54,10 @@ export function ProjectSection() {
                     className="text-center space-y-4"
                 >
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                        Latest Projects
+                        {dict.projects.title}
                     </h1>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                        Explore our innovative ventures across fitness, hospitality, and social impact
+                        {dict.projects.subtitle}
                     </p>
                 </motion.div>
 
@@ -93,16 +99,16 @@ export function ProjectSection() {
                                         className="max-w-2xl space-y-4"
                                     >
                                         <h2 className="text-3xl md:text-5xl font-bold text-white">
-                                            Tarc Resort
+                                            {dict.projects.resort.hero.title}
                                         </h2>
                                         <p className="text-white/90 text-lg">
-                                            A new benchmark in athletic retreats, combining luxury with professional training facilities
+                                            {dict.projects.resort.hero.desc}
                                         </p>
                                         {/**
                                          * 
                                         */}
                                         <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            Discover More
+                                            {dict.projects.resort.hero.button}
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </button>
                                     </motion.div>
@@ -173,13 +179,13 @@ export function ProjectSection() {
                                         className="max-w-2xl space-y-4"
                                     >
                                         <h2 className="text-3xl md:text-5xl font-bold text-white">
-                                            Partnering Program
+                                            {dict.projects['partnering-program'].hero.title}
                                         </h2>
                                         <p className="text-white/90 text-lg">
-                                            Connecting athletes and companies through ethical partnerships and innovative drafting systems.
+                                            {dict.projects['partnering-program'].hero.desc}
                                         </p>
                                         <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            Discover More
+                                            {dict.projects['partnering-program'].hero.button}
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </button>
                                     </motion.div>
@@ -212,13 +218,13 @@ export function ProjectSection() {
                                         className="max-w-2xl space-y-4"
                                     >
                                         <h2 className="text-3xl md:text-5xl font-bold text-white">
-                                            Weighted Clothing
+                                            {dict.projects['weighted-clothing'].hero.title}
                                         </h2>
                                         <p className="text-white/90 text-lg">
-                                            Connecting athletes and companies through ethical partnerships and innovative drafting systems.
+                                            {dict.projects['weighted-clothing'].hero.desc}
                                         </p>
                                         <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            Discover More
+                                            {dict.projects['weighted-clothing'].hero.button}
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </button>
                                     </motion.div>
@@ -250,13 +256,13 @@ export function ProjectSection() {
                                         className="max-w-2xl space-y-4"
                                     >
                                         <h2 className="text-3xl md:text-5xl font-bold text-white">
-                                            Social Work
+                                            {dict.projects['weighted-clothing'].hero.title}
                                         </h2>
                                         <p className="text-white/90 text-lg">
-                                            Connecting athletes and companies through ethical partnerships and innovative drafting systems.
+                                            {dict.projects['weighted-clothing'].hero.desc}
                                         </p>
                                         <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            Discover More
+                                            {dict.projects['weighted-clothing'].hero.button}
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </button>
                                     </motion.div>
