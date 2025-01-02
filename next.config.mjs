@@ -24,6 +24,17 @@ const nextConfig = {
         destination: 'https://tarc-fitness.com/de/:path*', // Redirect to tarc-fitness.com/de
         permanent: true, // Use a 301 permanent redirect
       },
+      {
+        source: '/:path*', // Match all paths
+        has: [
+          {
+            type: 'host',
+            value: 'www.tarc-fitness.de', // Match requests from tarc-fitness.de only
+          },
+        ],
+        destination: 'https://tarc-fitness.com/de/:path*', // Redirect to tarc-fitness.com/de
+        permanent: true, // Use a 301 permanent redirect
+      },
     ];
   },
 };
