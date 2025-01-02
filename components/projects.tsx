@@ -46,7 +46,7 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
 
     return (
         <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-secondary to-secondary/50 pt-16 pb-24">
-            <Tabs defaultValue="gym" className="flex flex-col items-center w-full gap-12">
+            <Tabs defaultValue="partner" className="flex flex-col items-center w-full gap-12">
                 {/* Enhanced Header */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -68,8 +68,8 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                     className="w-full max-w-2xl px-4"
                 >
                     <TabsList className="grid w-full grid-cols-4 bg-background/50 backdrop-blur-lg rounded-2xl border border-border/50 h-[60px] md:h-[48px]">
-                        <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger>
                         <TabsTrigger value="partner" className="h-[48px] md:h-[36px] rounded-2xl">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
+                        <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger>
                         <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
                         <TabsTrigger value="social" className="h-[48px] md:h-[36px] rounded-2xl">Social <br className="block md:hidden"></br>Work</TabsTrigger>
                     </TabsList>
@@ -165,7 +165,7 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                             {/* Hero Section */}
                             <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
                                 <Image
-                                    src="https://picsum.photos/seed/partner/1200/600"
+                                    src="/images/shakingHands.jpg"
                                     alt="lorem picsum photo"
                                     fill
                                     className="object-cover"
