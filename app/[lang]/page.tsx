@@ -33,6 +33,20 @@ export default async function Home({
         <>
             <div className="flex flex-col items-center gap-20">
                 <Hero dict={dict}/>
+                <section className="w-full bg-gradient-to-b from-secondary to-secondary/50 pt-16 pb-24">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/nfYQC6tgJQI?si=CZdOisX56aDmdOXD"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            />
+                        </div>
+                    </div>
+                </section>
                 <ProjectSection dict={dict}/>
                 <section id="team" className="w-full flex flex-col items-center">
                     <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-8 rounded-xl">
