@@ -2,7 +2,6 @@ import { updateSession } from '@/lib/utils/supabase/middleware'
 import { NextResponse, type NextRequest } from "next/server"
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
-import path from 'path'
  
 let headers = { 'accept-language': 'en,de;0.7' }
 let languages = new Negotiator({ headers }).languages()
@@ -10,27 +9,29 @@ let locales = ['en', 'de']
 let defaultLocale = 'en'
 let currentLocale = ''
  
-match(languages, locales, defaultLocale) // -> 'en-US' or 'de
+const matchedLocale = match(languages, locales, defaultLocale) // -> 'en-US' or 'de
 
 // Get the preferred locale, similar to the above or using a library
 function getLocale(request: NextRequest) {
-  return defaultLocale;
+  if (currentLocale != '') {
+    return currentLocale;
+  }
+  return matchedLocale
 }
 
 export async function middleware(request: NextRequest) {
+
   const response = await updateSession(request)
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
-
-  // Extract the locale from the pathname
-  const currentLocale = locales.find((locale) =>
+  const pathnameLocale = locales.find((locale) =>
     pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
-  
-  if (pathnameHasLocale) {
+
+
+  if (pathnameLocale != null) {
+    // Extract the locale from the pathname
+    currentLocale = pathnameLocale
     return response
   }
  
