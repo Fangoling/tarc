@@ -42,6 +42,7 @@ interface EmailForm {
 export interface AppData {
   navbar: Navbar;
   hero: Hero;
+  goals: string;
   projects: {
     title: string;
     subtitle: string;
@@ -50,6 +51,7 @@ export interface AppData {
     "weighted-clothing": Project;
     "social-circle": Project;
   }
+  con: string;
   bottombar: {
     contact: string;
   };

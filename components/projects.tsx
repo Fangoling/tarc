@@ -45,7 +45,7 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
     ]
 
     return (
-        <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-secondary to-secondary/50 pt-16 pb-24">
+        <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-secondary/10 via-secondary to-secondary/10 pt-16 pb-24">
             <Tabs defaultValue="partner" className="flex flex-col items-center w-full gap-12">
                 {/* Enhanced Header */}
                 <motion.div
@@ -256,13 +256,13 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                                         className="max-w-2xl space-y-4"
                                     >
                                         <h2 className="text-3xl md:text-5xl font-bold text-white">
-                                            {dict.projects['weighted-clothing'].hero.title}
+                                            {dict.projects['social-circle'].hero.title}
                                         </h2>
                                         <p className="text-white/90 text-lg">
-                                            {dict.projects['weighted-clothing'].hero.desc}
+                                            {dict.projects['social-circle'].hero.desc}
                                         </p>
                                         <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            {dict.projects['weighted-clothing'].hero.button}
+                                            {dict.projects['social-circle'].hero.button}
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                         </button>
                                     </motion.div>

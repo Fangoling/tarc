@@ -7,10 +7,11 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "Revolutioniere die Sportindustrie mit",
+        "title": "Verändere die Welt mit",
         "desc": "Tarc überbrückt die Lücke zwischen geschäftlicher Innovation und sozialem Engagement. Wir fördern das wirtschaftliche Wachstum mit vielfältigen Initiativen, von unserem Fitnessstudio auf Madeira bis hin zu unserer Fitness-App und Partnerschaftsprogrammen.",
         "contact-button": "Kontakt"
     },
+    "goals": "Ansprache zur Zielsetzung 2025",
     "projects": {
         "title": "Aktuelle Projekte",
         "subtitle": "Entdecken Sie unsere Innovationen in den Bereichen Fitness und gesellschaftliches Engagement",
@@ -57,6 +58,7 @@
             }
         }
     },
+    "con": "Kontakt",
     "bottombar": {
         "contact": "Kontakt"
     },

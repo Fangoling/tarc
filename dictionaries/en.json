@@ -11,6 +11,7 @@
         "desc": "Tarc bridges the gap between business innovation and social impact. We drive economic growth with diverse initiatives, from our fitness studio on Madeira to our fitness app and partnership programs.",
         "contact-button": "Contact Us"
     },
+    "goals": "Announcement for goals of 2025",
     "projects": {
         "title": "Latest Projects",
         "subtitle": "Explore our innovative ventures across fitness, hospitality, and social impact",
@@ -57,6 +58,7 @@
             }
         }
     },
+    "con": "Kontakt",
     "bottombar": {
         "contact": "Contact"
     },
