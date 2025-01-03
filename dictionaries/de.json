@@ -3,7 +3,7 @@
         "home": "Startseite",
         "about": "Über uns",
         "projects": "Projekte",
-        "impact": "Auswirkungen",
+        "impact": "Impact",
         "contact": "Kontakt"
     },
     "hero": {
@@ -38,21 +38,21 @@
         },
         "partnering-program": {
             "hero": {
-                "title": "Partnerschaftsprogramm",
+                "title": "Partnering Program",
                 "desc": "Verbindet Sportler und Unternehmen durch ethische Partnerschaften und innovative Auswahlverfahren.",
                 "button": "Entdecke mehr"
             }
         },
         "weighted-clothing": {
             "hero": {
-                "title": "Gewichtete Kleidung",
+                "title": "Weighted Clothing",
                 "desc": "Ein neuer Maßstab für sportliche Rückzugsorte, der Luxus mit professionellen Trainingsanlagen verbindet",
                 "button": "Entdecke mehr"
             }
         },
         "social-circle": {
             "hero": {
-                "title": "Sozialer Kreis",
+                "title": "Social Circle",
                 "desc": "Ein neuer Maßstab für sportliche Rückzugsorte, der Luxus mit professionellen Trainingsanlagen verbindet",
                 "button": "Entdecke mehr"
             }
