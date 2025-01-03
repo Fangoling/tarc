@@ -107,9 +107,11 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                                         {/**
                                          * 
                                         */}
-                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            {dict.projects.resort.hero.button}
-                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        <button >
+                                            <a href="/projects/resort" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                                {dict.projects.resort.hero.button}
+                                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </a>
                                         </button>
                                     </motion.div>
                                 </div>
@@ -184,9 +186,11 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                                         <p className="text-white/90 text-lg">
                                             {dict.projects['partnering-program'].hero.desc}
                                         </p>
-                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            {dict.projects['partnering-program'].hero.button}
-                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        <button>
+                                            <a href="/projects/partnering" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                                {dict.projects['partnering-program'].hero.button}
+                                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </a>
                                         </button>
                                     </motion.div>
                                 </div>
@@ -223,9 +227,11 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                                         <p className="text-white/90 text-lg">
                                             {dict.projects['weighted-clothing'].hero.desc}
                                         </p>
-                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
-                                            {dict.projects['weighted-clothing'].hero.button}
-                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                        <button>
+                                            <a href="/projects/clothing" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                                {dict.projects['weighted-clothing'].hero.button}
+                                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </a>
                                         </button>
                                     </motion.div>
                                 </div>
@@ -261,10 +267,10 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                                         <p className="text-white/90 text-lg">
                                             {dict.projects['social-circle'].hero.desc}
                                         </p>
-                                        <button className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
+                                        <a href="/projects/social" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full backdrop-blur-sm transition-all duration-300 group">
                                             {dict.projects['social-circle'].hero.button}
                                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </button>
+                                        </a>
                                     </motion.div>
                                 </div>
                             </div>
