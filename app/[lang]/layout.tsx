@@ -16,8 +16,8 @@ import Footer from "@/components/page-footer"
 import { getDictionary } from "./dictionaries";
 
 export const metadata: Metadata = {
-  title: "Tarc Website",
-  description: "Tarc, revolutionizing sport industry.",
+  title: "Tarc",
+  description: "Verändere die Welt mit Tarc",
   icons: {
     icon: [
       { url: '/favicon.ico'},
