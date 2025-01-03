@@ -68,5 +68,19 @@
         "message": "Message",
         "phone": "Phone (optional)",
         "address": "Address (optional)"
+    },
+    "impact": {
+        "impact": {
+            "title": "Impact",
+            "text": "Tarc stands not only for personal development towards a healthier body and mind but also for a greater goal: the creation of an ecologically and sociologically healthier world. <br/><br/> At Tarc, we are convinced that only healthy and conscious individuals can form the foundation for a sustainable, just, and livable future. Because we believe: those who live in harmony with themselves are also capable of acting sustainably and respectfully towards the world. Together, we create the basis for a healthier, more harmonious future for everyone."
+        },
+        "humanity": {
+            "title": "Humanity",
+            "text": "Advancing globalization brings cultural diversity but also leads to sociological problems. The collision of cultures can trigger social tensions and conflicts. Misunderstandings and prejudices contribute to this, as does the loss of entire cultures due to dominant global trends. Traditional cultures are often displaced, leading to identity crises. At the same time, economic inequality exacerbates social conflicts.<br/><br/>We aim to better organize advancing globalization so that every culture has as much space as possible to unfold and develop. Well-intentioned aid can sometimes unintentionally do more harm than good without clear structure and organization. That is why we focus on well-thought-out approaches that are sustainable and meet the needs of everyone. Achieving this goal requires respect, dialogue, and actions for social justice."
+        },
+        "planet": {
+            "title": "Planet Earth",
+            "text": "Despite an ever-improving understanding of the climate and the associated development of our planet, the ecological situation of our time is more challenging than ever. Earth is the foundation for all life as we know it, whether human, animal, or plant. Environmental pollution, the loss of natural habitats, and the lack of balance between human civilization and nature increasingly threaten this foundation.<br/><br/>We advocate for better education and more precise measures against environmental pollution because sustainable changes can only be achieved through a solid understanding. Our goal is to preserve untouched nature while fostering a harmonious connection between human civilization and the environment. Through targeted projects and educational initiatives, we aim to raise awareness of the importance of an intact environment and promote concrete solutions for sustainable development."
+        }
     }
 }

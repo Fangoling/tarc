@@ -38,6 +38,16 @@ interface EmailForm {
   address: string
 }
 
+interface Impact {
+  impact: ImpactSection;
+  humanity: ImpactSection;
+  planet: ImpactSection;
+}
+
+interface ImpactSection {
+  title: string;
+  text: string;
+}
 
 export interface AppData {
   navbar: Navbar;
@@ -56,6 +66,7 @@ export interface AppData {
     contact: string;
   };
   contact: EmailForm;
+  impact: Impact
 }
 
 export interface Props {

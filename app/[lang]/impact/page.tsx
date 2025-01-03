@@ -23,7 +23,7 @@ export default async function ImpactPage({
                 <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
                     <div>
                         <h1 className="text-3xl md:text-5xl font-bold text-white">
-                            Impact
+                            {dict.impact.impact.title}
                         </h1>
                     </div>
                 </div>
@@ -32,11 +32,7 @@ export default async function ImpactPage({
             <div className="flex flex-col items-center mx-auto w-full max-w-4xl">
 
                 <div className="container relative mx-auto px-4 py-12 lg:py-24">
-                    <p>
-                        Tarc steht nicht nur für die persönliche Entwicklung hin zu einem gesünderen Körper und Geist, sondern auch für ein größeres Ziel: die Schaffung einer ökologisch und soziologisch gesünderen Welt.
-                        <br /><br />
-                        Wir bei Tarc sind überzeugt, dass nur gesunde und bewusste Menschen die Grundlage für eine nachhaltige, gerechte und lebenswerte Zukunft bilden können. Denn wir glauben: Wer im Einklang mit sich selbst lebt, ist auch in der Lage, nachhaltig und respektvoll mit der Welt umzugehen. Gemeinsam schaffen wir die Basis für eine gesündere, harmonische Zukunft für alle.
-                    </p>
+                    <p dangerouslySetInnerHTML={{__html: dict.impact.impact.text}}/>
                 </div>
 
 
@@ -65,12 +61,8 @@ export default async function ImpactPage({
 
                         </div>
                         <div>
-                            <h2>Menschheit</h2>
-                            <p>
-                                Die voranschreitende Globalisierung bringt kulturelle Vielfalt, führt jedoch auch zu soziologischen Problemen. Die Kollision von Kulturen kann soziale Spannungen und Konflikte auslösen. Missverständnisse und Vorurteile tragen dazu bei, ebenso wie der Verlust ganzer Kulturen durch dominante globale Strömungen. Oft werden traditionelle Kulturen verdrängt, was Identitätskrisen zur Folge haben kann. Gleichzeitig verstärkt wirtschaftliche Ungleichheit soziale Konflikte.
-                                <br /><br />
-                                Wir wollen die voranschreitende Globalisierung besser organisieren, damit jede Kultur so viel Raum wie möglich hat, um sich zu entfalten und zu entwickeln. Gut gemeinte Hilfe kann ohne klare Struktur und Organisation manchmal unbeabsichtigt mehr schaden als nutzen. Deshalb setzen wir auf durchdachte Ansätze, die nachhaltig wirken und den Bedürfnissen aller gerecht werden. Dieses Ziel erfordert Respekt, Dialog und Maßnahmen für soziale Gerechtigkeit.
-                            </p>
+                            <h2>{dict.impact.humanity.title}</h2>
+                            <p dangerouslySetInnerHTML={{__html: dict.impact.humanity.text}}/>
                         </div>
                     </div>
                 </div>
@@ -80,12 +72,8 @@ export default async function ImpactPage({
                     <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                         <div>
 
-                            <h2>Planet Erde</h2>
-                            <p>
-                                Trotz immer besserem Verständnis über das Klima und die damit einhergehende Entwicklung unseres Planeten ist die ökologische Situation der aktuellen Zeit schwieriger denn je. Die Erde ist die Grundlage für alles Leben, das wir kennen, egal ob Menschen, Tiere oder Pflanzen. Umweltverschmutzung, der Verlust natürlicher Lebensräume und die fehlende Balance zwischen menschlicher Zivilisation und der Natur bedrohen diese Grundlage zunehmend.
-                                <br /><br />
-                                Wir setzen uns für bessere Aufklärung und präzisere Maßnahmen gegen Umweltverschmutzung ein, denn nur durch ein fundiertes Verständnis können nachhaltige Veränderungen erzielt werden. Unser Ziel ist es, unberührte Natur zu bewahren und gleichzeitig eine harmonische Verbindung zwischen menschlicher Zivilisation und der Umwelt zu fördern. Mit gezielten Projekten und Bildungsinitiativen wollen wir das Bewusstsein für die Bedeutung einer intakten Umwelt stärken und konkrete Lösungen für eine nachhaltige Entwicklung vorantreiben.
-                            </p>
+                            <h2>{dict.impact.planet.title}</h2>
+                            <p dangerouslySetInnerHTML={{__html: dict.impact.planet.text}}/>
                         </div>
 
                         <div className="relative h-[400px] w-full md:h-[500px]">
