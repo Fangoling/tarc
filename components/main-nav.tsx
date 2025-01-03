@@ -23,6 +23,13 @@ import {
 import { Props } from './prop-types'
 
 export default function Nav({ dict }: Props) {
+  const projectPages: { title: string, href: string, description: string}[] = [
+    { title: "Partnering Program", href: "/projects/partnering", description: "" },
+    { title: "Resort", href: "/projects/resort", description: "" },
+    { title: "Social Circle", href: "/projects/social", description: "" },
+    { title: "Weighted Clothing", href: "/projects/clothing", description: "" },
+  ]
+
   const navbarItems:
     {
       name: string;
@@ -31,7 +38,7 @@ export default function Nav({ dict }: Props) {
     }[] = [
       { name: dict.navbar.home, href: '/' },
       { name: dict.navbar.about, href: '/about' },
-      { name: dict.navbar.projects, href: '/#projects' },
+      { name: dict.navbar.projects, href: '/#projects', subcontent: projectPages },
       { name: dict.navbar.impact, href: '/impact' },
       { name: dict.navbar.contact, href: '/contact' }
     ]
