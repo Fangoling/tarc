@@ -42,6 +42,7 @@ export default async function Home({
                             src="https://www.youtube.com/embed/nfYQC6tgJQI?si=CZdOisX56aDmdOXD"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            loading="lazy"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
                         />
