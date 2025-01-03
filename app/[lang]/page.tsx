@@ -32,24 +32,24 @@ export default async function Home({
     return (
         <>
             <div className="flex flex-col items-center gap-20">
-                <Hero dict={dict}/>
+                <Hero dict={dict} />
                 <section className="flex flex-col gap-8 items-center w-full bg-gradient-to-b from-secondary/10 via-secondary to-secondary/10 pt-16 pb-24">
                     <h1>{dict.goals}</h1>
                     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                        <iframe
-                            className="absolute top-0 left-0 w-full h-full"
-                            src="https://www.youtube.com/embed/nfYQC6tgJQI?si=CZdOisX56aDmdOXD"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            loading="lazy"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        />
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/nfYQC6tgJQI?si=CZdOisX56aDmdOXD"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                loading="lazy"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            />
                         </div>
                     </div>
                 </section>
-                <ProjectSection dict={dict}/>
+                <ProjectSection dict={dict} />
                 <section id="team" className="w-full flex flex-col items-center">
                     <div className="flex flex-col items-center w-full max-w-4xl gap-8 p-8 rounded-xl">
                         <h1>Team</h1>
