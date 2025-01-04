@@ -45,7 +45,7 @@ export function LangToggle() {
                 <PopoverTrigger asChild>
                     <Button variant="outline" size="icon" className="bg-inherit hover:bg-background">
                         {language == "de" ?
-                            <div className="relative h-[1.2rem] w-[1.2rem]">
+                            <div className="relative h-[1.2rem] w-[1.6rem]">
                                 <Image
                                     src="/flags/de.svg"
                                     alt="Flag of Germany"
@@ -54,7 +54,7 @@ export function LangToggle() {
                                 />
                             </div>
                             :
-                            <div className="relative h-[1.2rem] w-[1.2rem]">
+                            <div className="relative h-[1.2rem] w-[1.6rem]">
                                 <Image
                                     src="/flags/gb.svg"
                                     alt="Flag of United Kingdom"
