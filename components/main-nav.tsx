@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 import { Sheet, SheetTrigger, SheetContent, SheetClose } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./ui/mode-toggle"
+import { LangToggle } from "./ui/language-toggle"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -99,6 +100,7 @@ export default function Nav({ dict }: Props) {
       </NavigationMenu>
 
       <div className="flex items-center gap-2">
+        <LangToggle />
         <ModeToggle />
         <Sheet>
           <SheetTrigger asChild>
