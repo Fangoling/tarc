@@ -2,9 +2,9 @@
 
 import React, { useState } from "react"
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
 } from "@/components/ui/popover"
 
 import { Button } from "@/components/ui/button"
@@ -27,43 +27,86 @@ export function LangToggle() {
 
     const [language, setLanguage] = useState(pathnameLocale)
 
-    const changeLanguage = () => {
-        if (pathnameLocale == 'de') {
-            setLanguage('en')
+    const changeLanguage = (lang: 'de' | 'en') => {
+        if (pathnameLocale == lang) {
+            return
         } else {
-            setLanguage('de')
+            setLanguage(lang)
         }
-
         // remove old locale
         const newPath = pathname.slice(3)
 
-        router.push(`/${language}${newPath}`)
+        router.push(`/${lang}${newPath}`)
     }
 
     return (
         <>
-            <Button variant="outline" size="icon" onClick={changeLanguage} className="bg-inherit hover:bg-background">
-                {language == "de" ?
-                <div className="relative h-[1.2rem] w-[1.8crem]">
-                    <Image
-                        src="/flags/de.svg"
-                        alt="Flag of Germany"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                    :
-                <div className="relative h-[1.2rem] w-[1.2rem]">
-                    <Image
-                        src="/flags/gb.svg"
-                        alt="Flag of United Kingdom"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                }
-                <span className="sr-only">Toggle theme</span>
-            </Button>
+            <Popover>
+                <PopoverTrigger asChild>
+                    <Button variant="outline" size="icon" className="bg-inherit hover:bg-background">
+                        {language == "de" ?
+                            <div className="relative h-[1.2rem] w-[1.2rem]">
+                                <Image
+                                    src="/flags/de.svg"
+                                    alt="Flag of Germany"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            :
+                            <div className="relative h-[1.2rem] w-[1.2rem]">
+                                <Image
+                                    src="/flags/gb.svg"
+                                    alt="Flag of United Kingdom"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        }
+                        <span className="sr-only">Toggle theme</span>
+                    </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-60">
+                    <div className="grid gap-4">
+                        <div className="space-y-2">
+                            <h4 className="font-medium leading-none">
+                                {language == 'de' ? "Sprachen" : "Languages"}
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
+                                {language == 'de' ? "Wähle eine Sprache " : "Choose your preferred Language"}
+                            </p>
+                        </div>
+                        <div className="grid gap-2">
+                            <div className="grid grid-cols-3 items-center gap-4">
+                                <Button variant="outline" onClick={() => changeLanguage('de')}>
+                                    {language == 'de' ? "Deutsch" : "German"}
+                                </Button>
+                                <div className="relative h-[1.2rem] w-[1.6rem]">
+                                    <Image
+                                        src="/flags/de.svg"
+                                        alt="Flag of Germany"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-3 items-center gap-4">
+                                <Button variant="outline" onClick={() => changeLanguage('en')}>
+                                    {language == 'de' ? "Englisch" : "English"}
+                                </Button>
+                                <div className="relative h-[1.2rem] w-[1.6rem]">
+                                    <Image
+                                        src="/flags/gb.svg"
+                                        alt="Flag of United Kingdom"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </PopoverContent>
+            </Popover>
         </>
     )
 }
