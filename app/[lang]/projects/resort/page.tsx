@@ -14,7 +14,7 @@ export default async function ResortPage({
         <div>
             <div className="relative h-[60vh] max-h-[400px] overflow-hidden">
                 <Image
-                    src="/images/madeira.jpg"
+                    src="/images/resort/madeira.jpg"
                     alt="Madeira resort view"
                     fill
                     className="object-cover"
