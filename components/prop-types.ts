@@ -40,13 +40,30 @@ interface EmailForm {
 
 interface Impact {
   impact: ImpactSection;
+  button: string;
   humanity: ImpactSection;
   planet: ImpactSection;
+  sociology: ImpactSection;
+  body: ImpactSection;
+  mind: ImpactSection;
 }
 
 interface ImpactSection {
   title: string;
   text: string;
+}
+
+interface Partnering {
+  introduction: string;
+  marketing: string;
+  vision: string;
+  what: string;
+  whatlist: string[][];
+  why: string;
+  whylist: string[][];
+  who: string;
+  wholist: string[][];
+  end: string;
 }
 
 export interface AppData {
@@ -66,7 +83,8 @@ export interface AppData {
     contact: string;
   };
   contact: EmailForm;
-  impact: Impact
+  impact: Impact;
+  partnering: Partnering;
 }
 
 export interface Props {

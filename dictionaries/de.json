@@ -74,6 +74,7 @@
             "title": "Impact",
             "text": "Tarc steht nicht nur für die persönliche Entwicklung hin zu einem gesünderen Körper und Geist, sondern auch für ein größeres Ziel: die Schaffung einer ökologisch und soziologisch gesünderen Welt. <br/><br/> Wir bei Tarc sind überzeugt, dass nur gesunde und bewusste Menschen die Grundlage für eine nachhaltige, gerechte und lebenswerte Zukunft bilden können. Denn wir glauben: Wer im Einklang mit sich selbst lebt, ist auch in der Lage, nachhaltig und respektvoll mit der Welt umzugehen. Gemeinsam schaffen wir die Basis für eine gesündere, harmonische Zukunft für alle."
         },
+        "button": "Entdecke mehr",
         "humanity": {
             "title": "Menschheit",
             "text": "Die voranschreitende Globalisierung bringt kulturelle Vielfalt, führt jedoch auch zu soziologischen Problemen. Die Kollision von Kulturen kann soziale Spannungen und Konflikte auslösen. Missverständnisse und Vorurteile tragen dazu bei, ebenso wie der Verlust ganzer Kulturen durch dominante globale Strömungen. Oft werden traditionelle Kulturen verdrängt, was Identitätskrisen zur Folge haben kann. Gleichzeitig verstärkt wirtschaftliche Ungleichheit soziale Konflikte. <br/><br/> Wir wollen die voranschreitende Globalisierung besser organisieren, damit jede Kultur so viel Raum wie möglich hat, um sich zu entfalten und zu entwickeln. Gut gemeinte Hilfe kann ohne klare Struktur und Organisation manchmal unbeabsichtigt mehr schaden als nutzen. Deshalb setzen wir auf durchdachte Ansätze, die nachhaltig wirken und den Bedürfnissen aller gerecht werden. Dieses Ziel erfordert Respekt, Dialog und Maßnahmen für soziale Gerechtigkeit."
@@ -81,6 +82,68 @@
         "planet": {
             "title": "Planet Erde",
             "text": "Trotz immer besserem Verständnis über das Klima und die damit einhergehende Entwicklung unseres Planeten ist die ökologische Situation der aktuellen Zeit schwieriger denn je. Die Erde ist die Grundlage für alles Leben, das wir kennen, egal ob Menschen, Tiere oder Pflanzen. Umweltverschmutzung, der Verlust natürlicher Lebensräume und die fehlende Balance zwischen menschlicher Zivilisation und der Natur bedrohen diese Grundlage zunehmend. <br/><br/> Wir setzen uns für bessere Aufklärung und präzisere Maßnahmen gegen Umweltverschmutzung ein, denn nur durch ein fundiertes Verständnis können nachhaltige Veränderungen erzielt werden. Unser Ziel ist es, unberührte Natur zu bewahren und gleichzeitig eine harmonische Verbindung zwischen menschlicher Zivilisation und der Umwelt zu fördern. Mit gezielten Projekten und Bildungsinitiativen wollen wir das Bewusstsein für die Bedeutung einer intakten Umwelt stärken und konkrete Lösungen für eine nachhaltige Entwicklung vorantreiben."
+        },
+        "sociology":{
+            "title": "Soziologie",
+            "text": ""
+        },
+        "body": {
+            "title": "Körper",
+            "text": "Unabhängig von der Bedeutung, die der menschliche Körper in verschiedenen Glaubensrichtungen oder Philosophien hat, steht fest, dass jeder Mensch nur einen Körper für sein gesamtes Leben zur Verfügung hat. Dieses einzigartige 'Gefäß' trägt uns durch alle Höhen und Tiefen unseres Daseins. Daher ist es eine kluge und verantwortungsvolle Entscheidung, den Körper zu pflegen, ihn vor Schäden zu bewahren und seine Gesundheit so gut wie möglich zu erhalten – für ein erfülltes und langes Leben<br/><br/>In der heutigen Zeit steht der Umgang vieler Menschen mit ihrem Körper oft im Widerspruch zu einem verantwortungsvollen, gesunden Lebensstil. Fettleibigkeit nimmt durch schlechte Ernährungsweisen immer weiter zu, während grundlegende Fitnessstandards zunehmend verloren gehen. Gleichzeitig wird die Kluft zwischen der körperlichen Verfassung der Durchschnittsbevölkerung und der Höchstleistung von Profisportlern immer größer. Hinzu kommt eine alarmierende Tendenz zum Missbrauch von Alkohol, Drogen sowie klassischen und elektronischen Zigaretten. Dieses Verhalten steht im Gegensatz zur Einsicht, dass jeder Mensch nur einen Körper hat, den es zu schützen und zu pflegen gilt – ein Dilemma, das dringend mehr Bewusstsein und Veränderung erfordert."
+        },
+        "mind": {
+            "title": "Geist",
+            "text": "Der menschliche Geist wird in den meisten Glaubensrichtungen als das Fundament unseres Daseins betrachtet, weit bedeutsamer als der Körper. Er hat uns als Spezies über die Tierwelt erhoben, durch unser Denken, unsere Kreativität und unsere Fähigkeit, komplexe Beziehungen zu gestalten. Egal, ob wir durch Zufall oder durch einen vorsätzlichen Schöpfer entstanden sind, steht außer Frage, dass unser Geist uns die Grundlage bietet, Großes zu bewirken. Es ist unser Geist, der Kunst, Wissenschaft und Kultur hervorgebracht hat – der uns träumen, planen und die Welt verändern lässt. Diese außergewöhnliche Gabe sollte uns mit Stolz und Verantwortung erfüllen.<br/><br/>Die Realität unserer Zeit steht in krassem Widerspruch zu dem Potenzial des menschlichen Geistes. Psychische Erkrankungen, insbesondere Depressionen, nehmen rasant zu, vor allem bei Jugendlichen. Diese Entwicklung wird durch eine nie dagewesene Abhängigkeit verstärkt: von Pornografie, Spielsucht, Social Media, Handys, Kaufsucht und anderen digitalen Reizen. Diese Abhängigkeiten rauben dem Geist die Freiheit und vertiefen das Gefühl von Isolation und Überforderung. Gleichzeitig verschlimmern oder schaffen Rauschmittel wie Alkohol und Drogen zusätzliche Probleme, indem sie den Geist vernebeln und echte Lösungen verhindern. Statt Größe zu entfalten, gerät der Geist immer mehr in einen Kreislauf von Kontrollverlust und Ohnmacht."
         }
+    },
+    "partnering": {
+        "introduction": "Wir sind der Meinung, dass Kooperationen zwischen Firmen nicht hochkomplex und nervenaufreibend sein müssen. Aus diesem Grund basieren alle unsere B2B-Programme auf 2 Prinzipien: Vorbereitung und Transparenz. Aus diesem Grund sind alle unsere Programme von langer Hand vorbereitet und es wird zu jedem Zeitpunkt so offen wie möglich kommuniziert, an welchem Punkt sich das Projekt befindet. So verhindern wir von vorneherein Missverständnisse durch unklare Definitionen oder fehlende Informationen.",
+        "marketing": "Unser B2B-Sport-Marketing-Programm verbindet Unternehmen mit Spitzensportlern und schafft eine Plattform, die sowohl Geschäftspartner als auch Athleten unterstützt. Mit maßgeschneiderten Lösungen fördern wir innovative Kooperationen, stärken Markenpräsenz und schaffen so langfristig einen Raum für Transparenz und Qualität. Auf diese Art optimieren wir die bestehenden Abläufe der Sport-Marketing-Industrie sowohl für Werbeträger als auch für Kunden.",
+        "vision": "Wir glauben an die Kraft von Partnerschaften, die auf Vertrauen, Fairness und Kreativität basieren. Unser Ziel ist es, Unternehmen und Athleten zusammenzubringen, um gemeinsam zu wachsen und nachhaltige Werte zu schaffen.",
+        "what": "Was wir anbieten",
+        "whatlist": [
+            [
+                "Exklusive Partnerschaften:",
+                "Nutzen Sie unsere Plattform, um mit Spitzenathleten zusammenzuarbeiten und Ihre Marke durch innovative Sportmarketing-Kampagnen zu stärken.",
+                "Athleten werden jährlich im Rahmen unseres „Drafts“ an langjährige Partnerfirmen vermittelt.",
+                "Dadurch profitieren Sie von exklusiven Werberechten für ein Jahr."
+            ],
+            [
+                "Vermittlung und Management:",
+                "Wir übernehmen die Vermittlung zwischen Unternehmen und Athleten, inklusive der Verhandlung von Gagen und Laufzeiten.",
+                "Unsere Qualitätssicherung schützt alle Beteiligten vor potenziellen Risiken wie „Cancel Culture“."
+            ],
+            [
+                "Flexibilität und Fairness:",
+                "Verträge sind jährlich kündbar und bieten Partnerfirmen maximale Flexibilität.",
+                "Athleten behalten Mitspracherechte, um eine faire und wertschätzende Zusammenarbeit sicherzustellen."
+            ]
+        ],
+        "why": "Warum Sie uns vertrauen können",
+        "whylist": [
+            [
+                "Transparenz und Nachvollziehbarkeit:",
+                "Wir legen offen, wie Mittel verwendet werden, und erstellen jährliche Berichte über die erzielten Fortschritte."
+            ],
+            [
+                "Exklusiver Zugang zur Partnergemeinschaft:",
+                "Unsere Partnerfirmen erhalten namentliche Erwähnung auf unserer Website sowie unser offizielles B2B-Siegel – ein Zeichen für Verantwortung und Qualität."
+            ],
+            [
+                "Nachhaltigkeit im Fokus:",
+                "Gemeinsam setzen wir Standards für ethische Produktions- und Arbeitsbedingungen.",
+                "Dies ist Voraussetzung für die Zusammenarbeit und spiegelt unsere Werte wider."
+            ]
+        ],
+        "who": "Für wen ist unser Projekt geeignet?",
+        "wholist": [
+            [
+                "Unternehmen, die ihre Markenbekanntheit steigern und ihre Werte durch sportliche Partnerschaften transportieren möchten."
+            ],
+            [
+                "Organisationen, die Wert auf Transparenz, Nachhaltigkeit und innovative Marketingstrategien legen."
+            ]
+        ],
+        "end": "Werden Sie Teil eines Netzwerks, das durch Zusammenarbeit Stärke zeigt. Gemeinsam machen wir aus Visionen Realität und schaffen Mehrwerte – für Sie, Ihre Marke und die Gesellschaft."
     }
 }

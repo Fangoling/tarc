@@ -36,21 +36,21 @@
                 }
             }
         },
-        "partnering-program":{
+        "partnering-program": {
             "hero": {
                 "title": "Partnering Program",
                 "desc": "Connecting athletes and companies through ethical partnerships and innovative drafting systems.",
                 "button": "Discover More"
             }
         },
-        "weighted-clothing":{
+        "weighted-clothing": {
             "hero": {
                 "title": "Weighted Clothing",
                 "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
                 "button": "Discover More"
             }
         },
-        "social-circle":{
+        "social-circle": {
             "hero": {
                 "title": "Social Circle",
                 "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
@@ -58,7 +58,7 @@
             }
         }
     },
-    "con": "Contakt",
+    "con": "Contact",
     "bottombar": {
         "contact": "Contact"
     },
@@ -74,6 +74,7 @@
             "title": "Impact",
             "text": "Tarc stands not only for personal development towards a healthier body and mind but also for a greater goal: the creation of an ecologically and sociologically healthier world. <br/><br/> At Tarc, we are convinced that only healthy and conscious individuals can form the foundation for a sustainable, just, and livable future. Because we believe: those who live in harmony with themselves are also capable of acting sustainably and respectfully towards the world. Together, we create the basis for a healthier, more harmonious future for everyone."
         },
+        "button": "Discover More",
         "humanity": {
             "title": "Humanity",
             "text": "Advancing globalization brings cultural diversity but also leads to sociological problems. The collision of cultures can trigger social tensions and conflicts. Misunderstandings and prejudices contribute to this, as does the loss of entire cultures due to dominant global trends. Traditional cultures are often displaced, leading to identity crises. At the same time, economic inequality exacerbates social conflicts.<br/><br/>We aim to better organize advancing globalization so that every culture has as much space as possible to unfold and develop. Well-intentioned aid can sometimes unintentionally do more harm than good without clear structure and organization. That is why we focus on well-thought-out approaches that are sustainable and meet the needs of everyone. Achieving this goal requires respect, dialogue, and actions for social justice."
@@ -81,6 +82,68 @@
         "planet": {
             "title": "Planet Earth",
             "text": "Despite an ever-improving understanding of the climate and the associated development of our planet, the ecological situation of our time is more challenging than ever. Earth is the foundation for all life as we know it, whether human, animal, or plant. Environmental pollution, the loss of natural habitats, and the lack of balance between human civilization and nature increasingly threaten this foundation.<br/><br/>We advocate for better education and more precise measures against environmental pollution because sustainable changes can only be achieved through a solid understanding. Our goal is to preserve untouched nature while fostering a harmonious connection between human civilization and the environment. Through targeted projects and educational initiatives, we aim to raise awareness of the importance of an intact environment and promote concrete solutions for sustainable development."
+        },
+        "sociology":{
+            "title": "Sociology",
+            "text": ""
+        },
+        "body": {
+            "title": "Body",
+            "text": "Regardless of the significance attributed to the human body in various religions or philosophies, it is undeniable that every person has only one body for their entire life. This unique 'vessel' carries us through all the highs and lows of our existence. Therefore, it is a wise and responsible decision to care for the body, protect it from harm, and preserve its health as best as possible—for a fulfilling and long life.<br/><br/>In today's world, many people's treatment of their bodies often contradicts a responsible, healthy lifestyle. Obesity continues to rise due to poor dietary habits, while basic fitness standards are increasingly being lost. At the same time, the gap between the physical condition of the average population and the peak performance of professional athletes is widening. Added to this is an alarming trend of alcohol, drug, and both traditional and electronic cigarette abuse. This behavior runs counter to the understanding that every person has only one body to protect and care for—a dilemma that urgently requires greater awareness and change."
+        },
+        "mind": {
+            "title": "Mind",
+            "text": "The human mind is regarded in most religions as the foundation of our existence, far more significant than the body. It has elevated us as a species above the animal kingdom through our thinking, creativity, and ability to form complex relationships. Whether we came into being by chance or through a deliberate creator, it is undeniable that our mind provides the basis for achieving great things. It is our mind that has brought forth art, science, and culture—allowing us to dream, plan, and change the world. This extraordinary gift should fill us with pride and responsibility.<br/><br/>The reality of our time starkly contrasts with the potential of the human mind. Mental illnesses, particularly depression, are rapidly increasing, especially among young people. This trend is exacerbated by an unprecedented dependency: on pornography, gambling addiction, social media, smartphones, compulsive shopping, and other digital stimuli. These addictions rob the mind of its freedom and deepen feelings of isolation and overwhelm. Simultaneously, substances like alcohol and drugs worsen or create additional problems by clouding the mind and preventing real solutions. Instead of unleashing greatness, the mind increasingly falls into a cycle of loss of control and helplessness."
         }
+    },
+    "partnering": {
+        "introduction": "We believe that collaborations between companies don’t have to be overly complex and stressful. For this reason, all our B2B programs are based on two principles: preparation and transparency. All our programs are carefully planned in advance, and we ensure open communication at all times about the current status of the project. This prevents misunderstandings caused by unclear definitions or missing information.",
+        "marketing": "Our B2B sports marketing program connects companies with top athletes and creates a platform that supports both business partners and athletes. With tailored solutions, we foster innovative collaborations, strengthen brand presence, and create a long-term space for transparency and quality. In this way, we optimize the existing processes of the sports marketing industry for both advertisers and clients.",
+        "vision": "We believe in the power of partnerships based on trust, fairness, and creativity. Our goal is to bring companies and athletes together to grow together and create sustainable value.",
+        "what": "What we offer",
+        "whatlist": [
+            [
+                "Exclusive partnerships:",
+                "Use our platform to collaborate with top athletes and strengthen your brand through innovative sports marketing campaigns.",
+                "Athletes are annually assigned to long-standing partner companies as part of our 'draft.'",
+                "This gives you exclusive advertising rights for one year."
+            ],
+            [
+                "Mediation and management:",
+                "We handle mediation between companies and athletes, including negotiating fees and contract durations.",
+                "Our quality assurance protects all parties from potential risks such as 'cancel culture.'"
+            ],
+            [
+                "Flexibility and fairness:",
+                "Contracts are cancellable annually, offering partner companies maximum flexibility.",
+                "Athletes retain the right to have a say, ensuring a fair and respectful collaboration."
+            ]
+        ],
+        "why": "Why you can trust us",
+        "whylist": [
+            [
+                "Transparency and traceability:",
+                "We disclose how funds are used and create annual reports on the progress achieved."
+            ],
+            [
+                "Exclusive access to the partner community:",
+                "Our partner companies receive named recognition on our website as well as our official B2B seal – a mark of responsibility and quality."
+            ],
+            [
+                "Focus on sustainability:",
+                "Together, we set standards for ethical production and working conditions.",
+                "This is a prerequisite for collaboration and reflects our values."
+            ]
+        ],
+        "who": "Who is this project for?",
+        "wholist": [
+            [
+                "Companies that want to increase their brand awareness and convey their values through sports partnerships."
+            ],
+            [
+                "Organizations that value transparency, sustainability, and innovative marketing strategies."
+            ]
+        ],
+        "end": "Join a network that demonstrates strength through collaboration. Together, we turn visions into reality and create added value – for you, your brand, and society."
     }
 }
