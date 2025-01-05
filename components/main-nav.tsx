@@ -38,7 +38,7 @@ export default function Nav({ dict }: Props) {
       subcontent?: { title: string, href: string, description: string }[]
     }[] = [
       { name: dict.navbar.home, href: '/' },
-      { name: dict.navbar.about, href: '/about' },
+      //{ name: dict.navbar.about, href: '/about' },
       { name: dict.navbar.projects, href: '/#projects', subcontent: projectPages },
       { name: dict.navbar.impact, href: '/impact' },
       { name: dict.navbar.contact, href: '/contact' }
