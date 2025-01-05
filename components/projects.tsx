@@ -19,28 +19,28 @@ const fadeInUp = {
 import { Props } from './prop-types'
 
 
-export const ProjectSection: React.FC<Props> = ( { dict }) => {
+export const ProjectSection: React.FC<Props> = ({ dict }) => {
 
     const resortContent = [
         {
             key: 'gym', title: 'Gym',
             content: dict.projects.resort.services!.gym.desc,
-            image: '/images/Swiper_1.png'
+            image: '/images/resort/Swiper_1.png'
         },
         {
             key: 'strongman', title: 'Strongman',
             content: dict.projects.resort.services!.strongman.desc,
-            image: '/images/strongman-generated.webp'
+            image: '/images/resort/strongman-generated.webp'
         },
         {
             key: 'athletics', title: 'Athletics',
             content: dict.projects.resort.services!.athletics.desc,
-            image: '/images/athletics-generated.webp'
+            image: '/images/resort/athletics-generated.webp'
         },
         {
             key: 'swimming', title: 'Swimming',
             content: dict.projects.resort.services!.swimming.desc,
-            image: '/images/pool-generated.webp'
+            image: '/images/resort/pool-generated.webp'
         },
     ]
 
@@ -85,7 +85,7 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                             {/* Hero Section */}
                             <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
                                 <Image
-                                    src="/images/madeira.jpg"
+                                    src="/images/resort/madeira.jpg"
                                     alt="Madeira resort view"
                                     fill
                                     className="object-cover"
@@ -167,7 +167,7 @@ export const ProjectSection: React.FC<Props> = ( { dict }) => {
                             {/* Hero Section */}
                             <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
                                 <Image
-                                    src="/images/shakingHands.jpg"
+                                    src="/images/partnering/shakingHands.jpg"
                                     alt="lorem picsum photo"
                                     fill
                                     className="object-cover"
