@@ -66,6 +66,11 @@ interface Partnering {
   end: string;
 }
 
+interface More {
+  title: string
+  desc: string
+}
+
 export interface AppData {
   navbar: Navbar;
   hero: Hero;
@@ -85,6 +90,7 @@ export interface AppData {
   contact: EmailForm;
   impact: Impact;
   partnering: Partnering;
+  more: More;
 }
 
 export interface Props {

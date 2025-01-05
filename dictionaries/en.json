@@ -69,6 +69,10 @@
         "phone": "Phone (optional)",
         "address": "Address (optional)"
     },
+    "more": {
+        "title": "Learn more about us",
+        "desc": "Discover the positive impact we're planning creating around the globe. Join us in shaping a brighter future for everyone."
+    },
     "impact": {
         "impact": {
             "title": "Impact",

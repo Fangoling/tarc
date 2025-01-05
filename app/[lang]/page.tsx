@@ -1,8 +1,6 @@
 import * as React from "react"
 
 import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
-import { ArrowRight } from 'lucide-react'
-import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 
 import { Hero } from '@/components/hero'
@@ -22,6 +20,7 @@ const teamContent = [
 ]
 
 import { AppData } from "@/components/prop-types"
+import { ImpactSection } from "@/components/impact"
 
 export default async function Home({
     params,
@@ -34,10 +33,10 @@ export default async function Home({
         <>
             <div className="flex flex-col items-center gap-20">
                 <Hero dict={dict} />
+                <ImpactSection dict={dict}/>
                 <ProjectSection dict={dict} />
 
-
-                <section className="flex flex-col gap-8 items-center w-full bg-gradient-to-b from-secondary/10 via-secondary to-secondary/10 pt-16 pb-24">
+                <section className="flex flex-col gap-8 items-center w-full bg-gradient-to-b from-background via-secondary to-background pt-16 pb-24">
                     <h1>{dict.goals}</h1>
                     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>

@@ -69,6 +69,10 @@
         "phone": "Telefon (optional)",
         "address": "Adresse (optional)"
     },
+    "more": {
+        "title": "Lerne mehr über uns",
+        "desc": "Entdecken Sie die positiven Auswirkungen, die wir weltweit planen. Schließen Sie sich uns an, um eine bessere Zukunft für alle zu gestalten."
+    },
     "impact": {
         "impact": {
             "title": "Impact",
