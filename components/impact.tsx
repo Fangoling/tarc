@@ -15,7 +15,7 @@ const fadeInUp = {
 
 export const ImpactSection: React.FC<Props> = ({ dict }) => {
     return (
-        <section id="impact" className="w-full min-h-screen bg-gradient-to-b from-secondary/10 via-secondary to-secondary/10 pt-16 pb-24">
+        <section id="impact" className="w-full min-h-screen bg-gradient-to-b from-background via-secondary to-background pt-16 pb-24">
             <div className="flex flex-col items-center w-full gap-12">
                 <h1>{dict.more.title}</h1>
                 <motion.div
