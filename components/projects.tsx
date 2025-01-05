@@ -45,7 +45,7 @@ export const ProjectSection: React.FC<Props> = ({ dict }) => {
     ]
 
     return (
-        <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-secondary/10 via-secondary to-secondary/10 pt-16 pb-24">
+        <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-background via-secondary to-background pt-16 pb-24">
             <Tabs defaultValue="partner" className="flex flex-col items-center w-full gap-12">
                 {/* Enhanced Header */}
                 <motion.div

@@ -18,7 +18,7 @@
         "resort": {
             "hero": {
                 "title": "Tarc Resort",
-                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
+                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities.",
                 "button": "Discover More"
             },
             "services": {
@@ -46,14 +46,14 @@
         "weighted-clothing": {
             "hero": {
                 "title": "Weighted Clothing",
-                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
+                "desc": "Elevate your training with our weighted clothing designed to challenge and enhance your performance. Experience the difference as you build strength and endurance with every move.",
                 "button": "Discover More"
             }
         },
         "social-circle": {
             "hero": {
                 "title": "Social Circle",
-                "desc": "A new benchmark in athletic retreats, combining luxury with professional training facilities",
+                "desc": "Join us in building stronger communities through impactful social initiatives. Together, we create opportunities, support those in need, and inspire meaningful change.",
                 "button": "Discover More"
             }
         }
