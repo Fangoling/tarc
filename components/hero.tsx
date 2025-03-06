@@ -5,10 +5,10 @@ import {
 } from '@/components/ui/dialog'
 
 import { EmailForm } from './email-form'
-import { Props } from './prop-types'
+import { DictionaryProp } from './prop-types'
 
 
-export const Hero: React.FC<Props> = ( { dict }) => {
+export const Hero: React.FC<DictionaryProp> = ( { dict }) => {
     return (
         <section id="hero" className="relative min-h-screen flex flex-col justify-center text-center">
             <div className="mx-auto max-w-7xl px-6 sm:px-8">

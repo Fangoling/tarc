@@ -1,9 +1,9 @@
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 
-import { Props } from './prop-types'
+import { DictionaryProp } from './prop-types'
 
-export default function Footer({ dict }: Props) {
+export default function Footer( {dict}: DictionaryProp ) {
     return (
         <>
             <div className="mt-auto w-full bg-secondary flex flex-col items-center pt-8 pb-8 text-xs gap-2">

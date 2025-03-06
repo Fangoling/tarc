@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { AppData } from "@/components/prop-types"
+import { Dictionary } from "@/components/prop-types"
 import { getDictionary } from "../../dictionaries"
 
 export default async function SociologyPage({
@@ -8,7 +8,7 @@ export default async function SociologyPage({
     params: Promise<{ lang: 'en' | 'de' }>
 }) {
     const lang = (await params).lang
-    const dict: AppData = await getDictionary(lang)
+    const dict: Dictionary = await getDictionary(lang)
 
     return (
         <div>

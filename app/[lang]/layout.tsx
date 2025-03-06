@@ -40,7 +40,7 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'de' }]
 }
 
-import { AppData } from "@/components/prop-types"
+import { Dictionary } from "@/components/prop-types"
 
 export default async function RootLayout({
   children,
@@ -50,7 +50,7 @@ export default async function RootLayout({
   params: { lang: 'en' | 'de'}
 }>) {
   const lang = (await params).lang
-  const dict: AppData = await getDictionary(lang)
+  const dict: Dictionary = await getDictionary(lang)
 
 
   return (

@@ -19,7 +19,7 @@ const teamContent = [
     { key: 'team_3', name: 'Fangxing Liu', title: 'IT Lead & Software Engineer' },
 ]
 
-import { AppData } from "@/components/prop-types"
+import { Dictionary } from "@/components/prop-types"
 import { ImpactSection } from "@/components/impact"
 
 export default async function Home({
@@ -28,7 +28,7 @@ export default async function Home({
     params: Promise<{ lang: 'en' | 'de' }>
 }) {
     const lang = (await params).lang
-    const dict: AppData = await getDictionary(lang)
+    const dict: Dictionary = await getDictionary(lang)
     return (
         <>
             <div className="flex flex-col items-center gap-20">

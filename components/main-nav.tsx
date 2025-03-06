@@ -21,9 +21,9 @@ import {
 } from "@/components/ui/navigation-menu"
 
 
-import { Props } from './prop-types'
+import { DictionaryProp } from './prop-types'
 
-export default function Nav({ dict }: Props) {
+export default function Nav({ dict }: DictionaryProp) {
   const projectPages: { title: string, href: string, description: string}[] = [
     { title: "Partnering Program", href: "/projects/partnering", description: "" },
     { title: "Resort", href: "/projects/resort", description: "" },

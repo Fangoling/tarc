@@ -1,3 +1,4 @@
+export const enTranslations =
 {
     "navbar": {
         "home": "Home",
@@ -150,4 +151,4 @@
         ],
         "end": "Join a network that demonstrates strength through collaboration. Together, we turn visions into reality and create added value – for you, your brand, and society."
     }
-}
+};

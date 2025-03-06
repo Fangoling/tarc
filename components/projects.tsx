@@ -1,12 +1,11 @@
 "use client"
 
 import * as React from "react"
-import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ChevronRight, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 
 const fadeInUp = {
@@ -16,10 +15,10 @@ const fadeInUp = {
 }
 
 
-import { Props } from './prop-types'
+import { DictionaryProp } from './prop-types'
 
 
-export const ProjectSection: React.FC<Props> = ({ dict }) => {
+export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
 
     const resortContent = [
         {

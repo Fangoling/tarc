@@ -1,6 +1,6 @@
 "use client"
 import * as React from "react"
-import { Props } from './prop-types'
+import { DictionaryProp } from './prop-types'
 
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -13,7 +13,7 @@ const fadeInUp = {
     transition: { duration: 0.5 }
 }
 
-export const ImpactSection: React.FC<Props> = ({ dict }) => {
+export const ImpactSection: React.FC<DictionaryProp> = ({ dict }) => {
     return (
         <section id="impact" className="w-full min-h-screen bg-gradient-to-b from-background via-secondary to-background pt-16 pb-24">
             <div className="flex flex-col items-center w-full gap-12">

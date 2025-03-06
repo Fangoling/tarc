@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { AppData } from "@/components/prop-types"
+import { Dictionary } from "@/components/prop-types"
 import { getDictionary } from "../dictionaries"
 import { Button } from "@/components/ui/button"
 export default async function ImpactPage({
@@ -9,7 +9,7 @@ export default async function ImpactPage({
     params: Promise<{ lang: 'en' | 'de' }>
 }) {
     const lang = (await params).lang
-    const dict: AppData = await getDictionary(lang)
+    const dict: Dictionary = await getDictionary(lang)
 
     return (
         <div>

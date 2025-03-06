@@ -1,3 +1,6 @@
+import { Dictionary } from "@/components/prop-types";
+
+export const deTranslations: Dictionary =
 {
     "navbar": {
         "home": "Startseite",
@@ -150,4 +153,4 @@
         ],
         "end": "Werden Sie Teil eines Netzwerks, das durch Zusammenarbeit Stärke zeigt. Gemeinsam machen wir aus Visionen Realität und schaffen Mehrwerte – für Sie, Ihre Marke und die Gesellschaft."
     }
-}
+};

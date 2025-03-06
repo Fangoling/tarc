@@ -27,10 +27,9 @@ const formSchema = z.object({
 
 export type FormData = z.infer<typeof formSchema>
 
-import { Props } from './prop-types'
+import { DictionaryProp } from './prop-types'
 
-
-export const EmailForm: React.FC<Props> = ( { dict }) => {
+export const EmailForm: React.FC<DictionaryProp> = ({ dict }) => {
 
     async function onSubmit(data: FormData) {
         try {
