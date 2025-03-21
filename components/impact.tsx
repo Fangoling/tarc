@@ -20,7 +20,7 @@ export const ImpactSection: React.FC<DictionaryProp> = ({ dict }) => {
                 <h1>{dict.more.title}</h1>
                 <motion.div
                     {...fadeInUp}
-                    className="max-w-7xl mx-auto space-y-12 w-full"
+                    className="max-w-7xl mx-auto space-y-12 w-full px-4 md:px-8"
                 >
                     {/* Hero Section */}
                     <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
