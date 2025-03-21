@@ -66,7 +66,7 @@ export function LangToggle() {
                         <span className="sr-only">Toggle theme</span>
                     </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-60">
+                <PopoverContent className="w-48">
                     <div className="grid gap-4">
                         <div className="space-y-2">
                             <h4 className="font-medium leading-none">
@@ -76,9 +76,9 @@ export function LangToggle() {
                                 {language == 'de' ? "Wähle eine Sprache " : "Choose your preferred Language"}
                             </p>
                         </div>
-                        <div className="grid gap-2">
-                            <div className="grid grid-cols-3 items-center gap-4">
-                                <Button variant="outline" onClick={() => changeLanguage('de')}>
+                        <div className="grid gap-4">
+                            <div className="grid grid-cols-3 items-center gap-24">
+                                <Button variant="outline" onClick={() => changeLanguage('de')} size={"lg"}>
                                     {language == 'de' ? "Deutsch" : "German"}
                                 </Button>
                                 <div className="relative h-[1.2rem] w-[1.6rem]">
@@ -90,8 +90,8 @@ export function LangToggle() {
                                     />
                                 </div>
                             </div>
-                            <div className="grid grid-cols-3 items-center gap-4">
-                                <Button variant="outline" onClick={() => changeLanguage('en')}>
+                            <div className="grid grid-cols-3 items-center gap-24">
+                                <Button variant="outline" onClick={() => changeLanguage('en')} size={"lg"}>
                                     {language == 'de' ? "Englisch" : "English"}
                                 </Button>
                                 <div className="relative h-[1.2rem] w-[1.6rem]">
