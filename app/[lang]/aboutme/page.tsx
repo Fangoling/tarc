@@ -1,10 +1,10 @@
+import { UnderConstrucion } from "../under-construction"
 
 export default function AboutMePage() {
     return (
         <div className="w-full bg-background">
             <div className="">
-                <h1>About</h1>
-
+                <UnderConstrucion />
             </div>
         </div>
     )
