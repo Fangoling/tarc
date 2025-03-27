@@ -16,7 +16,8 @@ export const enTranslations =
     "hero": {
         "title": "Revolutionize the Sport Industry with",
         "desc": "Tarc bridges the gap between business innovation and social impact. We drive economic growth with diverse initiatives, from our fitness studio on Madeira to our fitness app and partnership programs.",
-        "contact-button": "Contact Us"
+        "contact-button": "Contact us",
+        "about-button": "About us"
     },
     "goals": "Announcement for goals of 2025",
     "projects": {

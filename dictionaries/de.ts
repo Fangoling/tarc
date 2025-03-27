@@ -21,7 +21,8 @@ export const deTranslations: Dictionary =
     "hero": {
         "title": "Verändere die Welt mit",
         "desc": "Tarc überbrückt die Lücke zwischen geschäftlicher Innovation und sozialem Engagement. Wir fördern das wirtschaftliche Wachstum mit vielfältigen Initiativen, von unserem Fitnessstudio auf Madeira bis hin zu unserer Fitness-App und Partnerschaftsprogrammen.",
-        "contact-button": "Kontakt"
+        "contact-button": "Kontakt",
+        "about-button": "Über uns"
     },
     "goals": "Ansprache zur Zielsetzung 2025",
     "projects": {
