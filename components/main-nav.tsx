@@ -25,10 +25,10 @@ import { DictionaryProp } from './prop-types'
 
 export default function Nav({ dict }: DictionaryProp) {
   const projectPages: { title: string, href: string, description: string}[] = [
-    { title: "Partnering Program", href: "/projects/partnering", description: "" },
-    { title: "Resort", href: "/projects/resort", description: "" },
-    { title: "Social Circle", href: "/projects/social", description: "" },
-    { title: "Weighted Clothing", href: "/projects/clothing", description: "" },
+    { title: "Partnering Program", href: "/projects/partnering", description: dict.navbar.projects["partnering-program"] },
+    { title: "Resort", href: "/projects/resort", description: dict.navbar.projects.resort },
+    { title: "Social Circle", href: "/projects/social", description: dict.navbar.projects["social-circle"] },
+    { title: "Weighted Clothing", href: "/projects/clothing", description: dict.navbar.projects["weighted-clothing"] },
   ]
 
   const navbarItems:
@@ -38,8 +38,8 @@ export default function Nav({ dict }: DictionaryProp) {
       subcontent?: { title: string, href: string, description: string }[]
     }[] = [
       { name: dict.navbar.home, href: '/' },
-      //{ name: dict.navbar.about, href: '/about' },
-      { name: dict.navbar.projects, href: '/#projects', subcontent: projectPages },
+      { name: dict.navbar.about, href: '/aboutme' },
+      { name: dict.navbar.projects.title, href: '/#projects', subcontent: projectPages },
       { name: dict.navbar.impact, href: '/impact' },
       { name: dict.navbar.contact, href: '/contact' }
     ]
@@ -80,7 +80,7 @@ export default function Nav({ dict }: DictionaryProp) {
               :
               <NavigationMenuItem key={name}>
                 <NavigationMenuTrigger>{name}</NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="">
                   <ul className="grid w-[200px] gap-3 p-2 md:w-[300px] md:grind-cols-2 lg:w-[400px]">
                     {subcontent.map(({ title, href, description }) => (
                       <ListItem

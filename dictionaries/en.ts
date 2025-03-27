@@ -3,7 +3,13 @@ export const enTranslations =
     "navbar": {
         "home": "Home",
         "about": "About",
-        "projects": "Projects",
+        "projects": {
+            "title": "Projects",
+            "resort": "A new benchmark in athletic retreats, combining luxury with professional training facilities.",
+            "partnering-program": "Connecting athletes and companies through ethical partnerships and innovative drafting systems.",
+            "weighted-clothing": "Elevate your training with our weighted clothing designed to challenge and enhance your performance.",
+            "social-circle":"Join us in building stronger communities through impactful social initiatives.",
+        },
         "impact": "Impact",
         "contact": "Contact"
     },
@@ -88,7 +94,7 @@ export const enTranslations =
             "title": "Planet Earth",
             "text": "Despite an ever-improving understanding of the climate and the associated development of our planet, the ecological situation of our time is more challenging than ever. Earth is the foundation for all life as we know it, whether human, animal, or plant. Environmental pollution, the loss of natural habitats, and the lack of balance between human civilization and nature increasingly threaten this foundation.<br/><br/>We advocate for better education and more precise measures against environmental pollution because sustainable changes can only be achieved through a solid understanding. Our goal is to preserve untouched nature while fostering a harmonious connection between human civilization and the environment. Through targeted projects and educational initiatives, we aim to raise awareness of the importance of an intact environment and promote concrete solutions for sustainable development."
         },
-        "sociology":{
+        "sociology": {
             "title": "Sociology",
             "text": ""
         },
@@ -150,5 +156,49 @@ export const enTranslations =
             ]
         ],
         "end": "Join a network that demonstrates strength through collaboration. Together, we turn visions into reality and create added value – for you, your brand, and society."
+    },
+    "about-me": {
+        "header": {
+            "title": "Hello, my name is Finn Stark Untiedt",
+            "quote": "My Mission: Positively Changing People and Society through Tarc",
+            "text": "I am the CEO and sole owner of Germany-based Tarc-Fitness GmbH and the international brand Tarc. This page aims to provide an authentic insight into my personal journey, my values, and my mission—as a representative of my company and as someone who strives daily for self-improvement."
+        },
+        "section-one": {
+            "title": "My Journey: Between Rationality, Emotions, and Spirituality",
+            "text": "For a long time, I've aimed to base my life on facts and logic. As a self-proclaimed data enthusiast, I consciously avoid unnecessary distractions such as alcohol, drugs, or needless medications—because clear, unaltered perception is essential for informed decisions.<br/><br/>However, in recent years, I've realized that life offers more than just numbers and facts. Profound emotions, intuitive experiences, and belief in something higher have taught me there are aspects that logic alone cannot fully capture. Balancing rational thought and spiritual seeking makes my journey unique. I've found my path to God and see life as a kind of ongoing test—a continuous chance to unfold my potential and help others become their best versions."
+        },
+        "section-two": {
+            "title": "My Mission: Positively Changing People and Society through Tarc",
+            "text": "It is from this belief that my business partners and I founded Tarc. The name \"Tarc\"—short for \"Trainings Arc\"—symbolizes not only the path toward a healthier body and mind but also represents personal growth and the relentless effort to overcome challenges. At Tarc, our goal is to offer people a platform to advance their personal development—whether through physical training, mental resilience, or pursuing a more conscious life.<br/><br/>I firmly believe that only healthy, conscious individuals can form the foundation of a sustainable, fair, and livable future. My daily goal is to do good, work on myself, and positively impact the world."
+        },
+        "section-three": {
+            "title": "Principles and Guidelines: The 7 Deadly Sins as Guidance",
+            "text": "A central concept in my life is the 7 deadly sins—pride, greed, wrath, envy, lust, gluttony, and sloth. For me, these classical terms are more than just moral admonitions. They serve as preventive guidelines, constantly reminding me of negative behavioral patterns that could hinder my personal growth. Through conscious reflection on these human weaknesses, I continually strive to improve myself and realign my inner compass."
+        },
+        "section-four": {
+            "title": "My Aspiration and Vision",
+            "text": "I view my life as a continuous learning process. Each day, I strive to integrate my rational, emotional, and spiritual sides to become a better version of myself. I believe that every person—with all their strengths and weaknesses—holds the potential to make a positive difference in the world. Unlocking this potential and helping others do the same is not just a personal drive for me but also a social responsibility."
+        },
+        "section-five": {
+            "title": "Why Now?",
+            "text": "Today, January 1, 2025, marks a symbolic new beginning: the first quarter of the 21st century has concluded. This moment has inspired me to openly share my thoughts, fears, and visions. I want you to know who stands behind Tarc—a person tirelessly working to get the best out of himself and to bring others along this journey."
+        },
+        "section-six": {
+            "title": "Let's Grow Together",
+            "text": "I invite you to accompany me on this journey. Whether you're interested in learning more about Tarc or simply want to exchange thoughts on life philosophy and personal development—I look forward to connecting with you and growing together."
+        },
+        "section-seven": {
+            "title": "My Background",
+            "text": ""
+        },
+        "section-eight": {
+            "title": "Self-Criticism and Reflection",
+            "text": "I regard self-criticism and reflection as essential tools for growth—both personally and professionally. I welcome every opportunity to question my decisions and actions because I believe that honesty with oneself and the willingness to work hard eliminates the fear of transparency.<br/><br/>For me, criticism—whether from myself or from others—is not an attack but an opportunity. I appreciate every piece of feedback because it allows me to recognize mistakes early, mistakes that I might otherwise overlook. Two eyes see less than many, and an outside perspective can often reveal blind spots hidden from myself.<br/><br/>Therefore, I accept feedback with openness and gratitude. It helps me to refine my strengths and recognize my weaknesses—not to diminish myself, but to become continually better."
+        },
+        "section-nine": {
+            "title": "Vision",
+            "text": "I dream of a world where every individual has the opportunity to find personal happiness—grounded in scientific knowledge, without compulsion or limitation. A world where people are not burdened by uncertainties and unnecessary worries, but instead find a helping hand guiding them toward a fulfilling life.<br/><br/>Everyone should be free to choose their own path. At the same time, I recognize the importance of a stable, \"normal\" social structure. Normality does not imply restriction—it provides a framework within which individuality truly becomes visible. If everything is extraordinary, uniqueness loses its value.<br/><br/>In this better world, basic needs should no longer be burdens. Nobody should worry about reliable and affordable healthcare, whether their food is healthy and sustainably produced, or economic interests overriding quality of life.<br/><br/>A society in which people can concentrate on what truly matters—their dreams, their fellow human beings, and their personal growth. A world in which freedom and security are not opposing forces, but mutually reinforcing strengths."
+        }
     }
+
 };

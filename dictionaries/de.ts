@@ -1,11 +1,20 @@
 import { Dictionary } from "@/components/prop-types";
+import { Section } from "lucide-react";
+import { title } from "process";
+import { text } from "stream/consumers";
 
 export const deTranslations: Dictionary =
 {
     "navbar": {
         "home": "Startseite",
         "about": "Über uns",
-        "projects": "Projekte",
+        "projects": {
+            "title": "Projekte",
+            "resort": "Ein neuer Maßstab für sportliche Rückzugsorte, der Luxus mit professionellen Trainingsanlagen verbindet",
+            "partnering-program": "Verbindet Sportler und Unternehmen durch ethische Partnerschaften und innovative Auswahlverfahren.",
+            "weighted-clothing": "Steigern Sie Ihr Training mit unserer Gewichtskleidung, die Ihre Leistung herausfordert und verbessert.",
+            "social-circle": "Schließen Sie sich uns an, um durch wirkungsvolle soziale Initiativen stärkere Gemeinschaften aufzubauen.",
+        },
         "impact": "Impact",
         "contact": "Kontakt"
     },
@@ -90,7 +99,7 @@ export const deTranslations: Dictionary =
             "title": "Planet Erde",
             "text": "Trotz immer besserem Verständnis über das Klima und die damit einhergehende Entwicklung unseres Planeten ist die ökologische Situation der aktuellen Zeit schwieriger denn je. Die Erde ist die Grundlage für alles Leben, das wir kennen, egal ob Menschen, Tiere oder Pflanzen. Umweltverschmutzung, der Verlust natürlicher Lebensräume und die fehlende Balance zwischen menschlicher Zivilisation und der Natur bedrohen diese Grundlage zunehmend. <br/><br/> Wir setzen uns für bessere Aufklärung und präzisere Maßnahmen gegen Umweltverschmutzung ein, denn nur durch ein fundiertes Verständnis können nachhaltige Veränderungen erzielt werden. Unser Ziel ist es, unberührte Natur zu bewahren und gleichzeitig eine harmonische Verbindung zwischen menschlicher Zivilisation und der Umwelt zu fördern. Mit gezielten Projekten und Bildungsinitiativen wollen wir das Bewusstsein für die Bedeutung einer intakten Umwelt stärken und konkrete Lösungen für eine nachhaltige Entwicklung vorantreiben."
         },
-        "sociology":{
+        "sociology": {
             "title": "Soziologie",
             "text": ""
         },
@@ -152,5 +161,49 @@ export const deTranslations: Dictionary =
             ]
         ],
         "end": "Werden Sie Teil eines Netzwerks, das durch Zusammenarbeit Stärke zeigt. Gemeinsam machen wir aus Visionen Realität und schaffen Mehrwerte – für Sie, Ihre Marke und die Gesellschaft."
+    },
+    "about-me": {
+        "header": {
+            "title": "Hallo, mein Name ist Finn Stark Untiedt",
+            "quote": "Meine Mission: Mit Tarc Menschen und Gesellschaft positiv verändern",
+            "text": "Ich bin der leitende Geschäftsführer und alleinige Inhaber der in Deutschland ansässigen Tarc-Fitness GmbH sowie der internationalen Marke Tarc. Diese Seite soll euch einen authentischen Einblick in meinen persönlichen Werdegang, meine Werte und meine Mission geben – als Aushängeschild meiner Firma und als Mensch, der täglich an sich arbeitet."
+        },
+        "section-one": {
+            "title": "Mein Weg: Zwischen Rationalität, Emotionen und Spiritualität",
+            "text": "Schon lange habe ich danach gestrebt, mein Leben auf Fakten und Logik zu gründen. Als bekennender Datenfreak verzichte ich bewusst auf unnötige Ablenkungen wie Alkohol, Drogen oder überflüssige Medikamente – denn eine klare, unverfälschte Wahrnehmung ist für mich die Basis jeder fundierten Entscheidung.<br/><br/>Gleichzeitig habe ich in den letzten Jahren erkannt, dass das Leben mehr zu bieten hat als reine Zahlen und Fakten. Tiefgründige Emotionen, intuitive Erfahrungen und der Glaube an etwas Höheres haben mich gelehrt, dass es Aspekte gibt, die sich nicht vollständig in Logik fassen lassen. Dieser Spagat zwischen rationalem Denken und spiritueller Sinnsuche ist es, der meinen persönlichen Weg so einzigartig macht. Ich habe meinen Weg zu Gott gefunden und sehe das Leben als eine Art Prüfung – eine kontinuierliche Chance, mein Potenzial zu entfalten und dabei anderen zu helfen, ihre beste Version zu werden."
+        },
+        "section-two": {
+            "title": "Meine Mission: Mit Tarc Menschen und Gesellschaft positiv verändern",
+            "text": "Aus genau dieser Überzeugung heraus haben meine Geschäftspartner und ich Tarc gegründet. Der Name \"Tarc\" – kurz für \"Trainings Arc\" – symbolisiert nicht nur den Weg zu einem gesünderen Körper und Geist, sondern steht auch für die persönliche Entwicklung und den unermüdlichen Einsatz, Herausforderungen zu überwinden. Bei Tarc geht es darum, Menschen eine Plattform zu bieten, um ihre eigene Entwicklung voranzutreiben – sei es durch körperliches Training, mentale Stärke oder die Suche nach einem bewussteren Leben.<br/><br/>Ich bin fest davon überzeugt, dass nur gesunde, bewusste Menschen die Grundlage für eine nachhaltige, gerechte und lebenswerte Zukunft bilden können. Mein Ziel ist es, jeden Tag zu nutzen, um Gutes zu tun, an mir selbst zu arbeiten und so einen positiven Einfluss auf die Welt zu haben."
+        },
+        "section-three": {
+            "title": "Prinzipien und Leitlinien: Die 7 Todsünden als Wegweiser",
+            "text": "Ein zentrales Konzept in meinem Leben ist das der 7 Todsünden – Hochmut, Geiz, Zorn, Neid, Unkeuschheit, Völlerei und Trägheit. Für mich sind diese klassischen Begriffe weit mehr als alte moralische Mahnungen. Sie dienen als präventiver Leitfaden, der mich stets daran erinnert, welche negativen Verhaltensmuster mein persönliches Wachstum behindern können. Durch bewusstes Reflektieren über diese menschlichen Schwächen arbeite ich kontinuierlich daran, mich selbst zu verbessern und meinen inneren Kompass neu auszurichten."
+        },
+        "section-four": {
+            "title": "Mein Anspruch und meine Vision",
+            "text": "Ich sehe mein Leben als einen kontinuierlichen Lernprozess. Jeden Tag strebe ich danach, sowohl meine rationalen als auch meine emotionalen und spirituellen Seiten zu integrieren, um so zu einer besseren Version meiner selbst zu werden. Ich bin davon überzeugt, dass jeder Mensch – mit all seinen Stärken und Schwächen – das Potenzial hat, einen positiven Unterschied in der Welt zu bewirken. Dieses Potenzial zu entfalten und gleichzeitig anderen dabei zu helfen, ist für mich nicht nur ein persönlicher Antrieb, sondern auch eine gesellschaftliche Verantwortung."
+        },
+        "section-five": {
+            "title": "Warum gerade jetzt?",
+            "text": "Heute, am 01.01.2025, markiert ein symbolischer Neubeginn: Das erste Quartal des 21. Jahrhunderts ist abgeschlossen. Dieser Moment hat mich inspiriert, offen über meine Gedanken, Ängste und Visionen zu sprechen. Ich möchte, dass ihr wisst, wer hinter Tarc steht – und dass es ein Mensch ist, der unermüdlich daran arbeitet, das Beste aus sich herauszuholen und andere auf diesem Weg mitzunehmen."
+        },
+        "section-six": {
+            "title": "Lasst uns gemeinsam wachsen",
+            "text": "Ich lade euch ein, mich auf diesem Weg zu begleiten. Ob ihr mehr über Tarc erfahren möchtet oder einfach nur den Austausch über Lebensphilosophie und persönliche Entwicklung sucht – ich freue mich darauf, mit euch in Kontakt zu treten und gemeinsam zu wachsen."
+        },
+        "section-seven": {
+            "title": "Werdegang",
+            "text": ""
+        },
+        "section-eight": {
+            "title": "Selbstkritik und Reflexion",
+            "text": "Ich betrachte Selbstkritik und Reflexion als essenzielle Werkzeuge, um zu wachsen – sowohl persönlich als auch beruflich. Jede Gelegenheit, meine Entscheidungen oder mein Verhalten zu hinterfragen, begrüße ich, denn ich bin überzeugt: Wer ehrlich zu sich selbst ist und bereit ist, hart an sich zu arbeiten, hat keine Angst vor Transparenz.<br/><br/>Kritik – ob von mir selbst oder von anderen – ist für mich kein Angriff, sondern eine Chance. Ich freue mich über jedes Feedback, denn es erlaubt mir, Fehler frühzeitig zu erkennen, die mir allein möglicherweise entgangen wären. Zwei Augen sehen weniger als viele, und der Blick von außen kann oft blinde Flecken aufdecken, die mir selbst verborgen bleiben.<br/><br/>Deshalb nehme ich Rückmeldungen mit Offenheit und Dankbarkeit an. Sie helfen mir, meine Stärken weiterzuentwickeln und meine Schwächen zu erkennen – nicht um mich kleinzumachen, sondern um kontinuierlich besser zu werden."
+        },
+        "section-nine": {
+            "title": "Vision",
+            "text": "Ich träume von einer Welt, in der jeder Mensch die Möglichkeit hat, sein persönliches Glück zu finden – auf Grundlage wissenschaftlicher Erkenntnisse, ohne Zwang oder Einschränkung. Eine Welt, in der Menschen nicht durch Unsicherheiten und unnötige Sorgen belastet werden, sondern eine helfende Hand finden, die ihnen den Weg zu einem erfüllten Leben aufzeigt.<br/><br/>Jeder Mensch soll frei entscheiden können, welchen Lebensweg er wählt. Doch gleichzeitig sehe ich die Bedeutung einer stabilen, \"normalen\" Gesellschaftsstruktur. Normalität ist nicht gleichzusetzen mit Einengung – sie bildet vielmehr den Rahmen, innerhalb dessen Individualität erst sichtbar wird. Wenn alles außergewöhnlich ist, verliert das Besondere seinen Wert.<br/><br/>In dieser besseren Welt müssen grundlegende Bedürfnisse nicht mehr zur Last werden. Niemand soll sich Gedanken darüber machen müssen, ob seine medizinische Versorgung verlässlich und bezahlbar ist, ob sein Essen gesund und nachhaltig produziert wurde oder ob wirtschaftliche Interessen über seine Lebensqualität gestellt werden.<br/><br/>Eine Gesellschaft, in der Menschen sich auf das Wesentliche konzentrieren können – auf ihre Träume, ihre Mitmenschen und ihre persönliche Entfaltung. Eine Welt, in der Freiheit und Sicherheit keine Gegensätze sind, sondern sich gegenseitig stärken."
+        }
     }
+
 };
