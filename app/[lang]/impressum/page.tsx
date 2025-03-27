@@ -4,11 +4,12 @@ export default function Terms() {
             <h1>Impressum</h1>
             <p>
                 Name der Firma : Tarc-Fitness GmbH
-                <br/>Geschäftsführers : Finn Untiedt 
-                <br/>Anschrift : Diechmannplatz 1 Essen 45355 Essen, DE
-                <br/>E-Mail : info@tarc-fitness.de
-                <br/>Eintragung im Amtsgericht Düsseldorf 
-                <br/>Handelsregisternummer: HRB 36471
+                <br />Geschäftsführers : Finn Untiedt
+                <br />Anschrift : Diechmannplatz 1 Essen 45355 Essen, DE
+                <br />E-Mail : info@tarc-fitness.de
+                <br />Eintragung im Amtsgericht Düsseldorf
+                <br />Handelsregisternummer: HRB 36471
+                <br />Umsatzsteuer Identifikationsnummer: DE297335036
             </p>
         </div>
     )
