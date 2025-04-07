@@ -164,7 +164,11 @@ export const deTranslations: Dictionary =
         "end": "Werden Sie Teil eines Netzwerks, das durch Zusammenarbeit Stärke zeigt. Gemeinsam machen wir aus Visionen Realität und schaffen Mehrwerte – für Sie, Ihre Marke und die Gesellschaft."
     },
     "about": {
-        "title": "Tarc – weil aus großer Kraft große Verantwortung folgt",
+        "title": {
+            "part1": "Tarc",
+            "part2": " - weil aus großer Kraft",
+            "part3": " große Verantwortung folgt",
+        },
         "header": "Herzlich willkommen bei Tarc – der Marke, die für einen ganzheitlichen Ansatz im Training von Körper, Geist und Seele steht. Als in Deutschland ansässige Tarc-Fitness GmbH setzen wir uns leidenschaftlich dafür ein, Menschen auf ihrem Weg zu mehr Gesundheit, mentaler Stärke und persönlicher Weiterentwicklung zu begleiten.",
         "principle": {
             "title": "Unser Leitbild: Der Trainings Arc",

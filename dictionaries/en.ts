@@ -159,7 +159,11 @@ export const enTranslations =
         "end": "Join a network that demonstrates strength through collaboration. Together, we turn visions into reality and create added value – for you, your brand, and society."
     },
     "about": {
-        "title": "Tarc - because with great power comes great responsibility",
+        "title": {
+            "part1": "Tarc",
+            "part2": " - because with great power",
+            "part3": " comes great responsibility",
+        },
         "header": "Welcome to Tarc – the brand that stands for a holistic approach to training body, mind, and soul. As a Germany-based Tarc-Fitness GmbH, we are passionately committed to supporting people on their journey to better health, mental strength, and personal growth.",
         "principle": {
             "title": "Our Guiding Principle: The Trainings Arc",

@@ -13,7 +13,15 @@ export default async function AboutPage({
         <div>
             <div className="min-h-screen flex justify-center items-center">
                 <div className="text-4xl font-thin">
-                    {dict.about.title}
+                    <span className="animate-fade-in -translate-y-4 opacity-0 [--animation-delay:200ms]">
+                        {dict.about.title.part1}
+                    </span>
+                    <span className="animate-fade-in -translate-y-4 opacity-0 [--animation-delay:800ms]">
+                        {dict.about.title.part2}
+                    </span>
+                    <span className="animate-fade-in -translate-y-4 opacity-0 [--animation-delay:1600ms]">
+                        {dict.about.title.part3}
+                    </span>
                 </div>
             </div>
             <div className="flex justify-center max-w-full pb-12">
