@@ -12,31 +12,34 @@ import Image from "next/image"
 
 import { usePathname } from "next/navigation"
 import { useRouter } from "next/navigation"
+import Cookies from 'js-cookie'
 
 export function LangToggle() {
 
     const router = useRouter()
-
     let locales = ['en', 'de']
-
     const pathname = usePathname()
 
     const pathnameLocale = locales.find((locale) =>
         pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
     );
+    const initialLang = pathnameLocale || Cookies.get('site_locale') || 'en'
 
-    const [language, setLanguage] = useState(pathnameLocale)
+    const [language, setLanguage] = useState(initialLang)
 
     const changeLanguage = (lang: 'de' | 'en') => {
         if (pathnameLocale == lang) {
             return
-        } else {
-            setLanguage(lang)
         }
-        // remove old locale
-        const newPath = pathname.slice(3)
+        Cookies.set('site_locale', lang, { expires: 365, path: '/' })
 
-        router.push(`/${lang}${newPath}`)
+        // remove old locale
+        const newPath = pathnameLocale ? pathname.replace(`${pathnameLocale}`, '') : pathname
+        const updatedPath = `/${lang}${newPath}`
+
+        setLanguage(lang)
+
+        router.push(updatedPath)
     }
 
     return (
