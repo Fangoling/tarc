@@ -31,9 +31,9 @@ export default async function Home({
     const dict: Dictionary = await getDictionary(lang)
     return (
         <>
-            <div className="flex flex-col items-center gap-20">
+            <div className="flex flex-col items-center gap-12">
                 <Hero dict={dict} />
-                <ImpactSection dict={dict}/>
+                <ImpactSection dict={dict} />
                 <ProjectSection dict={dict} />
 
                 <section className="flex flex-col gap-8 items-center w-full bg-gradient-to-b from-background via-secondary to-background pt-16 pb-24">
