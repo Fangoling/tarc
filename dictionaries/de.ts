@@ -163,6 +163,30 @@ export const deTranslations: Dictionary =
         ],
         "end": "Werden Sie Teil eines Netzwerks, das durch Zusammenarbeit Stärke zeigt. Gemeinsam machen wir aus Visionen Realität und schaffen Mehrwerte – für Sie, Ihre Marke und die Gesellschaft."
     },
+    "about": {
+        "title": "Tarc – weil aus großer Kraft große Verantwortung folgt",
+        "header": "Herzlich willkommen bei Tarc – der Marke, die für einen ganzheitlichen Ansatz im Training von Körper, Geist und Seele steht. Als in Deutschland ansässige Tarc-Fitness GmbH setzen wir uns leidenschaftlich dafür ein, Menschen auf ihrem Weg zu mehr Gesundheit, mentaler Stärke und persönlicher Weiterentwicklung zu begleiten.",
+        "principle": {
+            "title": "Unser Leitbild: Der Trainings Arc",
+            "text": "Der Name „Tarc“ steht für den „Trainings Arc“ – den Bogen, der den Weg zu einem gesünderen, bewussteren Leben symbolisiert. Dieser Bogen verbindet körperliches Training mit mentaler und spiritueller Entwicklung. Wir glauben daran, dass jeder Mensch das Potenzial hat, sich kontinuierlich zu verbessern und so nicht nur das eigene Leben, sondern auch die Gesellschaft positiv zu beeinflussen."
+        },
+        "philosophy": {
+            "title": "Unsere Philosophie",
+            "text": "Bei Tarc vereinen wir eine fundierte, faktenbasierte Herangehensweise mit dem tiefen Glauben an das Potenzial jedes Einzelnen. Unser Ansatz basiert auf klaren, rationalen Prinzipien, die es ermöglichen, Entscheidungen ohne Ablenkungen und unnötige Einflüsse zu treffen. Gleichzeitig wissen wir, dass der Mensch mehr ist als nur Zahlen und Daten – Emotionen, Intuition und spirituelle Erfahrungen sind zentrale Bestandteile einer erfüllten Entwicklung."
+        },
+        "vision": {
+            "title": "Unsere Vision",
+            "text": "Wir träumen von einer Welt, in der jeder Mensch die Freiheit hat, seinen eigenen Lebensweg zu wählen – unterstützt durch wissenschaftliche Erkenntnisse und einen klaren, unvoreingenommenen Blick auf das Leben. Eine Welt, in der Sicherheit und Freiheit Hand in Hand gehen und in der Grundbedürfnisse nicht zur Last, sondern zur Basis für ein erfülltes Leben werden.<br/><br/>Durch unser Engagement und unsere innovativen Trainingskonzepte möchten wir Menschen dabei unterstützen, ihr persönliches Glück zu finden und gleichzeitig einen positiven Einfluss auf ihre Umwelt auszuüben."
+        },
+        "criticism": {
+            "title": "Kritik",
+            "text": "Wir sehen es als unsere Aufgabe, eine Plattform zu bieten, auf der Menschen wachsen und ihr volles Potenzial entfalten können. Dabei stehen Selbstkritik, Reflexion und der offene Austausch im Mittelpunkt unseres Handelns. Wir begrüßen Feedback und nutzen es als Chance, unsere Ansätze stetig zu verbessern und weiterzuentwickeln. Jeder Schritt, den wir gemeinsam gehen, ist ein Beitrag zu einer gesünderen und nachhaltigeren Zukunft."
+        },
+        "call": {
+            "title": "Lasst uns gemeinsam wachsen",
+            "text": "Wir laden euch ein, Teil unserer Gemeinschaft zu werden und gemeinsam mit uns den Weg zu mehr Gesundheit, innerer Stärke und persönlicher Entwicklung zu gehen. Bei Tarc stehen der Mensch und seine individuelle Reise im Mittelpunkt – lasst uns gemeinsam neue Wege beschreiten und über uns hinauswachsen."
+        }
+    },
     "about-me": {
         "header": {
             "title": "Hallo, mein Name ist Finn Stark Untiedt",

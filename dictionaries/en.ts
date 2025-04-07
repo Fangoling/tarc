@@ -8,7 +8,7 @@ export const enTranslations =
             "resort": "A new benchmark in athletic retreats, combining luxury with professional training facilities.",
             "partnering-program": "Connecting athletes and companies through ethical partnerships and innovative drafting systems.",
             "weighted-clothing": "Elevate your training with our weighted clothing designed to challenge and enhance your performance.",
-            "social-circle":"Join us in building stronger communities through impactful social initiatives.",
+            "social-circle": "Join us in building stronger communities through impactful social initiatives.",
         },
         "impact": "Impact",
         "contact": "Contact"
@@ -157,6 +157,30 @@ export const enTranslations =
             ]
         ],
         "end": "Join a network that demonstrates strength through collaboration. Together, we turn visions into reality and create added value – for you, your brand, and society."
+    },
+    "about": {
+        "title": "Tarc - because with great power comes great responsibility",
+        "header": "Welcome to Tarc – the brand that stands for a holistic approach to training body, mind, and soul. As a Germany-based Tarc-Fitness GmbH, we are passionately committed to supporting people on their journey to better health, mental strength, and personal growth.",
+        "principle": {
+            "title": "Our Guiding Principle: The Trainings Arc",
+            "text": "The name “Tarc” stands for the “Training Arc” – the bow that symbolizes the path to a healthier, more conscious life. This arc connects physical training with mental and spiritual development. We believe that every person has the potential to continuously improve, thereby positively impacting not only their own life but also society as a whole.",
+        },
+        "philosophy": {
+            "title": "Our Philosophy",
+            "text": "At Tarc, we combine a solid, evidence-based approach with a deep belief in every individual’s potential. Our approach is based on clear, rational principles that allow decisions to be made without distractions or unnecessary influences. At the same time, we know that humans are more than just numbers and data – emotions, intuition, and spiritual experiences are essential components of a fulfilling development.",
+        },
+        "vision": {
+            "title": "Our Vision",
+            "text": "We dream of a world where everyone has the freedom to choose their own life path – supported by scientific insights and a clear, unbiased view of life. A world where security and freedom go hand in hand and where basic needs are not a burden but a foundation for a fulfilling life.<br/><br/>Through our commitment and innovative training concepts, we aim to support people in finding their personal happiness while simultaneously having a positive impact on their environment.",
+        },
+        "criticism": {
+            "title": "Criticism",
+            "text": "We see it as our responsibility to provide a platform where people can grow and realize their full potential. Self-criticism, reflection, and open exchange are at the heart of our actions. We welcome feedback and see it as an opportunity to continuously improve and develop our approaches. Every step we take together contributes to a healthier and more sustainable future.",
+        },
+        "call": {
+            "title": "Let's Grow Together",
+            "text": "We invite you to become part of our community and join us on the journey to better health, inner strength, and personal development. At Tarc, people and their individual journeys are at the heart – let’s walk new paths together and grow beyond ourselves.",
+        },
     },
     "about-me": {
         "header": {

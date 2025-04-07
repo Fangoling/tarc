@@ -52,7 +52,7 @@ export const Hero: React.FC<DictionaryProp> = ({ dict }) => {
                   </DialogContent>
                 </Dialog>
                 <Button className="w-full max-w-[160px] animate-fade-in -translate-y-4 [--animation-delay:600ms] text-lg dark: text-black dark:text-white bg-secondary rounded-2xl hover:bg-primary opacity-0">
-                  <Link href="/aboutme" className="flex flex-row items-center">
+                  <Link href="/about" className="flex flex-row items-center">
                     <span>{dict.hero["about-button"]}</span>
                   </Link>
                 </Button>

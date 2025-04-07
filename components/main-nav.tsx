@@ -24,7 +24,7 @@ import {
 import { DictionaryProp } from './prop-types'
 
 export default function Nav({ dict }: DictionaryProp) {
-  const projectPages: { title: string, href: string, description: string}[] = [
+  const projectPages: { title: string, href: string, description: string }[] = [
     { title: "Partnering Program", href: "/projects/partnering", description: dict.navbar.projects["partnering-program"] },
     { title: "Resort", href: "/projects/resort", description: dict.navbar.projects.resort },
     { title: "Social Circle", href: "/projects/social", description: dict.navbar.projects["social-circle"] },
@@ -38,7 +38,7 @@ export default function Nav({ dict }: DictionaryProp) {
       subcontent?: { title: string, href: string, description: string }[]
     }[] = [
       { name: dict.navbar.home, href: '/' },
-      { name: dict.navbar.about, href: '/aboutme' },
+      { name: dict.navbar.about, href: '/about' },
       { name: dict.navbar.projects.title, href: '/#projects', subcontent: projectPages },
       { name: dict.navbar.impact, href: '/impact' },
       { name: dict.navbar.contact, href: '/contact' }
@@ -62,7 +62,7 @@ export default function Nav({ dict }: DictionaryProp) {
             width={20}
             className="hidden dark:flex"
           ></Img>
-          <span className="text-xl font-semibold">Tarc</span>
+          <span className="text-xl font-semibold ">Tarc</span>
         </div>
       </Link>
 
