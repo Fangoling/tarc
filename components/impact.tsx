@@ -23,7 +23,7 @@ export const ImpactSection: React.FC<DictionaryProp> = ({ dict }) => {
                     className="mx-auto space-y-12 w-full"
                 >
                     {/* Hero Section */}
-                    <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                    <div className="relative h-[60vh] min-h-[400px]  overflow-hidden">
                         <Image
                             src="/images/impact/earth.jpg"
                             alt="lorem picsum photo"
