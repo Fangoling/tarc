@@ -25,10 +25,10 @@ import { DictionaryProp } from './prop-types'
 
 export default function Nav({ dict }: DictionaryProp) {
   const projectPages: { title: string, href: string, description: string }[] = [
-    { title: "Partnering Program", href: "/projects/partnering", description: dict.navbar.projects["partnering-program"] },
-    { title: "Resort", href: "/projects/resort", description: dict.navbar.projects.resort },
-    { title: "Social Circle", href: "/projects/social", description: dict.navbar.projects["social-circle"] },
     { title: "Weighted Clothing", href: "/projects/clothing", description: dict.navbar.projects["weighted-clothing"] },
+    { title: "Partnering Program", href: "/projects/partnering", description: dict.navbar.projects["partnering-program"] },
+    //{ title: "Resort", href: "/projects/resort", description: dict.navbar.projects.resort },
+    { title: "Social Circle", href: "/projects/social", description: dict.navbar.projects["social-circle"] },
   ]
 
   const navbarItems:
