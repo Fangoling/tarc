@@ -206,11 +206,12 @@ export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
                         >
                             {/* Hero Section */}
                             <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
+
                                 <Image
-                                    src="https://picsum.photos/seed/clothing/1200/600"
-                                    alt="lorem picsum photo"
+                                    src="/images/clothing/weightvest.webp"
+                                    alt="weight vest in studio light with red to black gradient background"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover object-[50%_18%]"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                 <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
