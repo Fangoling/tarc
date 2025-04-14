@@ -45,7 +45,7 @@ export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
 
     return (
         <section id="projects" className="w-full min-h-screen bg-gradient-to-b from-background via-secondary to-background pt-16 pb-24">
-            <Tabs defaultValue="partner" className="flex flex-col items-center w-full gap-12">
+            <Tabs defaultValue="clothing" className="flex flex-col items-center w-full gap-12">
                 {/* Enhanced Header */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -66,15 +66,15 @@ export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
                     animate={{ opacity: 1, scale: 1 }}
                     className="w-full max-w-2xl px-4"
                 >
-                    <TabsList className="grid w-full grid-cols-4 bg-background/50 backdrop-blur-lg rounded-2xl border border-border/50 h-[60px] md:h-[48px]">
+                    <TabsList className="grid w-full grid-cols-3 bg-background/50 backdrop-blur-lg rounded-2xl border border-border/50 h-[60px] md:h-[48px]">
                         <TabsTrigger value="partner" className="h-[48px] md:h-[36px] rounded-2xl">Partnering <br className="block md:hidden"></br>Program</TabsTrigger>
-                        <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger>
+                        {/* <TabsTrigger value="gym" className="h-[48px] md:h-[36px] rounded-2xl">Resort</TabsTrigger> */}
                         <TabsTrigger value="clothing" className="h-[48px] md:h-[36px] rounded-2xl">Weighted <br className="block md:hidden"></br>Clothing</TabsTrigger>
                         <TabsTrigger value="social" className="h-[48px] md:h-[36px] rounded-2xl">Social <br className="block md:hidden"></br>Work</TabsTrigger>
                     </TabsList>
                 </motion.div>
 
-                <div className="w-full px-4 md:px-8">
+                <div className="w-full">
                     {/* Resort Tab Content */}
                     <TabsContent value="gym" className="focus-visible:outline-none">
                         <motion.div
@@ -161,10 +161,10 @@ export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
                     <TabsContent value="partner" className="focus-visible:outline-none">
                         <motion.div
                             {...fadeInUp}
-                            className="max-w-7xl mx-auto space-y-12"
+                            className="mx-auto space-y-12"
                         >
                             {/* Hero Section */}
-                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                            <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
                                 <Image
                                     src="/images/partnering/shakingHands.jpg"
                                     alt="lorem picsum photo"
@@ -202,10 +202,10 @@ export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
                     <TabsContent value="clothing" className="focus-visible:outline-none">
                         <motion.div
                             {...fadeInUp}
-                            className="max-w-7xl mx-auto space-y-12"
+                            className="space-y-12"
                         >
                             {/* Hero Section */}
-                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                            <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
                                 <Image
                                     src="https://picsum.photos/seed/clothing/1200/600"
                                     alt="lorem picsum photo"
@@ -242,10 +242,10 @@ export const ProjectSection: React.FC<DictionaryProp> = ({ dict }) => {
                     <TabsContent value="social" className="focus-visible:outline-none">
                         <motion.div
                             {...fadeInUp}
-                            className="max-w-7xl mx-auto space-y-12"
+                            className="mx-auto space-y-12"
                         >
                             {/* Hero Section */}
-                            <div className="relative h-[60vh] min-h-[400px] rounded-2xl overflow-hidden">
+                            <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
                                 <Image
                                     src="https://picsum.photos/id/65/1200/600"
                                     alt="lorem picsum photo"
