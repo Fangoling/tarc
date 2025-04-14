@@ -56,6 +56,18 @@ export const enTranslations =
                 "title": "Weighted Clothing",
                 "desc": "Elevate your training with our weighted clothing designed to challenge and enhance your performance. Experience the difference as you build strength and endurance with every move.",
                 "button": "Discover More"
+            },
+            "section-one": {
+                "title": "What is Weighted Clothing?",
+                "text": "Weighted clothing is a concept where resistance is added to familiar movements by using clothing with implemented weights. It is safer than other forms of weighted training, as no new movement patterns need to be learned. Additionally, it boosts metabolism due to the increased energy expenditure."
+            },
+            "section-two": {
+                "title": "The Problem with Current Solutions",
+                "text": "The current problem with the well-developed concept behind weighted clothing is its implementation in reality. The practical execution of the simple concept of overloading bodyweight training is very complex due to physical constraints. The biggest issues here are often limited range of motion and the improper distribution of weight, which make athletic training impossible. In addition, there is the problem of washability and maintaining quality, which is also encountered in other areas of the fitness industry, such as with free weights."
+            },
+            "section-three": {
+                "title": "The Tarc Advantage",
+                "text": "Tarcs products have achieved better usability for athletic training through improved weight distribution. Additionally, care has been taken not to line the product with thick fabric, ensuring that movement remains as unrestricted as possible"
             }
         },
         "social-circle": {

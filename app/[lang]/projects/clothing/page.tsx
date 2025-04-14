@@ -32,6 +32,18 @@ export default async function ResortPage({
                 </div>
             </div>
 
+            <div className="flex flex-col items-center mx-auto w-full max-w-4xl">
+                <div className="container relative mx-auto px-4 py-12 lg:py-24">
+                    <h2>{dict.projects["weighted-clothing"]["section-one"].title}</h2>
+                    <p>{dict.projects["weighted-clothing"]["section-one"].text}</p>
+                    <h2>{dict.projects["weighted-clothing"]["section-two"].title}</h2>
+                    <p>{dict.projects["weighted-clothing"]["section-two"].text}</p>
+                    <h2>{dict.projects["weighted-clothing"]["section-three"].title}</h2>
+                    <p>{dict.projects["weighted-clothing"]["section-three"].text}</p>
+                </div>
+            </div>
+
+
         </div>
     )
 }

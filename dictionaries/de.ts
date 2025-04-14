@@ -61,7 +61,20 @@ export const deTranslations: Dictionary =
                 "title": "Weighted Clothing",
                 "desc": "Steigern Sie Ihr Training mit unserer Gewichtskleidung, die Ihre Leistung herausfordert und verbessert. Spüren Sie den Unterschied, während Sie mit jeder Bewegung Kraft und Ausdauer aufbauen.",
                 "button": "Entdecke mehr"
+            },
+            "section-one": {
+                "title": "Was ist Weighted Clothing?",
+                "text": "Gewichtete Kleidung ist ein Konzept, bei dem durch in die Kleidung integrierte Gewichte Widerstand zu vertrauten Bewegungen hinzugefügt wird. Sie ist sicherer als andere Formen des Gewichtstrainings, da keine neuen Bewegungsmuster erlernt werden müssen. Zudem wird der Stoffwechsel durch den erhöhten Energieaufwand angeregt."
+            },
+            "section-two": {
+                "title": "Das Problem mit aktuellen Lösungen",
+                "text": "Das derzeitige Problem des gut durchdachten Konzepts der gewichteten Kleidung liegt in dessen Umsetzung in der Praxis. Die praktische Ausführung des einfachen Prinzips der Überlastung beim Training mit dem eigenen Körpergewicht ist aufgrund physikalischer Einschränkungen sehr komplex. Die größten Schwierigkeiten liegen oft im eingeschränkten Bewegungsradius und der ungleichmäßigen Gewichtsverteilung, wodurch sportliches Training unmöglich wird. Hinzu kommt das Problem der Waschbarkeit und Qualitätserhaltung – ein Thema, das auch in anderen Bereichen der Fitnessbranche, wie bei freien Gewichten, bekannt ist."
+            },
+            "section-three": {
+                "title": "Der Tarc Advantage",
+                "text": "Die Produkte von Tarc ermöglichen durch eine verbesserte Gewichtsverteilung eine bessere Nutzbarkeit für sportliches Training. Zudem wurde darauf geachtet, das Produkt nicht mit dicken Stoffen auszukleiden, sodass die Bewegungsfreiheit so wenig wie möglich eingeschränkt wird."
             }
+
         },
         "social-circle": {
             "hero": {
