@@ -23,7 +23,7 @@ export default async function ImpactPage({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
                     <div>
-                        <h1 className="text-3xl md:text-5xl font-bold text-white">
+                        <h1 className="text-7xl md:text-5xl font-bold text-white">
                             {dict.impact.impact.title}
                         </h1>
                     </div>
@@ -33,15 +33,15 @@ export default async function ImpactPage({
             <div className="flex flex-col items-center mx-auto w-full max-w-4xl">
 
                 <div className="container relative mx-auto px-4 py-12 lg:py-24">
-                    <p dangerouslySetInnerHTML={{__html: dict.impact.impact.text}}/>
+                    <p dangerouslySetInnerHTML={{ __html: dict.impact.impact.text }} />
                 </div>
 
 
                 <div className="container relative mx-auto px-4 py-12 lg:py-24">
                     <div className="grid gap-16 lg:grid-cols-2 lg:gap-12 items-center">
                         <div className="lg:order-2">
-                            <h2>{dict.impact.humanity.title}</h2>
-                            <p dangerouslySetInnerHTML={{__html: dict.impact.humanity.text}}/>
+                            <h2 className="text-5xl" >{dict.impact.humanity.title}</h2>
+                            <p dangerouslySetInnerHTML={{ __html: dict.impact.humanity.text }} />
                             <Button variant="outline" className="mt-4 text-xl p-6" asChild>
                                 <Link href="/impact/sociology">
                                     {dict.impact.button}
@@ -78,8 +78,8 @@ export default async function ImpactPage({
                     <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
                         <div>
 
-                            <h2>{dict.impact.planet.title}</h2>
-                            <p dangerouslySetInnerHTML={{__html: dict.impact.planet.text}}/>
+                            <h2 className="text-5xl" >{dict.impact.planet.title}</h2>
+                            <p dangerouslySetInnerHTML={{ __html: dict.impact.planet.text }} />
                         </div>
 
                         <div className="relative h-[400px] w-full md:h-[500px]">
