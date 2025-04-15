@@ -114,17 +114,17 @@ export default function Nav({ dict }: DictionaryProp) {
               {navbarItems.map(({ name, href, subcontent }) => (
                 !subcontent ?
                   <SheetClose key={name}>
-                    <Link key={name} href={href} className="text-4xl font-medium hover:underline" prefetch={false}>
+                    <Link key={name} href={href} className="text-2xl font-medium hover:underline" prefetch={false}>
                       {name}
                     </Link>
                   </SheetClose>
                   :
                   <div key={name}>
-                    <p className="text-4xl font-medium">{name + ":"}</p>
+                    <p className="text-2xl font-medium">{name + ":"}</p>
                     {subcontent.map(({ title, href }) => (
                       <SheetClose key={title}>
-                        <Link key={title} href={href} className="text-4xl font-medium hover:underline" prefetch={false}>
-                          {"- " + title}
+                        <Link key={title} href={href} className="text-2xl font-medium hover:underline" prefetch={false}>
+                          {" > " + title}
                         </Link>
                       </SheetClose>
                     ))}
