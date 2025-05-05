@@ -9,7 +9,7 @@ import { getDictionary } from "./dictionaries"
 
 const contactContent = [
     { key: 'phone', icon: <PhoneIcon size={48} />, text: '+49 201 72994195' },
-    { key: 'location', icon: <MapPinIcon size={48} />, text: '45355 Essen, Germany' },
+    { key: 'location', icon: <MapPinIcon size={48} />, text: 'Diechmannplatz 1, 45355 Essen, DE' },
     { key: 'mail', icon: <MailIcon size={48} />, text: 'info@tarc-fitness.de' },
 ]
 
@@ -59,7 +59,7 @@ export default async function Home({
                         <h1>{dict.con}</h1>
                         <div className="mx-auto px-4 flex flex-col items-center md:flex-row gap-8 w-full">
                             {contactContent.map(({ key, icon, text }) => (
-                                <Card key={key} className="w-full max-w-lg">
+                                <Card key={key} className="w-full max-w-lg min-h-[180px]">
                                     <CardHeader className="flex justify-center items-center">
                                         <div className="text-primary text-4xl">{icon}</div>
 
