@@ -8,7 +8,7 @@ import { ProjectSection } from '@/components/projects'
 import { getDictionary } from "./dictionaries"
 
 const contactContent = [
-    { key: 'phone', icon: <PhoneIcon size={48} />, text: 'Coming Soon' },
+    { key: 'phone', icon: <PhoneIcon size={48} />, text: '+49 201 72994195' },
     { key: 'location', icon: <MapPinIcon size={48} />, text: '45355 Essen, Germany' },
     { key: 'mail', icon: <MailIcon size={48} />, text: 'info@tarc-fitness.de' },
 ]
