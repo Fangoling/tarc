@@ -4,6 +4,7 @@ import { PhoneIcon, MapPinIcon, MailIcon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 
 import { Hero } from '@/components/hero'
+import { Quote } from '@/components/quote'
 import { ProjectSection } from '@/components/projects'
 import { getDictionary } from "./dictionaries"
 
@@ -33,6 +34,7 @@ export default async function Home({
         <>
             <div className="flex flex-col items-center gap-12 w-full">
                 <Hero dict={dict} />
+                <Quote dict={dict} />
                 <ProjectSection dict={dict} />
                 <ImpactSection dict={dict} />
 
