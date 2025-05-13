@@ -19,15 +19,20 @@ export const deTranslations: Dictionary =
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "Verändere die Welt mit",
-        "desc": "Tarc überbrückt die Lücke zwischen geschäftlicher Innovation und sozialem Engagement. Wir fördern das wirtschaftliche Wachstum mit vielfältigen Initiativen, von unserem Fitnessstudio auf Madeira bis hin zu unserer Fitness-App und Partnerschaftsprogrammen.",
+        "title": "Anonym trainieren Sichtbar leisten",
+        "desc": "Tarc verbindet geschäftliche Innovation und sozialem Engagement. Wir fördern wirtschaftliches Wachstum mit sozialer Initiative.",
         "contact-button": "Kontakt",
         "about-button": "Über uns"
+    },
+    "quote": {
+        "text": "Die Tarc-Fitness GmbH ist ein revolutionäres Unternehmen im Bereich Fitness, Mental Health und Leistungssport. Als erste Firma weltweit bilden wir Athleten anonym für den Hochleistungssport aus. Diese Athleten treten unter Synonymen und in Verkleidung auf, frei von äußerem Druck und öffentlicher Erwartung.",
+        "quote": "It's the pressure of the bull, I'll play the game for free but you get paid for the bull.",
+        "author": "5× NBA champion  2× NBA Defensive Player of the Year Dennis Rodman"
     },
     "goals": "Ansprache zur Zielsetzung 2025",
     "projects": {
         "title": "Aktuelle Projekte",
-        "subtitle": "Entdecken Sie unsere Innovationen in den Bereichen Fitness und gesellschaftliches Engagement",
+        "subtitle": "Alle Projekte fördern die psychische und physische Gesundheit der Verbraucher. Unser Ziel ist es, jeden Menschen dazu zu inspirieren, die beste Version seiner selbst zu werden.",
         "resort": {
             "hero": {
                 "title": "Tarc Resort",

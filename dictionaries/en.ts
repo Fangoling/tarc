@@ -14,10 +14,15 @@ export const enTranslations =
         "contact": "Contact"
     },
     "hero": {
-        "title": "Revolutionize the Sport Industry with",
-        "desc": "Tarc bridges the gap between business innovation and social impact. We drive economic growth with diverse initiatives, from our fitness studio on Madeira to our fitness app and partnership programs.",
+        "title": "Train Anonymously Perform Publicly",
+        "desc": "All our projects promote the mental and physical health of consumers. Our goal is to inspire every individual to become the best version of themselves.",
         "contact-button": "Contact us",
         "about-button": "About us"
+    },
+    "quote": {
+        "text": "Tarc-Fitness GmbH is a revolutionary company in the fields of fitness, mental health, and competitive sports. As the first company in the world, we train athletes anonymously for high-performance sports. These athletes perform under pseudonyms and in disguise—free from external pressure and public expectations.",
+        "quote": "It's the pressure of the bull, I'll play the game for free but you get paid for the bull.",
+        "author": "5× NBA champion, 2× NBA Defensive Player of the Year Dennis Rodman"
     },
     "goals": "Announcement for goals of 2025",
     "projects": {

@@ -31,10 +31,10 @@ export const Hero: React.FC<DictionaryProp> = ({ dict }) => {
         <div className="py-2 md:py-0">
           <div className="mx-auto max-w-4xl pb-4 text-center md:pb-16">
             <h1 className="animate-fade-in -translate-y-4 text-balance py-6 text-5xl font-semibold leading-none tracking-tighter opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-8xl">
+              <span className="pl-2 bg-primary bg-clip-text text-transparent font-bold">Tarc Fitness</span><br />
               <span className="bg-gradient-to-br from-black from-30% to-black/60 bg-clip-text text-transparent dark:from-white dark:from-30% dark:to-white/40">
                 {dict.hero.title}
               </span>
-              <span className="pl-2 bg-primary bg-clip-text text-transparent font-bold">Tarc</span>
             </h1>
 
             <div className="mx-auto max-w-3xl">
