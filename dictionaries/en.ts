@@ -21,7 +21,7 @@ export const enTranslations =
     },
     "quote": {
         "text": "Tarc-Fitness GmbH is a revolutionary company in the fields of fitness, mental health, and competitive sports. As the first company in the world, we train athletes anonymously for high-performance sports. These athletes perform under pseudonyms and in disguise—free from external pressure and public expectations.",
-        "quote": "It's the pressure of the bull, I'll play the game for free but you get paid for the bull.",
+        "quote": "It's the pressure of the bullshit, I'll play the game for free but you get paid for the bullshit.",
         "author": "5× NBA champion, 2× NBA Defensive Player of the Year Dennis Rodman"
     },
     "goals": "Announcement for goals of 2025",
