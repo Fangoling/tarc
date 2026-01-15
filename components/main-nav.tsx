@@ -2,14 +2,13 @@
 
 import * as React from "react"
 import Link from "next/link"
-import Img from "next/image"
+import Image from "next/image"
 
-import { Menu } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { Sheet, SheetTrigger, SheetContent, SheetClose } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./ui/mode-toggle"
 import { LangToggle } from "./ui/language-toggle"
+import { MobileNav, type NavItem, type SubNavItem } from "./mobile-nav"
+import { NavListItem } from "./ui/nav-list-item"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -20,148 +19,197 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
+import { DictionaryProp } from "./prop-types"
 
-import { DictionaryProp } from './prop-types'
+// ============================================================================
+// Types
+// ============================================================================
 
-export default function Nav({ dict }: DictionaryProp) {
-  const projectPages: { title: string, href: string, description: string }[] = [
-    { title: "Weighted Clothing", href: "/projects/clothing", description: dict.navbar.projects["weighted-clothing"] },
-    { title: "Partnering Program", href: "/projects/partnering", description: dict.navbar.projects["partnering-program"] },
-    //{ title: "Resort", href: "/projects/resort", description: dict.navbar.projects.resort },
-    { title: "Social Circle", href: "/projects/social", description: dict.navbar.projects["social-circle"] },
-  ]
+interface ProjectPage {
+  title: string
+  href: string
+  description: string
+}
 
-  const navbarItems:
-    {
-      name: string;
-      href: string;
-      subcontent?: { title: string, href: string, description: string }[]
-    }[] = [
-      { name: dict.navbar.home, href: '/' },
-      { name: dict.navbar.about, href: '/about' },
-      { name: dict.navbar.projects.title, href: '/#projects', subcontent: projectPages },
-      { name: dict.navbar.impact, href: '/impact' },
-      { name: dict.navbar.contact, href: '/contact' }
-    ]
+// ============================================================================
+// Logo Component
+// ============================================================================
 
+function Logo() {
   return (
-    <div className="bg-secondary flex items-center justify-between px-4 py-2">
-      <Link href="/" className="flex items-center gap-2">
-        <div className="pl-4 flex flex-row gap-2">
-          <Img
-            src="/images/Tarc_Logo_Schwarz.png"
-            alt="tarc logo"
-            height={20}
-            width={20}
-            className="flex dark:hidden"
-          ></Img>
-          <Img
-            src="/images/Tarc_Logo_Wei.png"
-            alt="tarc logo"
-            height={20}
-            width={20}
-            className="hidden dark:flex"
-          ></Img>
-          <span className="text-xl font-semibold ">Tarc</span>
-        </div>
-      </Link>
-
-      <NavigationMenu className="hidden md:flex">
-        <NavigationMenuList>
-          {navbarItems.map(({ name, href, subcontent }) => (
-            !subcontent ?
-              <NavigationMenuItem key={name} className="bg-secondary">
-                <Link href={href} className="text-lg font-medium" legacyBehavior passHref>
-                  <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  bg-secondary`}>
-                    {name}
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              :
-              <NavigationMenuItem key={name}>
-                <NavigationMenuTrigger>{name}</NavigationMenuTrigger>
-                <NavigationMenuContent className="">
-                  <ul className="grid w-[200px] gap-3 p-2 md:w-[300px] md:grind-cols-2 lg:w-[400px]">
-                    {subcontent.map(({ title, href, description }) => (
-                      <ListItem
-                        key={title}
-                        title={title}
-                        href={href}
-                      >
-                        {description}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-          ))}
-
-        </NavigationMenuList>
-      </NavigationMenu>
-
-      <div className="flex items-center gap-2">
-        <LangToggle />
-        <ModeToggle />
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <Menu />
-              <span className="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <div className="flex flex-col items-start w-[400px] p-4 gap-2">
-              {navbarItems.map(({ name, href, subcontent }) => (
-                !subcontent ?
-                  <SheetClose key={name}>
-                    <Link key={name} href={href} className="text-2xl font-medium hover:underline" prefetch={false}>
-                      {name}
-                    </Link>
-                  </SheetClose>
-                  :
-                  <div key={name}>
-                    <p className="text-2xl font-medium">{name + ":"}</p>
-                    {subcontent.map(({ title, href }) => (
-                      <SheetClose key={title}>
-                        <Link key={title} href={href} className="text-2xl font-medium hover:underline" prefetch={false}>
-                          {" > " + title}
-                        </Link>
-                      </SheetClose>
-                    ))}
-                  </div>
-
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
-
-      </div>
-    </div>
+    <Link
+      href="/"
+      className={cn(
+        "flex items-center gap-2 pl-4",
+        "transition-opacity duration-200 hover:opacity-80",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
+      )}
+      aria-label="Tarc Home"
+    >
+      {/* Light mode logo */}
+      <Image
+        src="/images/Tarc_Logo_Schwarz.png"
+        alt=""
+        height={20}
+        width={20}
+        className="block dark:hidden"
+        aria-hidden="true"
+      />
+      {/* Dark mode logo */}
+      <Image
+        src="/images/Tarc_Logo_Wei.png"
+        alt=""
+        height={20}
+        width={20}
+        className="hidden dark:block"
+        aria-hidden="true"
+      />
+      <span className="text-xl font-semibold">Tarc</span>
+    </Link>
   )
 }
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+// ============================================================================
+// Desktop Navigation Item Components
+// ============================================================================
+
+interface SimpleNavItemProps {
+  name: string
+  href: string
+}
+
+function SimpleNavItem({ name, href }: SimpleNavItemProps) {
   return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
+    <NavigationMenuItem className="bg-secondary">
+      <Link href={href} legacyBehavior passHref>
+        <NavigationMenuLink
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
+            navigationMenuTriggerStyle(),
+            "bg-secondary text-base font-medium",
+            "transition-all duration-200"
           )}
-          {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
+          {name}
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
   )
-})
-ListItem.displayName = "ListItem"
+}
+
+interface DropdownNavItemProps {
+  name: string
+  subcontent: SubNavItem[]
+}
+
+function DropdownNavItem({ name, subcontent }: DropdownNavItemProps) {
+  return (
+    <NavigationMenuItem>
+      <NavigationMenuTrigger className="text-base font-medium">
+        {name}
+      </NavigationMenuTrigger>
+      <NavigationMenuContent>
+        <ul
+          className="grid w-[200px] gap-2 p-3 md:w-[300px] lg:w-[400px]"
+          role="menu"
+          aria-label={`${name} submenu`}
+        >
+          {subcontent.map(({ title, href, description }) => (
+            <NavListItem key={title} title={title} href={href}>
+              {description}
+            </NavListItem>
+          ))}
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
+  )
+}
+
+// ============================================================================
+// Desktop Navigation
+// ============================================================================
+
+interface DesktopNavProps {
+  items: NavItem[]
+}
+
+function DesktopNav({ items }: DesktopNavProps) {
+  return (
+    <NavigationMenu className="hidden md:flex" aria-label="Main navigation">
+      <NavigationMenuList>
+        {items.map((item) => {
+          const hasSubcontent = Boolean(item.subcontent)
+
+          if (hasSubcontent) {
+            return (
+              <DropdownNavItem
+                key={item.name}
+                name={item.name}
+                subcontent={item.subcontent!}
+              />
+            )
+          }
+
+          return (
+            <SimpleNavItem key={item.name} name={item.name} href={item.href} />
+          )
+        })}
+      </NavigationMenuList>
+    </NavigationMenu>
+  )
+}
+
+// ============================================================================
+// Main Navigation Component
+// ============================================================================
+
+export default function Nav({ dict }: DictionaryProp) {
+  // Build project pages from dictionary
+  const projectPages: ProjectPage[] = [
+    {
+      title: "Weighted Clothing",
+      href: "/projects/clothing",
+      description: dict.navbar.projects["weighted-clothing"],
+    },
+    {
+      title: "Partnering Program",
+      href: "/projects/partnering",
+      description: dict.navbar.projects["partnering-program"],
+    },
+    {
+      title: "Social Circle",
+      href: "/projects/social",
+      description: dict.navbar.projects["social-circle"],
+    },
+  ]
+
+  // Build navigation items from dictionary
+  const navItems: NavItem[] = [
+    { name: dict.navbar.home, href: "/" },
+    { name: dict.navbar.about, href: "/about" },
+    { name: dict.navbar.projects.title, href: "/#projects", subcontent: projectPages },
+    { name: dict.navbar.impact, href: "/impact" },
+    { name: dict.navbar.contact, href: "/contact" },
+  ]
+
+  return (
+    <header
+      className="bg-secondary sticky top-0 z-50"
+      role="banner"
+    >
+      <nav
+        className="flex items-center justify-between px-4 py-2"
+        aria-label="Main"
+      >
+        <Logo />
+
+        <DesktopNav items={navItems} />
+
+        <div className="flex items-center gap-2">
+          <LangToggle />
+          <ModeToggle />
+          <MobileNav items={navItems} />
+        </div>
+      </nav>
+    </header>
+  )
+}

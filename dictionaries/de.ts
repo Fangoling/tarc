@@ -22,7 +22,8 @@ export const deTranslations: Dictionary =
         "title": "Anonym trainieren Sichtbar leisten",
         "desc": "Tarc verbindet geschäftliche Innovation und sozialem Engagement. Wir fördern wirtschaftliches Wachstum mit sozialer Initiative.",
         "contact-button": "Kontakt",
-        "about-button": "Über uns"
+        "about-button": "Über uns",
+        "dialog-title": "Schreiben Sie uns"
     },
     "quote": {
         "text": "Die Tarc-Fitness GmbH ist ein revolutionäres Unternehmen im Bereich Fitness, Mental Health und Leistungssport. Als erste Firma weltweit bilden wir Athleten anonym für den Hochleistungssport aus. Diese Athleten treten unter Synonymen und in Verkleidung auf, frei von äußerem Druck und öffentlicher Erwartung.",
