@@ -10,7 +10,6 @@ export default function Terms() {
                 <br />E-Mail : info@tarc-fitness.de
                 <br />Eintragung im Amtsgericht Düsseldorf
                 <br />Handelsregisternummer: HRB 36471
-                <br />Umsatzsteuer Identifikationsnummer: DE297335036
             </p>
         </div>
     )
