@@ -5,7 +5,7 @@ export default function Terms() {
             <p>
                 Name der Firma : Tarc-Fitness GmbH
                 <br />Geschäftsführers : Finn Untiedt
-                <br />Anschrift : Hiertrieferstraße 65 Essen 45143 Essen, DE
+                <br />Anschrift: Hiertrieferstraße 65, 45143 Essen, DE
                 <br />Telefon : +49 201 72994195
                 <br />E-Mail : info@tarc-fitness.de
                 <br />Eintragung im Amtsgericht Essen

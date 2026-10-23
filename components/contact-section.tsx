@@ -20,7 +20,7 @@ export interface ContactSectionProps extends DictionaryProp {
 
 const defaultContactItems: ContactItem[] = [
   { key: 'phone', icon: PhoneIcon, text: '+49 201 72994195' },
-  { key: 'location', icon: MapPinIcon, text: 'Diechmannplatz 1, 45355 Essen, DE' },
+  { key: 'location', icon: MapPinIcon, text: 'Hiertrieferstraße 65, 45143 Essen, DE' },
   { key: 'mail', icon: MailIcon, text: 'info@tarc-fitness.de' },
 ]
 

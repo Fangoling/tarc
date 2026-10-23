@@ -4,7 +4,7 @@ import type { DictionaryProp } from "./prop-types"
 
 export const Quote: React.FC<DictionaryProp> = ({ dict }) => {
     return (
-        <div className="flex flex-col min-h-screen justify-center items-center max-w-4xl px-8">
+        <div className="flex flex-col gap-8 justify-center items-center max-w-4xl px-8 py-16 md:py-24">
             <div>
                 {dict.quote.text}
             </div>
