@@ -1,5 +1,6 @@
 import { Dictionary } from "@/components/prop-types"
 import { getDictionary } from "../dictionaries"
+import { Paragraphs } from "@/components/ui/paragraphs"
 
 export default async function AboutPage({
     params,
@@ -30,45 +31,35 @@ export default async function AboutPage({
                         <h2>
                             {dict.about.principle.title}
                         </h2>
-                        <p>
-                            {dict.about.principle.text}
-                        </p>
+                        <Paragraphs text={dict.about.principle.text} />
                     </div>
 
                     <div>
                         <h2>
                             {dict.about.philosophy.title}
                         </h2>
-                        <p>
-                            {dict.about.philosophy.text}
-                        </p>
+                        <Paragraphs text={dict.about.philosophy.text} />
                     </div>
 
                     <div>
                         <h2>
                             {dict.about.vision.title}
                         </h2>
-                        <p>
-                            {dict.about.vision.text}
-                        </p>
+                        <Paragraphs text={dict.about.vision.text} />
                     </div>
 
                     <div>
                         <h2>
                             {dict.about.criticism.title}
                         </h2>
-                        <p>
-                            {dict.about.criticism.text}
-                        </p>
+                        <Paragraphs text={dict.about.criticism.text} />
                     </div>
 
                     <div>
                         <h2>
                             {dict.about.call.title}
                         </h2>
-                        <p>
-                            {dict.about.call.text}
-                        </p>
+                        <Paragraphs text={dict.about.call.text} />
                     </div>
 
                 </div>
